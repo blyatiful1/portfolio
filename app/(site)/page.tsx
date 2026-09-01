@@ -40,7 +40,7 @@ const chapters: ChapterContent[] = [
         ) },
       { label: "gates", value: "7, screenshot-verified" },
     ],
-    cta: { href: "/work/ultraweb", label: "Enter world 01 — the full case study →" },
+    cta: { href: "/work/ultraweb", label: "Enter world 01 →" },
   },
   {
     world: "hm",
@@ -66,7 +66,7 @@ const chapters: ChapterContent[] = [
       { label: "proof", value: "tools/demo.py — CI proves every hook blocks" },
       { label: "status", value: "live on the machine that built this" },
     ],
-    cta: { href: "/work/hardmode", label: "Enter world 02 — the full case study →" },
+    cta: { href: "/work/hardmode", label: "Enter world 02 →" },
   },
   {
     world: "gt",
@@ -98,7 +98,7 @@ const chapters: ChapterContent[] = [
     ],
     cta: {
       href: "https://github.com/blyatiful1/gtheme",
-      label: "Visit world 03 — on GitHub ↗",
+      label: "Visit world 03 ↗",
       external: true,
     },
   },
@@ -114,7 +114,7 @@ const chapters: ChapterContent[] = [
       <>
         This site.{" "}
         <span className="text-muted-foreground">
-          It monitors the other three — and itself.
+          It watches the others — and itself.
         </span>
       </>
     ),
@@ -135,7 +135,7 @@ const chapters: ChapterContent[] = [
     ],
     cta: {
       href: "https://github.com/blyatiful1",
-      label: "Audit world 00 — the build, on GitHub ↗",
+      label: "Audit the build ↗",
       external: true,
     },
   },

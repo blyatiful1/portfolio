@@ -18,10 +18,9 @@ export function Hero() {
           <span className="text-[var(--w3-display)]">lds</span>.
         </h1>
         <p className="mt-7 max-w-[58ch] text-lg text-muted-foreground">
-          Three projects, each in its own aesthetic — and the world you&apos;re
-          standing in, which watches the other three in real time.{" "}
+          Three projects, each in its own world — and{" "}
           <span className="text-foreground">
-            Built with AI agents I direct.
+            the one you&apos;re standing in, watching them live.
           </span>
         </p>
         <p

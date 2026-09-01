@@ -29,3 +29,12 @@
 6. Purple-blue gradients, gradient headline text, glassmorphism smears, emoji icons, uniform py-24 rhythm — constitution bans, no exceptions taken.
 7. A second animation engine (no anime.js — no SVG choreography commissioned) and no AI chat widget.
 8. Star counts as headline metrics (real counts are 0–1; cadence and substance lead).
+
+## Voice
+Matrix (1–5): Formal↔Casual 3 · Serious↔Playful 2.5 · Plain↔Expressive 2 · Reserved↔Bold 4.
+- precise — sounds like: "254 of 256 commits carry the marker." / never: "extremely high AI coverage."
+- obsessive — sounds like: "The counter recomputes hourly; a stale number is a bug." / never: "we care deeply about quality."
+- wry — sounds like: "Whether that's worth hiring is a fair question." / never: winking self-praise.
+Mechanics: person I/you · contractions yes · sentence ceiling 18 words · jargon IN: commit, webhook, hook, gate, agent, wire — OUT: AI-powered, passionate, journey · humor dry, one wink per surface max.
+German register (legal pages only): **Sie** — trust surface, DDG/DSGVO context [recorded in BRIEF].
+Calibration: H1 "One operator. Four worlds." · button "Work with me" · error "Didn't send — your message is still here. Try again, or email me directly."

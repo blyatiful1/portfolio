@@ -20,16 +20,14 @@ export async function Operator() {
               </em>
             </h2>
             <p className="mt-7 max-w-[54ch] text-base text-muted-foreground">
-              I&apos;m Iwan Braun, and I run software projects the way
-              they&apos;ll be run from now on:{" "}
+              I&apos;m Iwan Braun.{" "}
               <span className="text-foreground">
-                AI agents write essentially every line, and I own everything git
+                AI agents write essentially every line I ship; I own what git
                 log can&apos;t record
               </span>{" "}
-              — choosing the problems, writing the standard before the first
-              token, and binning what fails it. Whether that&apos;s worth hiring
-              is a fair question. The worlds above are exactly where you&apos;d
-              check.
+              — choosing the problems, writing the standard, binning what fails
+              it. Whether that&apos;s worth hiring is a fair question. The
+              worlds above are where you&apos;d check.
             </p>
             <dl className="mt-8 space-y-2 font-mono text-xs tracking-[0.05em] uppercase text-muted-foreground">
               <div className="grid grid-cols-[8.5rem_1fr] gap-2">

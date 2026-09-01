@@ -59,3 +59,5 @@ counsel-needed: whether a personal hireability portfolio is "geschäftsmäßig" 
 - Impressum requires full name + postal address on the page — material, unconfirmed.
 - Ship-time user actions: configure GitHub webhooks on curated repos; provide a server-side GitHub PAT for API rate limits — material, unconfirmed.
 - Brand mark: an invented starting mark (IWAN·BRAUN wordmark + IB monogram, Space Grotesk 700 outlines, square-counter cut — see design/IDENTITY.md); the user may replace it — creative.
+
+- German register: Sie on legal pages (the only German surfaces) — trust-coded [copywriting, Phase 8].
