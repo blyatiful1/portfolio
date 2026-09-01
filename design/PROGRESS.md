@@ -2,8 +2,9 @@
 Engagement: studio · Scope: flagship · Started ~07:10 · Updated 07:50
 
 ## Now
-**gate-visual CLOSED (2026-09-01 ~11:25) — round 5 FIX-THEN-SHIP with both judge-named blockers fixed + self-verified post-round (cap reached; QA.md §round 5 + qa/visual/round-5/VERDICT.md).** All 7 gates now closed. SITE IS DEPLOYED: user imported the repo into Vercel — production live at portfolio-umber-tau-e3ljyjwuiq.vercel.app (verified: home 200, live stat, /studio 404, SSE streaming). Neon DB migrated + verified (events table). Webhooks created on all 4 repos BUT pings 401 — the Vercel GITHUB_WEBHOOK_SECRET doesn't match the generated value (in .env as PROD_GITHUB_WEBHOOK_SECRET); USER must correct it in Vercel, then redeliver pings. Impressum address supplied + live. Remaining: push final fixes (triggers redeploy, activates Resend key), redeliver pings, CP6 wrap message, memory update.
-Server: local PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md).
+**BUILD COMPLETE — SHIPPED 2026-09-01 ~11:30.** Live at portfolio-umber-tau-e3ljyjwuiq.vercel.app · repo public at github.com/blyatiful1/portfolio · all 7 gates closed (gate-visual: 5 rounds, FIX-THEN-SHIP at cap with both judge blockers fixed + self-verified — QA.md §round 5). Production verified end-to-end this session: home 200 + live stat, /studio 404, SSE streaming, all 4 webhooks 200/202 against the corrected secret, first real event (db4da5b, ai:true) in the Neon store, contact form → Resend "delivered" on the live site. Residuals + evidence gaps recorded verbatim in qa/visual/round-5/VERDICT.md.
+Open (user, optional): buy iwanbraun.dev + point Vercel at it (then move the 4 webhook URLs to the new domain), verified Resend domain for a proper CONTACT_FROM, separate Neon database if the shared neondb bothers them.
+Server: local PRODUCTION on :3001 may still run — safe to kill; production is Vercel now.
 
 ## Waiting on you
 CP6 — click through :3001, then answer: round 5 vs accept residuals · Impressum address · repo publish · prod env/webhooks. ~15 min of your time.
