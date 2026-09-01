@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* ============ iwanbraun.dev — compiled from design/SYSTEM.md ============
+   Dark-leading: :root IS the dark chrome (world 00). `.light` is the
+   re-decided light theme (next-themes class strategy, defaultTheme dark).
+   Worlds re-map ACCENT roles only ([data-world]); chapter grounds are
+   section surfaces (--w*-*), mode-invariant by design. */
+
+@custom-variant light (&:where(.light, .light *));
+
+:root {
+  /* — semantic: dark chrome (SYSTEM §color, verified 2026-09-01) — */
+  --background: oklch(0.14 0.01 280);
+  --foreground: oklch(0.91 0.01 280);
+  --card: oklch(0.17 0.012 280);
+  --card-foreground: oklch(0.91 0.01 280);
+  --popover: oklch(0.18 0.012 280);
+  --popover-foreground: oklch(0.91 0.01 280);
+  --primary: oklch(0.91 0.01 280);
+  --primary-foreground: oklch(0.14 0.01 280);
+  --secondary: oklch(0.20 0.012 280);
+  --secondary-foreground: oklch(0.91 0.01 280);
+  --muted: oklch(0.20 0.012 280);
+  --muted-foreground: oklch(0.68 0.015 280);
+  --accent: oklch(0.20 0.012 280);
+  --accent-foreground: oklch(0.91 0.01 280);
+  --destructive: oklch(0.70 0.16 25);
+  --border: oklch(0.28 0.015 280);
+  --input: oklch(0.50 0.015 280);
+  --ring: var(--tuned-accent);
+  --live: oklch(0.75 0.17 150);
+  --shadow-md-v: 0 1px 2px oklch(0.2 0.03 280 / 0.10), 0 2px 6px oklch(0.2 0.03 280 / 0.12);
+  --shadow-xl-v: 0 4px 8px oklch(0.2 0.03 280 / 0.12), 0 16px 36px oklch(0.2 0.03 280 / 0.20);
+
+  /* — world accents (chrome tuning + chapter accents) — */
+  --world-me: oklch(0.91 0.01 280);   --world-me-fg: oklch(0.14 0.01 280);
+  --world-uw: oklch(0.68 0.14 45);    --world-uw-fg: oklch(0.14 0.012 60);
+  --world-hm: oklch(0.85 0.16 95);    --world-hm-fg: oklch(0.15 0.005 90);
+  --world-gt: oklch(0.52 0.15 255);   --world-gt-fg: oklch(0.99 0.005 250);
+
+  /* — chapter surfaces (section grounds, identical in both modes) — */
+  --w1-ground: oklch(0.18 0.012 60);  --w1-fg: oklch(0.92 0.02 75);  --w1-muted: oklch(0.72 0.02 70);
+  --w2-ground: oklch(0.15 0.005 90);  --w2-fg: oklch(0.90 0.01 90);  --w2-muted: oklch(0.72 0.01 90);
+  --w3-ground: oklch(0.93 0.02 250);  --w3-fg: oklch(0.30 0.04 260); --w3-muted: oklch(0.45 0.03 260);
+  --w3-display: oklch(0.60 0.14 250); /* LARGE text/display only — 3.19:1 */
+
+  /* — motion durations (motion-language; raw numbers live here + lib/motion.ts ONLY) — */
+  --dur-micro: 200ms;
+  --dur-small: 320ms;
+  --dur-section: 560ms;
+}
+
+.light {
+  /* re-decided, not inverted (SYSTEM §color light table) */
+  --background: oklch(0.965 0.008 260);
+  --foreground: oklch(0.22 0.02 270);
+  --card: oklch(0.99 0.005 260);
+  --card-foreground: oklch(0.22 0.02 270);
+  --popover: oklch(0.99 0.005 260);
+  --popover-foreground: oklch(0.22 0.02 270);
+  --primary: oklch(0.30 0.03 270);
+  --primary-foreground: oklch(0.97 0.008 260);
+  --secondary: oklch(0.93 0.012 260);
+  --secondary-foreground: oklch(0.22 0.02 270);
+  --muted: oklch(0.93 0.012 260);
+  --muted-foreground: oklch(0.46 0.02 265);
+  --accent: oklch(0.93 0.012 260);
+  --accent-foreground: oklch(0.22 0.02 270);
+  --destructive: oklch(0.55 0.19 25);
+  --border: oklch(0.88 0.012 260);
+  --input: oklch(0.62 0.02 265);
+  --live: oklch(0.50 0.14 155);
+  --world-me: oklch(0.30 0.03 270);   --world-me-fg: oklch(0.97 0.008 260);
+  --shadow-md-v: 0 1px 2px oklch(0.3 0.02 265 / 0.05), 0 2px 6px oklch(0.3 0.02 265 / 0.06);
+  --shadow-xl-v: 0 4px 8px oklch(0.3 0.02 265 / 0.06), 0 16px 36px oklch(0.3 0.02 265 / 0.10);
+}
+
+/* — the chrome tuning: an interpolating color token (the ONE registered property) — */
+@property --tuned-accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(0.91 0.01 280);
+}
+
+/* — worlds: accent re-map ONLY (never surfaces; theme-worlds law).
+     shadcn --accent (a hover SURFACE role) deliberately not re-mapped. — */
+[data-world="me"] { --primary: var(--world-me); --primary-foreground: var(--world-me-fg); --tuned-accent: var(--world-me); }
+[data-world="uw"] { --primary: var(--world-uw); --primary-foreground: var(--world-uw-fg); --tuned-accent: var(--world-uw); }
+[data-world="hm"] { --primary: var(--world-hm); --primary-foreground: var(--world-hm-fg); --tuned-accent: var(--world-hm); }
+[data-world="gt"] { --primary: var(--world-gt); --primary-foreground: var(--world-gt-fg); --tuned-accent: var(--world-gt); }
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-live: var(--live);
+  --color-w1-ground: var(--w1-ground); --color-w1-fg: var(--w1-fg); --color-w1-muted: var(--w1-muted);
+  --color-w2-ground: var(--w2-ground); --color-w2-fg: var(--w2-fg); --color-w2-muted: var(--w2-muted);
+  --color-w3-ground: var(--w3-ground); --color-w3-fg: var(--w3-fg); --color-w3-muted: var(--w3-muted);
+  --color-w3-display: var(--w3-display);
+  --color-world-uw: var(--world-uw); --color-world-hm: var(--world-hm);
+  --color-world-gt: var(--world-gt); --color-world-me: var(--world-me);
+  --color-tuned: var(--tuned-accent);
+
+  --font-sans: var(--font-space-grotesk), "Space Grotesk Fallback", system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "Cascadia Mono", monospace;
+  --font-display-uw: var(--font-fraunces), Georgia, serif;
+
+  --shadow-md: var(--shadow-md-v);
+  --shadow-xl: var(--shadow-xl-v);
+}
+
+@theme {
+  /* — spacing base (SYSTEM §layout: 4px unit) — */
+  --spacing: 0.25rem;
+
+  /* — containers — */
+  --container-prose: 62ch;
+  --container-content: 72rem;
+  --container-wide: 88rem;
+
+  /* — radius (SYSTEM §shape: Sharp) — */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+
+  /* — fluid type scale (390→1440; hero 96/17 = 5.6× body at 1440) — */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1.4;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.4;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5;
+  --text-base: clamp(1rem, 0.976rem + 0.095vw, 1.0625rem);
+  --text-base--line-height: 1.6;
+  --text-lg: clamp(1.125rem, 1.079rem + 0.19vw, 1.25rem);
+  --text-lg--line-height: 1.45;
+  --text-xl: clamp(1.25rem, 1.157rem + 0.381vw, 1.5rem);
+  --text-xl--line-height: 1.3;
+  --text-2xl: clamp(1.5rem, 1.268rem + 0.952vw, 2.125rem);
+  --text-2xl--line-height: 1.15;
+  --text-3xl: clamp(1.75rem, 1.379rem + 1.524vw, 2.75rem);
+  --text-3xl--line-height: 1.1;
+  --text-4xl: clamp(2.125rem, 1.429rem + 2.857vw, 4rem);
+  --text-4xl--line-height: 1.02;
+  --text-5xl: clamp(2.75rem, 1.543rem + 4.952vw, 6rem);
+  --text-5xl--line-height: 1.0;
+
+  /* — easing family: Decisive (motion-language) — */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.83, 0, 0.17, 1);
+  --ease-in: cubic-bezier(0.64, 0, 0.78, 0);
+
+  /* — keyframes (numbers come from tokens at point of use) — */
+  --animate-fade-rise: fade-rise var(--dur-section) var(--ease-out) both;
+  --animate-wire-in: wire-in var(--dur-small) var(--ease-out) both;
+  @keyframes fade-rise {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes wire-in {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scrollbar-color: color-mix(in oklab, var(--foreground) 28%, transparent) transparent; }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--primary); color: var(--primary-foreground); }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+}
+
+@layer components {
+  /* entrance utilities are OPT-IN under no-preference (motion-language two-layer policy);
+     reduce users get the static end state — content never hidden */
+  .anim-fade-rise, .anim-wire-in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: no-preference) {
+    .anim-fade-rise { animation: var(--animate-fade-rise); }
+    .anim-wire-in { animation: var(--animate-wire-in); }
+  }
+
+  /* display-scale craft (SYSTEM §type) */
+  .display-features { font-feature-settings: "kern" 1, "liga" 1, "calt" 1; }
+
+  /* forced-colors / reduced-transparency floor (SYSTEM §depth) */
+  @media (forced-colors: active), (prefers-reduced-transparency: reduce) {
+    .glass-header { backdrop-filter: none; background: Canvas; border-bottom: 1px solid CanvasText; }
+    .elevated { border: 1px solid CanvasText; box-shadow: none; }
+  }
+}
