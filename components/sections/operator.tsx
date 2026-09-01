@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TimeAgo } from "@/components/data/time-ago";
+import { ContactForm } from "@/components/sections/contact-form";
 import { getAuthorship } from "@/lib/data/github";
 
 export async function Operator() {
@@ -44,15 +45,19 @@ export async function Operator() {
                 <dd>Germany · remote / hybrid</dd>
               </div>
             </dl>
-            <div id="contact" className="mt-10 flex flex-wrap items-center gap-4 scroll-mt-24">
-              <Button asChild size="lg">
-                <a href="mailto:iwan.braun2004@gmail.com">Work with me</a>
-              </Button>
-              <Button asChild variant="ghost" size="lg">
-                <a href="https://github.com/blyatiful1" target="_blank" rel="noreferrer">
-                  GitHub ↗
-                </a>
-              </Button>
+            <div id="contact" className="mt-10 scroll-mt-24">
+              <ContactForm />
+              <div className="mt-6">
+                <Button asChild variant="ghost" size="sm">
+                  <a
+                    href="https://github.com/blyatiful1"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub ↗
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
 
