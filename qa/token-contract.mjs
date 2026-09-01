@@ -7,6 +7,8 @@ const declared = new Set([...css.matchAll(/--([\w-]+)\s*:/g)].map((m) => m[1]));
 // tokens set by JS/next-font at runtime, or Tailwind-namespace generated
 const runtimeDeclared = new Set([
   "font-space-grotesk", "font-fraunces", "font-plex-mono",
+  // inline-style tokens with explicit var() fallbacks (Reveal delay, hazard header clearance)
+  "reveal-delay", "hazard-offset",
 ]);
 let fail = 0;
 

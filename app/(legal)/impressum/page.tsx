@@ -55,9 +55,9 @@ export default function Impressum() {
             <p>
               Iwan Braun
               <br />
-              {/* material, unconfirmed — production ship is blocked until the real
-                  postal address replaces this line (design/BRIEF.md §Assumed facts) */}
-              [Anschrift wird vor Veröffentlichung ergänzt]
+              Poststr. 153a
+              <br />
+              44809 Bochum
             </p>
           </LegalBlock>
 
