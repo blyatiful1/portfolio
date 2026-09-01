@@ -2,8 +2,8 @@
 Engagement: studio · Scope: flagship · Started ~07:10 · Updated 07:50
 
 ## Now
-Phase 11/12 — Gates · six of seven PASS; gate-visual in round 3 (r1 FIX-THEN-SHIP w/ invalid home evidence → fixed; r2 FIX-THEN-SHIP w/ real movement → all ranked defects fixed; r3 judge scoring the fresh 31-capture set now).
-Server: PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md).
+Phase 11/12 — Gates · six of seven PASS; gate-visual round 4 (FINAL — flagship cap): r3 fixes committed (e470915), 32-capture round-4 set shot and valid, **design-judge round-4 agent running in the background — its notification closes the gate (SHIP, or residuals quoted verbatim at CP6). If resuming: check for that agent's result before re-judging; do NOT start a new round.**
+Server: PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md). After the verdict: CP6 acceptance (address + repo/webhook asks in CONTEXT-HANDOFF.md), then ship.
 
 ## Waiting on you
 CP5 voice review — read the headlines + one body block per page (presented in chat) and approve or name what sounds off. ~8 min of your time.

@@ -1,5 +1,8 @@
 # Context handoff — what's load-bearing in the build session (2026-09-01)
 
+## The original request, verbatim (compaction-preservation rule)
+/ultraweb — "I want a dynamically updating the portfolio site that connects my profile and my github repo's; i dont want this to be a generic portfolio site like all the ones that are beeing generated, i want this to be truly special and have something that no one else ever implemented in their coding career, walk me through your ideas and design choices"
+
 Written mid-session at the user's request: the state a future session (or a post-compaction continuation) needs that ISN'T already obvious from the other design/* artifacts. Read design/PROGRESS.md §Now first — it is the resume authority; this file carries the surrounding context.
 
 ## Where the build stands
