@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B — The Evidence File</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,700;1,6..72,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper: oklch(0.97 0.01 80);
+  --ink: oklch(0.21 0.012 60);
+  --ink-soft: oklch(0.42 0.012 60);
+  --rule: oklch(0.84 0.015 75);
+  --oxblood: oklch(0.44 0.15 25);
+  --serif:"Newsreader", Georgia, serif;
+  --sans:"Archivo", system-ui, sans-serif;
+}
+*{margin:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.65 var(--sans)}
+a{color:var(--oxblood)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.masthead{border-bottom:2px solid var(--ink);padding:16px 0}
+.masthead .wrap{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.masthead b{font:700 15px var(--serif);letter-spacing:.01em}
+.masthead span{font:500 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.hero{padding:clamp(48px,8vw,110px) 0 30px}
+.eyebrow{font:600 12px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--oxblood)}
+h1{font:500 clamp(40px,7vw,92px)/1.02 var(--serif);letter-spacing:-0.015em;margin:20px 0 22px;max-width:16ch}
+h1 em{font-style:italic}
+.stand{font:400 clamp(17px,1.6vw,20px)/1.6 var(--serif);max-width:56ch;color:var(--ink-soft)}
+.stand strong{color:var(--ink);font-weight:500}
+.pullstat{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);margin:56px 0;padding:34px 0 30px;display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,4vw,56px);align-items:center}
+.pullstat .num{font:700 clamp(64px,11vw,148px)/0.9 var(--serif);color:var(--oxblood);letter-spacing:-0.03em;font-variant-numeric:lining-nums}
+.pullstat .cap{max-width:34ch}
+.pullstat .cap p{font:400 16px/1.55 var(--sans)}
+.pullstat .cap .note{margin-top:10px;font:italic 400 15px var(--serif);color:var(--ink-soft)}
+.wire{border:1px solid var(--rule);background:oklch(0.985 0.008 80)}
+.wire-head{display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1px solid var(--rule);font:600 11px var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.wire-head .live{color:var(--oxblood)}
+.wireline{padding:9px 16px;border-bottom:1px solid var(--rule);font:400 14px var(--sans);color:var(--ink-soft)}
+.wireline b{color:var(--ink);font-weight:600}
+.wireline time{font-variant-numeric:tabular-nums;margin-right:10px;color:var(--oxblood)}
+.byline{padding:8px 16px;font:italic 400 13px var(--serif);color:var(--ink-soft)}
+section{padding:60px 0 8px}
+.kicker{font:600 12px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);border-top:2px solid var(--ink);padding-top:12px;margin-bottom:26px}
+.exhibit{display:grid;grid-template-columns:110px 1fr auto;gap:clamp(12px,3vw,40px);padding:20px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.exhibit .label{font:italic 500 17px var(--serif);color:var(--oxblood)}
+.exhibit h3{font:500 clamp(22px,2.6vw,30px) var(--serif);letter-spacing:-0.01em}
+.exhibit p{color:var(--ink-soft);max-width:52ch;margin-top:4px;font-size:15px}
+.exhibit .count{font:400 14px var(--sans);color:var(--ink-soft);font-variant-numeric:tabular-nums;white-space:nowrap}
+.closing{margin:70px 0 0;border-top:2px solid var(--ink);padding:44px 0 70px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.closing p{font:400 clamp(19px,2vw,24px)/1.5 var(--serif);max-width:30ch}
+.btn{display:inline-block;border:2px solid var(--ink);color:var(--ink);font:600 14px var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:14px 26px;text-decoration:none}
+footer{border-top:1px solid var(--rule);padding:18px 0 44px;font:400 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+@media (max-width:640px){.pullstat{grid-template-columns:1fr}.exhibit{grid-template-columns:1fr}.exhibit .count{order:3}.closing{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="masthead"><div class="wrap">
+  <b>Iwan Braun — The Evidence File</b>
+  <span>github.com/blyatiful1 · updated continuously</span>
+</div></div>
+
+<div class="wrap">
+<div class="hero">
+  <p class="eyebrow">A portfolio, under oath</p>
+  <h1>Almost none of this code was written <em>by me.</em></h1>
+  <p class="stand"><strong>That is the point, not a disclaimer.</strong> I direct AI agents; they write the code. What follows is not a claim about the future of software — it is a measured record of four repositories, streamed to this page as it happens, with the command to check every number yourself.</p>
+</div>
+
+<div class="pullstat">
+  <div class="num">254<span style="font-size:.45em">/256</span></div>
+  <div class="cap">
+    <p>content commits across four repos carry a machine-authorship marker. The other two: a licence file and a bulk import of files an AI had already generated.</p>
+    <p class="note">If anything, the number understates it.</p>
+  </div>
+</div>
+
+<div class="wire">
+  <div class="wire-head"><span>The wire — latest from the repos</span><span class="live">● live</span></div>
+  <div class="wireline"><time>14:02</time><b>ultraweb</b> — gate-visual: raise judge ceiling for flagship tier</div>
+  <div class="wireline"><time>13:47</time><b>portfolio</b> — this very page, committing itself into the record</div>
+  <div class="wireline"><time>11:20</time><b>hardmode</b> — loop-alarm: treat third identical failure as ground truth</div>
+  <div class="byline">Each line arrives by webhook, seconds after the push. The page you are reading is one of the repos it reports on.</div>
+</div>
+
+<section>
+  <p class="kicker">The artifacts, as exhibits</p>
+  <div class="exhibit"><span class="label">Exhibit A</span><div><h3>ultraweb</h3><p>A design studio for Claude Code: a scoping interview, three mockups, a 12-phase pipeline, screenshot-verified gates. This site is its work — every decision it made is committed in the repo.</p></div><span class="count">60/62 AI-authored</span></div>
+  <div class="exhibit"><span class="label">Exhibit B</span><div><h3>hardmode</h3><p>A discipline floor for AI coding agents. Advice loses to momentum, so the rules live in hooks that cannot be talked out of.</p></div><span class="count">39/39 AI-authored</span></div>
+  <div class="exhibit"><span class="label">Exhibit C</span><div><h3>gtheme</h3><p>GNOME theming for people who are nervous about breaking their desktop — with an undo that always works.</p></div><span class="count">124/124 AI-authored</span></div>
+  <div class="exhibit"><span class="label">Exhibit D</span><div><h3>NightCityMP</h3><p>Multiplayer for Cyberpunk 2077. Host and join like Minecraft.</p></div><span class="count">31/31 AI-authored</span></div>
+</section>
+
+<div class="closing">
+  <p>What's mine is the part <em>git log</em> doesn't record. Judge it on the artifacts.</p>
+  <a class="btn" href="mailto:iwan.braun2004@gmail.com">Work with me</a>
+</div>
+</div>
+
+<footer><div class="wrap">Iwan Braun · built by ultraweb — its own exhibit · Imprint / Privacy</div></footer>
+</body>
+</html>

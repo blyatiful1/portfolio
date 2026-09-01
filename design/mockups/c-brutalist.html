@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C — The Receipts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white: oklch(1 0 0);
+  --black: oklch(0.13 0 0);
+  --acid: oklch(0.87 0.24 135);
+  --linkblue: oklch(0.45 0.31 264);
+  --mono:"Space Mono", ui-monospace, monospace;
+}
+*{margin:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font:400 15px/1.5 var(--mono)}
+a{color:var(--linkblue)}
+.meta{position:fixed;writing-mode:vertical-rl;right:8px;top:120px;font-size:10px;letter-spacing:.12em;color:var(--black);opacity:.55}
+.wrap{max-width:1140px;margin:0 auto;padding:0 clamp(14px,3.5vw,44px)}
+header{border-bottom:3px solid var(--black)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:12px clamp(14px,3.5vw,44px);flex-wrap:wrap;gap:6px}
+header b{font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.stamp{background:var(--acid);border:2px solid var(--black);padding:3px 10px;font-weight:700;font-size:12px;text-transform:uppercase}
+.hero{padding:clamp(40px,6vw,80px) 0 34px}
+h1{font:700 clamp(44px,10.5vw,150px)/1.04 var(--mono);text-transform:uppercase;letter-spacing:-0.03em;word-break:break-word}
+h1 .not{background:var(--black);color:var(--acid);padding:0 .08em}
+.sub{margin:42px 0 0;max-width:60ch;font-size:16px}
+.sub b{background:var(--acid);padding:0 4px}
+.exposed{margin-top:14px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;opacity:.6}
+.log{border:3px solid var(--black);margin:44px 0 0}
+.log-head{display:flex;justify-content:space-between;border-bottom:3px solid var(--black);padding:8px 14px;font-weight:700;text-transform:uppercase;font-size:12px}
+.log-head .live{color:var(--black);background:var(--acid);padding:0 8px}
+.logline{padding:8px 14px;border-bottom:1px solid var(--black);font-size:13px;display:flex;gap:14px;flex-wrap:wrap;align-items:baseline}
+.logline .sha{font-weight:700}
+.logline .new{background:var(--acid)}
+.logline time{opacity:.55;font-size:11px}
+.logline .marker{margin-left:auto;font-size:10px;font-weight:700;border:2px solid var(--black);padding:1px 6px;text-transform:uppercase}
+.verify{padding:10px 14px;font-size:12px;background:var(--black);color:var(--white)}
+.verify code{color:var(--acid)}
+section{padding:52px 0 0}
+h2{font:700 clamp(24px,3.4vw,40px) var(--mono);text-transform:uppercase;border-bottom:3px solid var(--black);padding-bottom:8px;margin-bottom:0}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--black);padding:16px 0}
+.row h3{font:700 clamp(18px,2.4vw,26px) var(--mono);text-transform:uppercase}
+.row p{font-size:13px;max-width:52ch;margin-top:4px}
+.row .facts{font-size:11px;text-align:right;opacity:.65;text-transform:uppercase;letter-spacing:.04em}
+.row .aicount{font-weight:700;border:2px solid var(--black);padding:2px 8px;white-space:nowrap}
+.hire{margin:64px 0 0;border:3px solid var(--black);padding:clamp(24px,4vw,48px);background:var(--acid)}
+.hire p{font-weight:700;font-size:clamp(18px,2.6vw,28px);text-transform:uppercase;max-width:34ch}
+.hire a{display:inline-block;margin-top:18px;background:var(--black);color:var(--white);padding:14px 24px;font-weight:700;text-transform:uppercase;text-decoration:none;font-size:15px}
+footer{margin-top:56px;border-top:3px solid var(--black);padding:16px 0 46px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+@media (max-width:620px){.row{grid-template-columns:1fr}.row .facts{text-align:left}.meta{display:none}}
+</style>
+</head>
+<body>
+<span class="meta">FILE: INDEX.HTML · 14.2KB · 52.52°N 13.40°E · SERVED RAW</span>
+<header><div class="wrap" style="padding-left:0;padding-right:0">
+  <b>IWAN_BRAUN.LOG</b>
+  <span class="stamp">RECEIPTS INSIDE</span>
+</div></header>
+
+<div class="wrap">
+<div class="hero">
+  <h1>254/256 commits: <span class="not">not mine.</span></h1>
+  <p class="sub">I direct AI agents. They write the code. <b>That is the point, not a disclaimer.</b> This page appends my git log in real time — unedited, machine-attributed, timestamped. No screenshots of code. The actual log.</p>
+  <p class="exposed">last-modified: 31.08.2026 14:02:11 UTC · feed: SSE, open · uptime of claim: recomputed hourly</p>
+
+  <div class="log">
+    <div class="log-head"><span>git log --live</span><span class="live">● STREAMING</span></div>
+    <div class="logline"><span class="sha new">a41f209</span><span>ultraweb — gate-visual: raise judge ceiling</span><time>14:02:07</time><span class="marker">AI</span></div>
+    <div class="logline"><span class="sha">10b8879</span><span>portfolio — phase 1: this page commits itself</span><time>13:47:52</time><span class="marker">AI</span></div>
+    <div class="logline"><span class="sha">7c03e1d</span><span>hardmode — loop-alarm: third failure = ground truth</span><time>11:20:33</time><span class="marker">AI</span></div>
+    <div class="logline"><span class="sha">e9b2a04</span><span>gtheme — snapshot: pristine restore point</span><time>09:03:18</time><span class="marker">AI</span></div>
+    <div class="verify">don't believe a portfolio. run it: <code>git log --no-merges | grep -ci claude</code></div>
+  </div>
+</div>
+
+<section>
+  <h2>The artifacts</h2>
+  <div class="row"><div><h3>ultraweb</h3><p>A design studio for Claude Code. Interview, mockups, 12 phases, screenshot-verified gates. Built this page. Yes, that one is recursive.</p></div><span class="facts">JS · 62 COMMITS · PUSHED TODAY</span><span class="aicount">60/62 AI</span></div>
+  <div class="row"><div><h3>hardmode</h3><p>A discipline floor for AI agents: hooks that cannot be talked out of, verifiers with no loyalty to the work.</p></div><span class="facts">PY · 39 COMMITS · 2D AGO</span><span class="aicount">39/39 AI</span></div>
+  <div class="row"><div><h3>gtheme</h3><p>GNOME theming with an undo that always works. 2,610 tests. No telemetry.</p></div><span class="facts">PY · 124 COMMITS · 4D AGO</span><span class="aicount">124/124 AI</span></div>
+  <div class="row"><div><h3>NightCityMP</h3><p>Multiplayer for Cyberpunk 2077. Host and join like Minecraft.</p></div><span class="facts">C++ · 31 COMMITS · JUL</span><span class="aicount">31/31 AI</span></div>
+</section>
+
+<div class="hire">
+  <p>The human part: choosing the problem, writing the standard, binning what fails it.</p>
+  <a href="mailto:iwan.braun2004@gmail.com">HIRE THE OPERATOR →</a>
+</div>
+</div>
+
+<footer><div class="wrap" style="padding-left:0;padding-right:0">IWAN BRAUN · BUILT BY ULTRAWEB (EXHIBIT IN ITS OWN CASE) · IMPRINT / PRIVACY</div></footer>
+</body>
+</html>

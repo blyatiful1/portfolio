@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A2 — The Machine Hall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hall: oklch(0.16 0.015 260);
+  --hall-deep: oklch(0.12 0.012 262);
+  --steel: oklch(0.30 0.015 255);
+  --fog: oklch(0.72 0.02 250);
+  --white: oklch(0.94 0.008 250);
+  --lamp: oklch(0.78 0.14 75);          /* sodium work-light amber */
+  --lamp-dim: oklch(0.45 0.06 75);
+  --hazard: oklch(0.86 0.17 95);
+  --display:"Big Shoulders Display", sans-serif-condensed, sans-serif;
+  --sans:"Archivo", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+*{margin:0;box-sizing:border-box}
+body{background:var(--hall);color:var(--white);font:400 15px/1.6 var(--sans)}
+a{color:var(--lamp)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+header{position:sticky;top:0;background:color-mix(in oklab,var(--hall) 88%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--steel);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px}
+.brand{font:700 15px var(--display);letter-spacing:.14em;text-transform:uppercase}
+.livechip{font:500 11px var(--mono);letter-spacing:.1em;color:var(--lamp);border:1px solid var(--lamp-dim);padding:4px 10px}
+.livechip .d{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lamp);box-shadow:0 0 8px var(--lamp);margin-right:7px}
+.hero{position:relative;padding:clamp(56px,9vw,120px) 0 0;overflow:hidden}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--fog)}
+h1{font:700 clamp(52px,9vw,132px)/0.95 var(--display);text-transform:uppercase;letter-spacing:.015em;margin:16px 0 18px}
+h1 .amber{color:var(--lamp)}
+.sub{max-width:54ch;color:var(--fog);font-size:17px}
+.sub b{color:var(--white);font-weight:500}
+/* the hall scene — static frame of the scroll-camera set */
+.scene{margin:56px auto 0;position:relative;height:360px;background:linear-gradient(oklch(0.13 0.012 262), oklch(0.19 0.02 255) 70%, oklch(0.23 0.03 80 / .25));border:1px solid var(--steel);border-bottom:0}
+.floorline{position:absolute;left:0;right:0;bottom:64px;height:1px;background:oklch(0.4 0.03 80/.5)}
+.station{position:absolute;bottom:64px;width:17%;height:52%;background:linear-gradient(oklch(0.20 0.015 258), oklch(0.15 0.012 260));border:1px solid var(--steel);border-bottom:0}
+.station .lamp{position:absolute;top:-26px;left:50%;transform:translateX(-50%);width:34px;height:14px;background:var(--lamp-dim);clip-path:polygon(15% 0,85% 0,100% 100%,0 100%)}
+.station .glowpool{position:absolute;left:-12%;right:-12%;bottom:-64px;height:64px;background:radial-gradient(ellipse at top, oklch(0.5 0.09 75/.28), transparent 70%)}
+.station .tag{position:absolute;bottom:10px;left:0;right:0;text-align:center;font:700 clamp(11px,1.3vw,16px) var(--display);letter-spacing:.16em;color:var(--fog)}
+.station.lit .lamp{background:var(--lamp);box-shadow:0 0 22px var(--lamp)}
+.station.lit .tag{color:var(--lamp)}
+.station.lit{border-color:oklch(0.5 0.08 75)}
+.s1{left:6%}.s2{left:28%}.s3{left:50%}.s4{left:72%}
+.scene .note{position:absolute;top:14px;right:16px;font:400 11px var(--mono);color:var(--lamp);letter-spacing:.06em}
+.railbar{border:1px solid var(--steel);border-top:0;display:flex;justify-content:space-between;padding:10px 16px;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--fog)}
+.railbar b{color:var(--lamp)}
+section{padding:64px 0 8px}
+.kicker{font:700 13px var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--fog);margin-bottom:24px}
+.plate{border:1px solid var(--steel);background:var(--hall-deep);display:grid;grid-template-columns:auto 1fr auto;gap:clamp(16px,3vw,40px);padding:clamp(18px,3vw,32px);align-items:center}
+.plate .no{font:700 clamp(40px,6vw,84px)/1 var(--display);color:var(--lamp)}
+.plate h3{font:700 clamp(22px,3vw,34px) var(--display);letter-spacing:.06em;text-transform:uppercase}
+.plate p{color:var(--fog);max-width:52ch;margin-top:6px;font-size:14px}
+.plate .spec{font:400 11px var(--mono);color:var(--fog);text-align:right;line-height:2;letter-spacing:.04em;text-transform:uppercase}
+.plate .spec b{color:var(--white)}
+.stance{margin:64px 0 0;border-top:1px solid var(--steel);padding:44px 0 0;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
+.stance p{font-size:clamp(17px,1.8vw,21px);max-width:52ch;color:var(--fog)}
+.stance p b{color:var(--white);font-weight:500}
+.stance .fine{font:400 12px var(--mono);color:var(--lamp-dim);margin-top:10px}
+.btn{display:inline-block;background:var(--lamp);color:var(--hall-deep);font:700 15px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:14px 26px;text-decoration:none}
+footer{margin-top:64px;border-top:1px solid var(--steel);padding:18px 0 44px;font:400 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fog)}
+@media (max-width:640px){.plate{grid-template-columns:1fr}.plate .spec{text-align:left}.stance{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="brand">Braun — Machine Hall</span>
+  <span class="livechip"><span class="d"></span>HALL LIVE · LAST EVENT 31 S</span>
+</div></header>
+
+<div class="wrap">
+<div class="hero">
+  <p class="eyebrow">Iwan Braun · agent infrastructure · Germany</p>
+  <h1>I built <span class="amber">the hall.</span><br>The machines run.</h1>
+  <p class="sub">Four projects run in this hall, worked around the clock by AI agents I direct. <b>Scroll walks you past every station.</b> When a lamp flares, a real commit just landed — this page is wired to the repos, live.</p>
+
+  <div class="scene" role="img" aria-label="Static frame of the hall scene: four machine stations, ultraweb's lamp lit">
+    <span class="note">⟵ camera dollies on scroll — static frame</span>
+    <div class="floorline"></div>
+    <div class="station s1 lit"><div class="lamp"></div><div class="glowpool"></div><span class="tag">ULTRAWEB</span></div>
+    <div class="station s2"><div class="lamp"></div><span class="tag">HARDMODE</span></div>
+    <div class="station s3"><div class="lamp"></div><span class="tag">GTHEME</span></div>
+    <div class="station s4"><div class="lamp"></div><span class="tag">NIGHTCITY</span></div>
+  </div>
+  <div class="railbar"><span>STATION 01 / 04</span><span><b>ULTRAWEB</b> — LAMP LIT: PUSH 14:02:07</span><span>WALK →</span></div>
+</div>
+
+<section>
+  <p class="kicker">Station 01 — close-up</p>
+  <div class="plate">
+    <span class="no">01</span>
+    <div>
+      <h3>Ultraweb</h3>
+      <p>A design studio for Claude Code: scoping interview, three mockups, a 12-phase pipeline, screenshot-verified gates. This hall was built by this machine — the case study proves itself.</p>
+    </div>
+    <div class="spec">TYPE <b>DESIGN PIPELINE</b><br>COMMITS <b>62 · 60 AI</b><br>STATUS <b>RUNNING · TODAY</b></div>
+  </div>
+</section>
+
+<div class="stance">
+  <div>
+    <p><b>The machines write the code — 254 of 256 commits.</b> My work is the hall itself: choosing the problems, writing the standards, binning what fails them.</p>
+    <p class="fine">authorship recomputed from git history · verified 3 min ago · git log --no-merges | grep -ci claude</p>
+  </div>
+  <a class="btn" href="mailto:iwan.braun2004@gmail.com">Work with me</a>
+</div>
+</div>
+
+<footer><div class="wrap">Iwan Braun · this hall is station 00 — it watches itself · imprint / privacy</div></footer>
+</body>
+</html>

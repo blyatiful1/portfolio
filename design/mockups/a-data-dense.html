@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A — Mission Control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground: oklch(0.965 0.006 240);
+  --panel: oklch(0.985 0.004 240);
+  --ink: oklch(0.22 0.015 250);
+  --ink-soft: oklch(0.45 0.015 250);
+  --hairline: oklch(0.87 0.01 240);
+  --accent: oklch(0.52 0.19 255);        /* cobalt — interactive only */
+  --live: oklch(0.60 0.17 150);          /* data: live/AI-marked */
+  --warn: oklch(0.72 0.15 75);           /* data: human-authored */
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+}
+*{margin:0;box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:400 15px/1.5 var(--sans);font-variant-numeric:tabular-nums}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+header{border-bottom:1px solid var(--hairline)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px}
+.brand{font:500 14px var(--mono);letter-spacing:.02em}
+.livechip{display:inline-flex;align-items:center;gap:8px;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--live);border:1px solid var(--live);padding:4px 10px;border-radius:2px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--live)}
+.hero{padding:clamp(48px,8vw,96px) 0 40px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+h1{font:600 clamp(34px,5.4vw,64px)/1.06 var(--sans);letter-spacing:-0.02em;margin:18px 0 14px;max-width:17ch}
+h1 em{font-style:normal;color:var(--accent)}
+.sub{max-width:52ch;color:var(--ink-soft);font-size:17px}
+.instrument{border:1px solid var(--hairline);background:var(--panel);margin:44px 0 0;border-radius:3px;overflow:hidden}
+.instrument-head{display:flex;justify-content:space-between;align-items:baseline;padding:12px 18px;border-bottom:1px solid var(--hairline);font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.feedrow{display:grid;grid-template-columns:64px 110px 1fr 92px;gap:12px;padding:10px 18px;border-bottom:1px solid var(--hairline);font:400 13px var(--mono);align-items:baseline}
+.feedrow time{color:var(--ink-soft)}
+.feedrow .repo{font-weight:500}
+.feedrow .msg{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink-soft)}
+.tag{font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:2px;justify-self:end}
+.tag.ai{color:var(--live);border:1px solid var(--live)}
+.tag.hum{color:var(--warn);border:1px solid var(--warn)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border-top:1px solid var(--hairline)}
+.stat{padding:16px 18px;border-right:1px solid var(--hairline)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font:500 26px var(--mono);letter-spacing:-0.01em}
+.stat span{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.verify{padding:10px 18px;border-top:1px solid var(--hairline);font:400 12px var(--mono);color:var(--ink-soft)}
+.verify code{color:var(--ink)}
+section{padding:56px 0;border-top:1px solid var(--hairline)}
+h2{font:600 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:22px}
+table{width:100%;border-collapse:collapse;font:400 14px var(--mono)}
+th{text-align:left;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);padding:8px 12px 8px 0;border-bottom:1px solid var(--ink)}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--hairline);vertical-align:baseline}
+td.num{text-align:right}
+th.num{text-align:right}
+.reponame{font-weight:500}
+.repodesc{display:block;font:400 13px var(--sans);color:var(--ink-soft);max-width:44ch}
+.cta{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.cta p{max-width:46ch;font-size:17px}
+.btn{display:inline-block;background:var(--accent);color:oklch(0.98 0.005 240);font:500 14px var(--sans);padding:12px 22px;border-radius:2px;text-decoration:none}
+footer{border-top:1px solid var(--hairline);padding:20px 0 40px;font:400 12px var(--mono);color:var(--ink-soft)}
+@media (max-width:560px){.feedrow{grid-template-columns:56px 1fr 70px}.feedrow .msg{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="brand">iwan braun / agent infrastructure</span>
+  <span class="livechip"><span class="dot"></span>feed live</span>
+</div></header>
+
+<div class="wrap">
+<div class="hero">
+  <p class="eyebrow">Operations · github.com/blyatiful1</p>
+  <h1>I direct AI agents. <em>They write the code.</em></h1>
+  <p class="sub">This page is the instrument: every event below arrives on its own, seconds after it happens. Nothing here is claimed — it is measured, and you can re-run the measurement.</p>
+
+  <div class="instrument">
+    <div class="instrument-head"><span>Live operations feed</span><span>UTC+2 · streaming</span></div>
+    <div class="feedrow"><time>14:02</time><span class="repo">ultraweb</span><span class="msg">gate-visual: raise judge ceiling for flagship tier</span><span class="tag ai">AI</span></div>
+    <div class="feedrow"><time>13:47</time><span class="repo">portfolio</span><span class="msg">ultraweb: phase 1 — brief committed</span><span class="tag ai">AI</span></div>
+    <div class="feedrow"><time>11:20</time><span class="repo">hardmode</span><span class="msg">loop-alarm: treat third identical failure as ground truth</span><span class="tag ai">AI</span></div>
+    <div class="feedrow"><time>09:03</time><span class="repo">gtheme</span><span class="msg">snapshot: restore pristine point on fresh install</span><span class="tag ai">AI</span></div>
+    <div class="stats">
+      <div class="stat"><b>254 / 256</b><span>commits AI-authored</span></div>
+      <div class="stat"><b>4</b><span>repos monitored</span></div>
+      <div class="stat"><b>2,610</b><span>tests green (gtheme)</span></div>
+      <div class="stat"><b>31 min</b><span>since last push</span></div>
+    </div>
+    <div class="verify">authorship recomputed from git history · verified 3 min ago · check it yourself: <code>git log --no-merges | grep -ci claude</code></div>
+  </div>
+</div>
+
+<section>
+  <h2>The artifacts</h2>
+  <table>
+    <tr><th>repo</th><th>what it is</th><th class="num">AI commits</th><th class="num">last push</th></tr>
+    <tr><td class="reponame">ultraweb</td><td><span class="repodesc">A design studio for Claude Code — interview, mockups, 12-phase pipeline, screenshot-verified gates. It built this site.</span></td><td class="num">60/62</td><td class="num">today</td></tr>
+    <tr><td class="reponame">hardmode</td><td><span class="repodesc">A discipline floor for AI agents: hooks that cannot be talked out of, verifiers that owe the work no loyalty.</span></td><td class="num">39/39</td><td class="num">2 d</td></tr>
+    <tr><td class="reponame">gtheme</td><td><span class="repodesc">GNOME theming for people nervous about breaking their desktop. Undo that always works.</span></td><td class="num">124/124</td><td class="num">4 d</td></tr>
+    <tr><td class="reponame">NightCityMP</td><td><span class="repodesc">Multiplayer for Cyberpunk 2077. Host and join like Minecraft.</span></td><td class="num">31/31</td><td class="num">Jul</td></tr>
+  </table>
+</section>
+
+<section class="cta-sec">
+  <div class="cta">
+    <p>What's mine is the part <span style="font-family:var(--mono)">git log</span> doesn't record: choosing the problem, writing the standard, binning what fails it. If that's the skill you're hiring for —</p>
+    <a class="btn" href="mailto:iwan.braun2004@gmail.com">Work with me</a>
+  </div>
+</section>
+</div>
+
+<footer><div class="wrap">iwan braun · built by ultraweb, its own case study · imprint / privacy</div></footer>
+</body>
+</html>

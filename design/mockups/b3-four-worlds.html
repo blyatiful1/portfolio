@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B3 — Four Worlds, refined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void: oklch(0.14 0.01 280);
+  --void-2: oklch(0.17 0.012 280);
+  --chrome: oklch(0.91 0.01 280);
+  --chrome-dim: oklch(0.63 0.015 280);
+  --line: oklch(0.28 0.015 280);
+  --sans:"Space Grotesk", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  --uw-ground: oklch(0.18 0.012 60); --uw-terra: oklch(0.68 0.14 45); --uw-cream: oklch(0.92 0.02 75);
+  --hm-ground: oklch(0.15 0 0);      --hm-yellow: oklch(0.85 0.16 95);
+  --gt-ground: oklch(0.93 0.02 250); --gt-ink: oklch(0.3 0.04 260);  --gt-blue: oklch(0.6 0.14 250);
+}
+*{margin:0;box-sizing:border-box}
+body{background:var(--void);color:var(--chrome);font:400 15px/1.6 var(--sans)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:color-mix(in oklab,var(--void) 92%,transparent);backdrop-filter:blur(6px);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:13px;padding-bottom:13px;gap:16px}
+.brand{font:700 15px var(--sans);letter-spacing:.03em;white-space:nowrap}
+nav{font:400 12px var(--mono);color:var(--chrome-dim);letter-spacing:.06em}
+nav span{margin-left:18px}
+.hero{padding:clamp(56px,8vw,110px) 0 clamp(36px,5vw,56px)}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--chrome-dim)}
+h1{font:700 clamp(46px,8vw,116px)/0.98 var(--sans);letter-spacing:-0.03em;margin:18px 0 22px;max-width:13ch}
+h1 .w1{color:var(--uw-terra)}h1 .w2{color:var(--hm-yellow)}h1 .w3{color:var(--gt-blue)}
+.sub{max-width:58ch;color:var(--chrome-dim);font-size:17px}
+.sub b{color:var(--chrome);font-weight:500}
+.scrollnote{margin-top:26px;font:400 11px var(--mono);letter-spacing:.08em;color:var(--chrome-dim)}
+.scrollnote em{color:var(--chrome);font-style:normal}
+/* the wire */
+.wire{border:1px solid var(--line);background:var(--void-2);margin:0 0 clamp(48px,7vw,80px)}
+.wire-head{display:flex;justify-content:space-between;padding:9px 16px;border-bottom:1px solid var(--line);font:500 10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--chrome-dim)}
+.wire-head .live{color:oklch(0.75 0.17 150)}
+.wireline{display:grid;grid-template-columns:76px 96px 1fr auto;gap:14px;padding:8px 16px;border-bottom:1px solid var(--line);font:400 12.5px var(--mono);align-items:baseline}
+.wireline:last-child{border-bottom:0}
+.wireline time{color:var(--chrome-dim)}
+.wireline .r{font-weight:500}
+.wireline .r.uw{color:var(--uw-terra)}.wireline .r.hm{color:var(--hm-yellow)}.wireline .r.gt{color:var(--gt-blue)}.wireline .r.me{color:var(--chrome)}
+.wireline .m{color:var(--chrome-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wireline .ai{font-size:9px;letter-spacing:.1em;border:1px solid var(--line);color:var(--chrome-dim);padding:1px 6px}
+/* chapters */
+.chapter{border-top:1px solid var(--line)}
+.ch-inner{max-width:1120px;margin:0 auto;padding:clamp(48px,7vw,88px) clamp(16px,4vw,48px)}
+.ch-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.ch-eyebrow{font:500 11px var(--mono);letter-spacing:.2em;text-transform:uppercase}
+.ch-live{font:400 11px var(--mono);letter-spacing:.06em}
+.ch-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(24px,4vw,64px);align-items:start}
+.ch-desc{margin-top:14px;font-size:15px;max-width:52ch}
+.ch-cta{margin-top:22px;font:500 13px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.ch-facts{font:400 12px var(--mono);line-height:2.2;letter-spacing:.04em;border-left:1px solid;padding-left:20px}
+.ch-facts b{font-weight:500}
+/* world 01 — ultraweb */
+.uw{background:var(--uw-ground)}
+.uw .ch-eyebrow,.uw .ch-cta a{color:var(--uw-terra)}
+.uw .ch-live{color:oklch(0.6 0.08 50)}
+.uw h2{font:500 clamp(38px,5.5vw,76px)/1.02 "Fraunces",serif;color:var(--uw-cream);letter-spacing:-0.01em}
+.uw h2 em{font-style:italic;color:var(--uw-terra)}
+.uw .ch-desc{color:oklch(0.72 0.02 70)}
+.uw .ch-facts{color:oklch(0.65 0.03 60);border-color:oklch(0.35 0.04 55)}
+.uw .ch-facts b{color:var(--uw-cream)}
+/* world 02 — hardmode */
+.hm{background:var(--hm-ground);position:relative;overflow:hidden}
+.hm::before{content:"";position:absolute;top:0;left:0;right:0;height:10px;background:repeating-linear-gradient(-45deg,var(--hm-yellow) 0 22px,var(--hm-ground) 22px 44px)}
+.hm .ch-eyebrow,.hm .ch-cta a{color:var(--hm-yellow)}
+.hm .ch-live{color:oklch(0.62 0.1 95)}
+.hm h2{font:700 clamp(34px,5vw,68px)/1.02 var(--mono);text-transform:uppercase;letter-spacing:-0.01em;color:var(--hm-yellow)}
+.hm .ch-desc{color:oklch(0.72 0.01 90)}
+.hm .ch-facts{color:oklch(0.62 0.03 95);border-color:oklch(0.35 0.05 95)}
+.hm .ch-facts b{color:oklch(0.9 0.05 95)}
+/* world 03 — gtheme */
+.gt{background:linear-gradient(150deg,var(--gt-ground),oklch(0.87 0.035 230));color:var(--gt-ink)}
+.gt .ch-eyebrow,.gt .ch-cta a{color:var(--gt-blue)}
+.gt .ch-live{color:oklch(0.5 0.08 250)}
+.gt h2{font:500 clamp(38px,5.5vw,76px)/1.02 var(--sans);letter-spacing:-0.025em;color:var(--gt-ink)}
+.gt h2 span{border-radius:16px;background:var(--gt-blue);color:white;padding:.02em .28em}
+.gt .ch-desc{color:oklch(0.44 0.03 260)}
+.gt .ch-facts{color:oklch(0.5 0.03 260);border-color:oklch(0.75 0.04 250)}
+.gt .ch-facts b{color:var(--gt-ink)}
+/* world 00 — this site */
+.me{background:var(--void-2)}
+.me .ch-eyebrow,.me .ch-cta a{color:var(--chrome)}
+.me .ch-live{color:oklch(0.75 0.17 150)}
+.me h2{font:500 clamp(34px,5vw,64px)/1.06 var(--sans);letter-spacing:-0.02em;color:var(--chrome)}
+.me h2 em{font-style:normal;color:var(--chrome-dim)}
+.me .ch-desc{color:var(--chrome-dim)}
+.me .ch-facts{color:var(--chrome-dim);border-color:var(--line)}
+.me .ch-facts b{color:var(--chrome)}
+/* operator */
+.operator{border-top:1px solid var(--line)}
+.operator .wrap{padding-top:clamp(48px,7vw,80px);padding-bottom:clamp(48px,7vw,88px)}
+.op-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+.operator h2{font:700 clamp(30px,4vw,52px)/1.05 var(--sans);letter-spacing:-0.02em;margin:14px 0 18px}
+.operator h2 i{font:italic 500 1em "Fraunces",serif;color:var(--chrome-dim)}
+.op-copy{color:var(--chrome-dim);max-width:52ch}
+.op-copy b{color:var(--chrome);font-weight:500}
+.op-list{margin-top:20px;font:400 13px var(--mono);line-height:2.2;color:var(--chrome-dim)}
+.op-list b{color:var(--chrome);font-weight:500}
+.op-card{border:1px solid var(--line);padding:clamp(20px,3vw,32px)}
+.op-card .big{font:700 clamp(40px,5vw,64px)/1 var(--sans);letter-spacing:-0.02em}
+.op-card .big span{color:var(--chrome-dim);font-size:.5em}
+.op-card .cap{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--chrome-dim);margin:6px 0 18px}
+.op-card .vfy{font:400 11.5px var(--mono);color:var(--chrome-dim);border-top:1px solid var(--line);padding-top:14px;line-height:1.8}
+.op-card .vfy code{color:oklch(0.75 0.17 150)}
+.btn{display:inline-block;margin-top:22px;background:var(--chrome);color:var(--void);font:500 14px var(--sans);letter-spacing:.04em;padding:14px 26px;text-decoration:none}
+.btn2{display:inline-block;margin-top:22px;margin-left:14px;border:1px solid var(--line);color:var(--chrome);font:500 14px var(--sans);letter-spacing:.04em;padding:13px 22px;text-decoration:none}
+footer{border-top:1px solid var(--line);padding:16px 0 42px;font:400 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--chrome-dim)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:16px}
+a{color:inherit}
+@media (max-width:720px){.ch-grid,.op-grid{grid-template-columns:1fr}.ch-facts{border-left:0;padding-left:0;border-top:1px solid;padding-top:14px}.wireline{grid-template-columns:64px 1fr auto}.wireline .m{display:none}nav{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="brand">Iwan Braun</span>
+  <nav><span>worlds</span><span>operator</span><span style="color:oklch(0.75 0.17 150)">● live</span></nav>
+</div></header>
+
+<div class="wrap">
+<div class="hero">
+  <p class="eyebrow">Agent infrastructure · Germany</p>
+  <h1>One operator.<br><span class="w1">Four</span> <span class="w2">wor</span><span class="w3">lds</span>.</h1>
+  <p class="sub">Three projects, each living in its own aesthetic — and the world you are standing in, which watches the other three in real time. <b>Built with AI agents I direct.</b> No template holds them; none was asked to.</p>
+  <p class="scrollnote">⟶ on scroll, the chrome <em>tunes itself to each world</em> — nav, selection, scrollbar take the world's accent · static frame</p>
+</div>
+
+<div class="wire">
+  <div class="wire-head"><span>The wire — all worlds, as it happens</span><span class="live">● streaming · last event 31 s</span></div>
+  <div class="wireline"><time>14:02:07</time><span class="r uw">ultraweb</span><span class="m">gate-visual: raise judge ceiling for flagship tier</span><span class="ai">AI</span></div>
+  <div class="wireline"><time>13:47:52</time><span class="r me">this site</span><span class="m">ultraweb: phase 2 — direction, round 3</span><span class="ai">AI</span></div>
+  <div class="wireline"><time>11:20:33</time><span class="r hm">hardmode</span><span class="m">loop-alarm: treat third identical failure as ground truth</span><span class="ai">AI</span></div>
+  <div class="wireline"><time>09:03:18</time><span class="r gt">gtheme</span><span class="m">snapshot: restore pristine point on fresh install</span><span class="ai">AI</span></div>
+</div>
+</div>
+
+<div class="chapter uw"><div class="ch-inner">
+  <div class="ch-top"><span class="ch-eyebrow">World 01 · the studio</span><span class="ch-live">● lamp lit — pushed today</span></div>
+  <div class="ch-grid">
+    <div>
+      <h2>ultraweb, <em>a design studio you can install</em></h2>
+      <p class="ch-desc">A scoping interview, three mockups to pick from, then a production-grade site — built through the review checkpoints a real studio would give you. 80 skills, screenshot-verified gates, a written taste constitution. The page you are reading is its work.</p>
+      <p class="ch-cta"><a href="#">enter world 01 — the full case study →</a></p>
+    </div>
+    <div class="ch-facts">STACK <b>NEXT.JS PIPELINE · 80 SKILLS</b><br>COMMITS <b>62 · 60 AI-AUTHORED</b><br>PROOF <b>ULTRAWEB-SITE.VERCEL.APP</b><br>STATUS <b>ACTIVE — TODAY</b></div>
+  </div>
+</div></div>
+
+<div class="chapter hm"><div class="ch-inner">
+  <div class="ch-top"><span class="ch-eyebrow">World 02 · the discipline</span><span class="ch-live">● pushed 2 days ago</span></div>
+  <div class="ch-grid">
+    <div>
+      <h2>hardmode</h2>
+      <p class="ch-desc">A discipline floor for AI coding agents. Advice loses to momentum — so the load-bearing rules live in hooks that cannot be talked out of, and the checks that matter run in fresh contexts that owe the work no loyalty. CI proves every hook blocks what it claims to block.</p>
+      <p class="ch-cta"><a href="#">enter world 02 — the full case study →</a></p>
+    </div>
+    <div class="ch-facts">STACK <b>PYTHON · 6 HOOKS · 3 AGENTS</b><br>COMMITS <b>39 · 39 AI-AUTHORED</b><br>PROOF <b>tools/demo.py — HOOKS VS PLANTED FAILURES</b><br>STATUS <b>LIVE ON THIS MACHINE</b></div>
+  </div>
+</div></div>
+
+<div class="chapter gt"><div class="ch-inner">
+  <div class="ch-top"><span class="ch-eyebrow">World 03 · the gentle one</span><span class="ch-live">● pushed 4 days ago</span></div>
+  <div class="ch-grid">
+    <div>
+      <h2>gtheme, for the <span>nervous</span></h2>
+      <p class="ch-desc">Desktop theming for people who are afraid of breaking their desktop. Wallpaper, colours, icons, shell — one window, plain words, and an undo that always works. 2,610 tests. No telemetry.</p>
+      <p class="ch-cta"><a href="#">visit world 03 — on GitHub →</a></p>
+    </div>
+    <div class="ch-facts">STACK <b>PYTHON · GTK4 / LIBADWAITA</b><br>COMMITS <b>124 · 124 AI-AUTHORED</b><br>PROOF <b>2,610 TESTS · CI GREEN</b><br>STATUS <b>RELEASED — V2.0.0</b></div>
+  </div>
+</div></div>
+
+<div class="chapter me"><div class="ch-inner">
+  <div class="ch-top"><span class="ch-eyebrow">World 00 · the one you're in</span><span class="ch-live">● watching itself — streaming</span></div>
+  <div class="ch-grid">
+    <div>
+      <h2>This site. <em>It monitors the other three — and itself.</em></h2>
+      <p class="ch-desc">Every commit you saw arrive on the wire is real, seconds old, delivered by webhook. The authorship numbers are recomputed from git history, never typed in. And this site's own repo is on the wire too — including the commits that built this page. The full decision trail is committed and public.</p>
+      <p class="ch-cta"><a href="#">audit world 00 — the build ledger →</a></p>
+    </div>
+    <div class="ch-facts">FEED <b>WEBHOOK → SSE · LIVE</b><br>CLAIMS <b>SELF-VERIFYING · RE-RUN THEM</b><br>BUILT BY <b>WORLD 01 (ULTRAWEB)</b><br>STATUS <b>THE EVIDENCE, LIVE</b></div>
+  </div>
+</div></div>
+
+<div class="operator"><div class="wrap">
+  <div class="op-grid">
+    <div>
+      <p class="eyebrow">The operator</p>
+      <h2>The code is theirs. <i>The standard is mine.</i></h2>
+      <p class="op-copy">I'm Iwan Braun, and I run software projects the way they'll be run from now on: <b>AI agents write essentially every line, and I own everything git log can't record</b> — choosing the problems, writing the standard before the first token, and binning what fails it. Whether that's worth hiring is a fair question. The worlds above are exactly where you'd check.</p>
+      <div class="op-list">what I bring: <b>agent orchestration · verification design · shipped artifacts</b><br>what I don't claim: <b>lines typed by hand</b><br>based in <b>Germany</b> · work <b>remote / hybrid</b></div>
+      <a class="btn" href="mailto:iwan.braun2004@gmail.com">Work with me</a><a class="btn2" href="https://github.com/blyatiful1">GitHub ↗</a>
+    </div>
+    <div class="op-card">
+      <p class="big">223<span> / 225</span></p>
+      <p class="cap">commits across these worlds — AI-authored</p>
+      <p class="vfy">recomputed from git history · verified 3 min ago<br>don't take the site's word: <code>git log --no-merges | grep -ci claude</code></p>
+    </div>
+  </div>
+</div></div>
+
+<footer><div class="wrap">
+  <span>Iwan Braun · built by world 01</span>
+  <span>imprint · privacy · humans.txt: yes, one</span>
+</div></footer>
+</body>
+</html>
