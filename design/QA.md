@@ -109,3 +109,55 @@ Movement vs r1: uw +1/+1/+2/+1, hm +1/+2/+2, legal dist/craft +3/+3. Banned swee
 - d8 mono display: tracking −0.02em + word-spacing −0.35ch on hardmode display lines
 - minors: hm closer forward link added; 404 live-dot added
 - d3(address) unchanged — tracked production blocker for CP6
+
+## gate-visual — round 3 — 2026-09-01 — FIX-THEN-SHIP (new sectional/narrow evidence surfaced new findings; two r2 wins confirmed)
+Shoot: 31 captures (full ×2 themes, home sectionals, 375/768) — qa/visual/round-3/. Judge verbatim:
+| Page | hier | type | space | color | dist | craft |
+|---|---|---|---|---|---|---|
+| home | 7 | 7 | 6 | 7 | 7 | 6 |
+| work-ultraweb | 8 | 8 | 7 | 7 | 8 | 6 |
+| work-hardmode | 8 | 8 | 7 | 7 | 8 | 6 |
+| impressum | 6 | 6 | 6 | 7 | 6 | 6 |
+| datenschutz | 6 | 6 | 6 | 7 | 6 | 6 |
+| notfound | 8 | 8 | 6 | 6 | 6 | 7 |
+Judge: "the light-mode world inversion is the most award-grade decision in the whole build"; drops are new-evidence findings, not regressions. Two banned hits: the FOOTER'S HARDCODED 254/256 (fabricated-in-effect proof — mockup leftover while the site renders live 225/227) and the tracked Impressum placeholder.
+Fixes applied (committed e470915):
+- d1 footer stat now rendered from the same live getAuthorship() as hero/operator — the two-numbers defect is dead
+- d2 min-w-0 on the chapter rail + commit lines — repairs the 1440 rail-x drift, the 41px overhang, and the 768 ~30ch measure collapse in one class
+- d3 worlds dressed for min-h-svh: chapter titles → text-5xl, per-world ghost numerals at clamp(14rem,32vw,30rem) bleeding the right edge (Type as the Image + the recurring Edge Bleed SYSTEM promised)
+- d4 evidence-panel bleed md:→lg: — 768 renders panels in-container, unclipped
+- d5 legal 375: content first in DOM, rail md:order-first — H1 leads on mobile, tab order natural
+- d6 chrome tuning now VISIBLE: header CTA bg-tuned/text-tuned-fg + live-chip border takes the tuned mix (color change fires under reduce too; no-JS renders rest chrome — recorded)
+- d7 ONE Framed-Data moment: operator card → bracket grammar, big number mobile-only (hero owns it at lg), verify command whitespace-nowrap in overflow-x-auto
+- d8 light re-decisions: .light .plus-grid dark mark; case-page mains keep world temperature in light (light:bg world-paper)
+- d9 language bar: <1% segments dropped (no more "SHELL 0%" with a painted segment), dominant segment takes the world accent, widths sum true
+- d10 craft batch: legal index links get underline affordance; GitHub ghost aligned to form fields; mailto reads as link; hero label one-line; 404 text-pretty; w0 streaming dot in --live; chip h-8
+Round 4 (final within flagship cap 5) shoots the judge's named evidence gaps: light sectionals, 375 sectionals, 404 narrow, home light 375.
+
+## gate-visual — round 4 (FINAL, declared cap) — 2026-09-01 — CLOSED: FIX-THEN-SHIP, residuals recorded
+NOT a PASS. Round 4 was the declared final round (4 of the flagship hard cap 5); per the recorded protocol its verdict closes the gate and residuals go verbatim to CP6. Full verbatim judge report: qa/visual/round-4/VERDICT.md · evidence: qa/visual/round-4/ (32 captures).
+| Page | hier | type | space | color | dist | craft |
+|---|---|---|---|---|---|---|
+| home | 7 | 8 | 7 | 8 | 8 | 6 |
+| work-ultraweb | 8 | 9 | 7 | 8 | 8 | 7 |
+| work-hardmode | 8 | 8 | 7 | 8 | 8 | 7 |
+| impressum | 7 | 6 | 6 | 7 | 6 | 7 |
+| datenschutz | 7 | 6 | 6 | 7 | 6 | 7 |
+| notfound | 8 | 8 | 6 | 6 | 6 | 7 |
+Verdict verbatim: "FIX-THEN-SHIP. The gate's bar (≥7 on all six axes, every page) is not met: home craft 6; impressum and datenschutz type/space/dist 6; notfound space/color/dist 6. Movement since round 3 is real and positive — home type/space/color/dist +1 each, uw type/color/craft +1, hm color/craft +1, legal hier/craft +1, notfound flat — and no round-3 fix regressed."
+Banned sweep: clean; r3's fabricated-proof hit confirmed dead in pixels (225/227 from one source everywhere). Only remaining hit = the tracked Impressum placeholder (material blocker, not design).
+R3 fix verification: d1/d2@1440/d3/d6/d7/d8/d9 + most of d10 confirmed in pixels. Not landed: d10's ghost-button alignment (new defect 4). Unverifiable this round for lack of captures: d2@768, d4, d5.
+Ranked defects (one line each; full text in VERDICT.md):
+1. Wire drops message text at 375 — core mechanic renders as content-free rows (usability-class)
+2. Operator right half dead at 1440; framed note captions an off-screen number
+3. Chrome tuning latches on last-visited world at operator/footer (light mode exposes it)
+4. Ghost "GitHub" button breaks the left edge at 375 (~42px indent)
+5. Case-page evidence panels bleed as empty slabs (~330–370px blank before the edge)
+6. Legal prose measure ~76–83 chars vs SYSTEM's ≈70 ceiling (9-col width, not --container-prose)
+7. Ghost numeral collides with chapter CTA at 375 (AA evidence doesn't cover the rendered pair)
+8. Footer collapses 2+1 at 375, link labels wrap mid-phrase
+9. World 00's facts rail thinnest of the four (no language bar/commits on the self-monitoring chapter)
+10. WHAT I DON'T CLAIM label wraps; 404 is the only centered page, no site move
+Judge's conversion path: defect 1 alone lifts home/uw/hm over the bar; defect 6 + one distinctive legal gesture lifts both legal pages; defect 10's 404 half lifts notfound. Round 5 remains available inside the flagship cap if the user commissions it at CP6.
+Residuals (verbatim, quotable at acceptance — full wording also in VERDICT.md §Residuals): Impressum address placeholder (§5 DDG blocker); wire shows no commit message at 375; legal measure ~80 chars; impressum/datenschutz/404 dist 6 (no site moves in the corners); 404 centered vs site's left-aligned grammar; light-mode CTA stays terracotta at operator/footer; operator right half empty ~730px at 1440.
+Evidence gaps (judge): 768 home/case unshot this round (r3 d2/d4 unverified there); 375 legal unshot (r3 d5 unverified); light chapter interiors w02/03/00 only in downscaled full-page.

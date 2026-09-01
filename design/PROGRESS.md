@@ -2,14 +2,14 @@
 Engagement: studio · Scope: flagship · Started ~07:10 · Updated 07:50
 
 ## Now
-Phase 11/12 — Gates · six of seven PASS; gate-visual round 4 (FINAL — flagship cap): r3 fixes committed (e470915), 32-capture round-4 set shot and valid, **design-judge round-4 agent running in the background — its notification closes the gate (SHIP, or residuals quoted verbatim at CP6). If resuming: check for that agent's result before re-judging; do NOT start a new round.**
-Server: PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md). After the verdict: CP6 acceptance (address + repo/webhook asks in CONTEXT-HANDOFF.md), then ship.
+**CP6 acceptance OPEN** (2026-09-01 10:35). Phase 11 gates closed: six PASS + gate-visual CLOSED at round 4 (declared final; cap 5) with verdict FIX-THEN-SHIP — scores/defects/residuals in QA.md, full verbatim report at qa/visual/round-4/VERDICT.md. Pending user decisions: residuals (commission round 5 — allowed within cap — or accept), Impressum postal address (ship blocker), repo publish, webhooks, prod env (all listed in CONTEXT-HANDOFF.md §Ship-blocking). Then Phase 12 ship.
+Server: PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md).
 
 ## Waiting on you
-CP5 voice review — read the headlines + one body block per page (presented in chat) and approve or name what sounds off. ~8 min of your time.
+CP6 — click through :3001, then answer: round 5 vs accept residuals · Impressum address · repo publish · prod env/webhooks. ~15 min of your time.
 
 ## Next time I need you
-After CP5: silence through motion + SEO + gates → CP6 acceptance · ~40–70 min away · ~15 min
+After CP6: Phase 12 ship (deploy only on your explicit confirmation) · ~20–40 min
 
 ## Done
 ✓ P0 Preflight ~07:10 (node/npm/git OK, Playwright browser installed mid-run)
