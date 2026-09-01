@@ -65,3 +65,24 @@ Mobile: 3 stacks media-first.
 ### /impressum · /datenschutz — goal: —
 Single prose sections — skill: copywriting (headed plain-language structure per sitemap legal rules) — width: narrow (prose container) — chrome unthemed (world 00). Mobile: as-is.
 
+---
+
+# Part 3 — RSC/client boundary plan (app-structure)
+
+Layouts and pages: 100% server, zero exceptions. Client-leaf budget: ≤9 files.
+
+| Leaf | Justification (one sentence) |
+|---|---|
+| components/layout/providers.tsx | next-themes context — the ONE provider. |
+| components/layout/focus-on-navigate.tsx | usePathname effect moves focus to #main-heading after client navigation. |
+| components/layout/nav-menu.tsx | mobile menu open/close is ephemeral client state. |
+| components/motion/reveal.tsx | whileInView once-reveals need viewport observation. |
+| components/wire/wire-live.tsx | EventSource (SSE) subscription is a browser API; owns the ONE connection, re-broadcasts status via a module-level emitter (no provider). |
+| components/wire/live-chip.tsx | subscribes to the emitter for the header's streaming/idle state. |
+| components/sections/contact-form.tsx | useActionState form feedback (server action does the work). |
+| components/ui/* (as installed) | only those shadcn primitives that are genuinely interactive. |
+
+Signature move engine: CSS scroll-driven animation (`animation-timeline: view()`) — the world-entry expansion and chrome tuning need ZERO client JS at baseline; a client scrub-smoother may be added in Phase 9 only if empirically needed (decision recorded then).
+URL state: none (no tabs/filters/pagination on this site). Mutations: contact form → one server action (`lib/actions/contact.ts`). Data: wire events fetched in RSCs (initial render) + SSE for deltas; GitHub repo facts fetched server-side with revalidation (data-fetching owns policy).
+`params` are Promises (Next 16) — await in every page/generateMetadata. Secrets only in server files: GITHUB_WEBHOOK_SECRET, GITHUB_TOKEN, RESEND_API_KEY, DATABASE_URL.
+
