@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# iwanbraun.dev — world 00
 
-## Getting Started
+The portfolio at [iwanbraun.dev](https://iwanbraun.dev). It watches my other repos — and itself: every push lands on the site's live wire via webhook, and the authorship stat is recomputed from git history, never typed in.
 
-First, run the development server:
+**The claim this repo exists to prove:** AI agents write essentially every line I ship; I direct them and own the standard. Check it here the same way the site does:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```sh
+git log --no-merges | grep -ci claude
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The build ledger
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This site was built by [ultraweb](https://github.com/blyatiful1/ultraweb) — my agent-driven design studio — under [hardmode](https://github.com/blyatiful1/hardmode) verification discipline. The whole process is in the open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `design/` — the studio's working memory: brief, direction, design system, sitemap, mockup rounds (two full rounds were rejected at review), QA ledger with every gate verdict verbatim
+- `qa/visual/` — five rounds of screenshot evidence scored by an adversarial design-judge agent; `round-4/VERDICT.md` is a full verdict, unedited
+- `design/QA.md` — seven gates: code, anti-slop, content, responsive, accessibility, performance, visual — each with measured evidence
 
-## Learn More
+## Stack
 
-To learn more about Next.js, take a look at the following resources:
+Next.js 16 (App Router, Cache Components) · Tailwind v4 · GitHub webhook → Postgres event store (Drizzle; PGlite dev / Neon prod) → SSE wire · Resend contact.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No analytics, no trackers. `robots.txt` reserves against AI-training crawls (UrhG §44b) while staying citable.
