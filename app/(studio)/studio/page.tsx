@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { readArtifact, listShots } from "./lib";
 import { Feed } from "./feed";
 
-export const dynamic = "force-dynamic";
+// dev-only construction window: allowed to block (never prerendered)
+export const instant = false;
 
 const mono: React.CSSProperties = {
   fontFamily: "ui-monospace, monospace",
@@ -29,6 +31,7 @@ function gateColor(line: string): string | undefined {
 }
 
 export default async function StudioPage() {
+  await connection(); // request-time rendering under cacheComponents
   if (process.env.NODE_ENV === "production") notFound();
 
   const progress = await readArtifact("PROGRESS.md");

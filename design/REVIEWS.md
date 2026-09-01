@@ -15,3 +15,8 @@ Verdicts logged near-verbatim in MOCKUPS.md; R3 notes commissioned: worlds expan
 ## CP3 — Structure sign-off
 Presented: 5 routes, one line per section (SITEMAP.md parts 1+2), signature placement flagged on world-01 (~3 min)
 **Approved** (round 1)
+
+## CP4 — First-page review
+Presented: built homepage at http://localhost:3000, screenshots 375+1440 (design/screenshots/cp4/), live GitHub data flowing (stat 225/227 recomputed with --no-merges methodology; wire showing real commits)
+Known deferrals stated: world-entry scroll expansion + chrome tuning motion (Phase 9), SSE live push + contact form (Phase 7), voice polish (Phase 8)
+**Approved** (round 1)

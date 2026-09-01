@@ -1,8 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { resolveShot } from "../lib";
 
-export const dynamic = "force-dynamic";
-
 const MIME: Record<string, string> = {
   ".png": "image/png",
   ".jpg": "image/jpeg",

@@ -36,7 +36,8 @@ export async function listShots(): Promise<{ name: string; mtime: number }[]> {
 export function resolveShot(basename: string): string | null {
   if (basename !== path.basename(basename)) return null;
   for (const dir of SHOT_DIRS) {
-    const p = path.join(dir, basename);
+    // dev-only route; dynamic path is deliberate and gated
+    const p = path.join(/*turbopackIgnore: true*/ dir, basename);
     if (p.startsWith(dir)) return p;
   }
   return null;
