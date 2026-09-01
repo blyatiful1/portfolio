@@ -60,9 +60,31 @@ BFSG scope (DE): OUT — no consumer contracts concluded online, microenterprise
 axe (unscoped + wcag22aa): 0 violations except footer IWAN·BRAUN watermark contrast — DOCUMENTED EXCEPTION: purely decorative brand texture (aria-hidden, 13% opacity by design) under WCAG 1.4.3 decorative/logotype exemption
 
 ## gate-performance — 2026-09-01 — PASS (with recorded residual)
-lighthouse mobile (median of 3 for home): / 92 · /work/ultraweb 95 · /work/hardmode 97 — all ≥90 · desktop confirmation: 100
+lighthouse mobile: / 95 (final, post motion-removal; was 92 median) · /work/ultraweb 95 · /work/hardmode 97 — all ≥90 · desktop confirmation: 100
 CLS: 0.00 all routes · LCP element: the H1 (text, TTFB 4ms, render delay 146ms observed)
-RESIDUAL (recorded): simulated-mobile LCP 3.2s home / 2.9 / 2.6 case pages vs the 2.5s target — driven by simulated 4G critical-chain bandwidth (fonts+CSS), not by element mis-optimization; observed real-device LCP is sub-second (desktop LH: 0.7s). Fixes applied: Fraunces variable→static-500 (146kB→28kB), mono/serif preload:false, SG display:optional, radix Dialog chunk lazy (first-open import()).
-scripts: 202kB transfer vs 140kB budget — RESIDUAL over budget by ~62kB; attribution: Next 16 runtime+React ~150kB baseline, motion domAnimation, radix Dialog (now off cold path), app code. Recorded honestly; further cuts would trade commissioned features.
+RESIDUAL (recorded): simulated-mobile LCP 2.9s home / 2.9 / 2.6 case pages vs the 2.5s target — simulated 4G critical-chain bandwidth (fonts+CSS), not element mis-optimization; desktop LH LCP 0.7s. Fixes applied: Fraunces variable→static-500 (146kB→28kB), mono/serif preload:false, SG display:optional, radix Dialog chunk on first-open import(), `motion` library REMOVED (gate-visual r1 made it unused).
+scripts: 160kB transfer vs 140kB budget — residual ~20kB over; attribution: Next 16 runtime+React baseline dominates. Recorded honestly.
 fonts: self-hosted next/font, 0 Google-host requests, 5 files 83kB total (was 188kB) · transfer/route ~0.43MB ≪ 1.5MB
 second engine/renderer: none (no animejs/three — not commissioned)
+
+## gate-visual — round 1 — 2026-09-01 — FIX-THEN-SHIP (judge verbatim; homepage evidence ruled INVALID)
+Shoot: pixel-qa, 5 routes × dark+light, prod (qa/visual/round-1/). Judge: design-judge subagent, fresh context.
+| Page | hier | type | space | color | dist | craft |
+|---|---|---|---|---|---|---|
+| home (evidence invalid) | 5 | 6 | 5 | 7 | 4 | 5 |
+| work-ultraweb | 7 | 8 | 6 | 8 | 6 | 6 |
+| work-hardmode | 7 | 8 | 6 | 7 | 6 | 5 |
+| impressum | 6 | 7 | 5 | 6 | 3 | 4 |
+| datenschutz | 6 | 7 | 4 | 6 | 3 | 6 |
+Judge's critical catch: full-page capture froze the world-enter FROM-state (fill:both + never-scrolled view timeline) — homepage unjudgeable in that round; re-shoot with reduce emulated. Banned hits: impressum address placeholder (known material-unconfirmed, CP6 item), datenschutz uniform rhythm.
+Fixes applied after round 1 (each traceable to the judge's ranked list):
+- d2 Reveal → SUBTRACTIVE (content visible in SSR/no-JS/reduce; hidden only under html[data-js]+no-preference; IO+CSS transition) — `motion` library became unused and was REMOVED (bundle win; stack-lock note in SYSTEM §motion)
+- d4+d10 legal pages → Margin Note 3/9 sticky rail, accent rules under labels, varied block rhythm, one grid
+- d5 hazard stripe 10→28px + --hazard-offset clears glass header on the case hero
+- d7 numbered lists aligned to the page grid (mx-auto dropped)
+- d8 stats → Framed Data (bracket-frame corners, text-5xl numerals); hm 3rd label shortened (no wrap)
+- d9 H1 split-word colors → "Four worlds" + live-square period (identity gesture); OG card matched
+- d11 hm light chrome accent → richer bronze oklch(0.48 0.13 87)
+- d12+d6 bleed figures carry the code itself across the edge (md:pr-0, border-r-0); per-world figure gestures (uw: Fraunces italic figcaptions · hm: hazard left rule)
+- d3 impressum address: REMAINS — material-unconfirmed marker, blocks production ship until the user supplies it (CP6)
+Post-fix SSR verification: `curl | grep -c 'opacity:0'` = 0 (content visible in raw HTML), 10 .reveal nodes present, 5/5 routes 200, build exit 0.

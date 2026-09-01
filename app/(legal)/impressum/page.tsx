@@ -9,16 +9,18 @@ export const metadata: Metadata = {
 };
 
 function LegalBlock({
+  id,
   label,
   children,
   tight,
 }: {
+  id: string;
   label: string;
   children: React.ReactNode;
   tight?: boolean;
 }) {
   return (
-    <section className={tight ? "mt-8" : "mt-12"}>
+    <section id={id} className={tight ? "mt-8 scroll-mt-24" : "mt-12 scroll-mt-24"}>
       <h2 className="font-mono text-2xs font-medium tracking-[0.16em] uppercase text-muted-foreground after:mt-2 after:block after:h-px after:w-10 after:bg-primary/50 after:content-['']">
         {label}
       </h2>
@@ -41,6 +43,15 @@ export default function Impressum() {
             <br />
             nach § 5 DDG
           </p>
+          <nav aria-label="Abschnitte" className="mt-6">
+            <ul className="space-y-2">
+              <li><a href="#anbieter" className="nav-link font-mono text-2xs text-muted-foreground">Diensteanbieter</a></li>
+              <li><a href="#kontakt" className="nav-link font-mono text-2xs text-muted-foreground">Kontakt</a></li>
+              <li><a href="#vsbg" className="nav-link font-mono text-2xs text-muted-foreground">Streitbeilegung</a></li>
+              <li><a href="#hinweis" className="nav-link font-mono text-2xs text-muted-foreground">Hinweis</a></li>
+            </ul>
+          </nav>
+          <p className="mt-6 font-mono text-2xs text-muted-foreground">Stand: September 2026</p>
           <p className="mt-5">
             <Link
               href="/"
@@ -55,12 +66,12 @@ export default function Impressum() {
           <h1
             id="main-heading"
             tabIndex={-1}
-            className="text-3xl font-bold tracking-tight outline-none"
+            className="text-4xl font-bold tracking-tight outline-none"
           >
             Impressum
           </h1>
 
-          <LegalBlock label="Diensteanbieter (§ 5 DDG)">
+          <LegalBlock id="anbieter" label="Diensteanbieter (§ 5 DDG)">
             <p>
               Iwan Braun
               <br />
@@ -70,7 +81,7 @@ export default function Impressum() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Kontakt" tight>
+          <LegalBlock id="kontakt" label="Kontakt" tight>
             <p>
               E-Mail:{" "}
               <a
@@ -92,7 +103,7 @@ export default function Impressum() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Verbraucherstreitbeilegung (§ 36 VSBG)">
+          <LegalBlock id="vsbg" label="Verbraucherstreitbeilegung (§ 36 VSBG)">
             <p className="text-muted-foreground">
               Ich bin nicht bereit und nicht verpflichtet, an
               Streitbeilegungsverfahren vor einer
@@ -100,7 +111,7 @@ export default function Impressum() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Hinweis" tight>
+          <LegalBlock id="hinweis" label="Hinweis" tight>
             <p className="text-muted-foreground">
               Diese Website ist ein persönliches Portfolio. Es werden keine
               Waren oder Dienstleistungen über diese Website verkauft.

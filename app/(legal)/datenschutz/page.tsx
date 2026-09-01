@@ -9,16 +9,18 @@ export const metadata: Metadata = {
 };
 
 function LegalBlock({
+  id,
   label,
   children,
   tight,
 }: {
+  id: string;
   label: string;
   children: React.ReactNode;
   tight?: boolean;
 }) {
   return (
-    <section className={tight ? "mt-8" : "mt-12"}>
+    <section id={id} className={tight ? "mt-8 scroll-mt-24" : "mt-12 scroll-mt-24"}>
       <h2 className="font-mono text-2xs font-medium tracking-[0.16em] uppercase text-muted-foreground after:mt-2 after:block after:h-px after:w-10 after:bg-primary/50 after:content-['']">
         {label}
       </h2>
@@ -40,6 +42,17 @@ export default function Datenschutz() {
             <br />
             Art. 13 DSGVO
           </p>
+          <nav aria-label="Abschnitte" className="mt-6">
+            <ul className="space-y-2">
+              <li><a href="#verantwortlicher" className="nav-link font-mono text-2xs text-muted-foreground">Verantwortlicher</a></li>
+              <li><a href="#hosting" className="nav-link font-mono text-2xs text-muted-foreground">Hosting & Logs</a></li>
+              <li><a href="#kontakt" className="nav-link font-mono text-2xs text-muted-foreground">Kontaktaufnahme</a></li>
+              <li><a href="#github" className="nav-link font-mono text-2xs text-muted-foreground">GitHub-Daten</a></li>
+              <li><a href="#speicherung" className="nav-link font-mono text-2xs text-muted-foreground">Lokale Speicherung</a></li>
+              <li><a href="#rechte" className="nav-link font-mono text-2xs text-muted-foreground">Ihre Rechte</a></li>
+            </ul>
+          </nav>
+          <p className="mt-6 font-mono text-2xs text-muted-foreground">Stand: September 2026</p>
           <p className="mt-5">
             <Link
               href="/"
@@ -54,7 +67,7 @@ export default function Datenschutz() {
           <h1
             id="main-heading"
             tabIndex={-1}
-            className="text-3xl font-bold tracking-tight outline-none"
+            className="text-4xl font-bold tracking-tight outline-none"
           >
             Datenschutzerklärung
           </h1>
@@ -64,7 +77,7 @@ export default function Datenschutz() {
             kommerziellen Zwecken.
           </p>
 
-          <LegalBlock label="Verantwortlicher">
+          <LegalBlock id="verantwortlicher" label="Verantwortlicher">
             <p className="text-foreground">
               Iwan Braun · E-Mail:{" "}
               <a
@@ -77,7 +90,7 @@ export default function Datenschutz() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Hosting und Server-Logs">
+          <LegalBlock id="hosting" label="Hosting und Server-Logs">
             <p>
               Diese Website wird bei Vercel Inc. gehostet. Beim Aufruf werden
               technisch notwendige Daten verarbeitet (IP-Adresse, Zeitpunkt,
@@ -88,7 +101,7 @@ export default function Datenschutz() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Kontaktaufnahme" tight>
+          <LegalBlock id="kontakt" label="Kontaktaufnahme" tight>
             <p>
               Bei Kontakt per E-Mail oder über das Kontaktformular werden die
               mitgeteilten Daten (Name, E-Mail-Adresse, Nachricht) zur
@@ -98,7 +111,7 @@ export default function Datenschutz() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Live-Daten von GitHub" tight>
+          <LegalBlock id="github" label="Live-Daten von GitHub" tight>
             <p>
               Die Seite zeigt öffentliche Repository-Daten (Commits, Sprachen,
               Zeitstempel), die serverseitig von der GitHub-API abgerufen
@@ -107,7 +120,7 @@ export default function Datenschutz() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Lokale Speicherung" tight>
+          <LegalBlock id="speicherung" label="Lokale Speicherung" tight>
             <p>
               Die Wahl des Farbschemas (hell/dunkel) wird ausschließlich lokal
               im Browser gespeichert (localStorage) und nicht an den Server
@@ -115,7 +128,7 @@ export default function Datenschutz() {
             </p>
           </LegalBlock>
 
-          <LegalBlock label="Ihre Rechte">
+          <LegalBlock id="rechte" label="Ihre Rechte">
             <p>
               Sie haben nach der DSGVO das Recht auf Auskunft (Art. 15),
               Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der

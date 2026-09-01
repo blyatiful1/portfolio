@@ -5,7 +5,7 @@ import {
   WorldChapter,
   type ChapterContent,
 } from "@/components/sections/world-chapter";
-import { getRepoFacts, getWireEvents } from "@/lib/data/github";
+import { getAuthorship, getRepoFacts, getWireEvents } from "@/lib/data/github";
 
 const chapters: ChapterContent[] = [
   {
@@ -49,7 +49,7 @@ const chapters: ChapterContent[] = [
     eyebrow: "the discipline",
     surface: "bg-w2-ground text-w2-fg",
     muted: "text-w2-muted",
-    headingClass: "font-mono text-4xl font-bold uppercase tracking-[-0.01em] text-primary",
+    headingClass: "font-mono text-4xl font-bold uppercase tracking-[-0.02em] [word-spacing:-0.35ch] text-primary",
     grain: true,
     hazard: true,
     title: <>hardmode</>,
@@ -142,7 +142,11 @@ const chapters: ChapterContent[] = [
 ];
 
 export default async function Home() {
-  const [facts, events] = await Promise.all([getRepoFacts(), getWireEvents()]);
+  const [facts, events, auth] = await Promise.all([
+    getRepoFacts(),
+    getWireEvents(),
+    getAuthorship(),
+  ]);
   const factsFor = (w: string) =>
     facts.find(
       (f) =>
@@ -156,7 +160,7 @@ export default async function Home() {
 
   return (
     <main id="main" tabIndex={-1} className="outline-none">
-      <Hero />
+      <Hero auth={auth} />
       <div className="mx-auto max-w-content px-4 pb-20 sm:px-6">
         <Wire />
       </div>

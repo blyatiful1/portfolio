@@ -61,12 +61,12 @@ Pairing: **Space Grotesk** (display + body — chrome, worlds 00/03) + **Fraunce
 - Tracking: SG display ≥40px −0.02em; Fraunces display −0.01em; mono labels +0.08em caps; body 0.
 - Leading: display 1.0; world titles 1.02; headings 1.15; body 1.6; wire/mono 1.5.
 - `text-wrap: balance` on H1–H3; `pretty` on prose. `font-feature-settings:'kern' 1,'liga' 1,'calt' 1` at display scale.
-- Measure: body max 62ch (`--container-prose`).
+- Measure: body ≈70 real characters max (`--container-prose: 55ch` — the ch UNIT is the 0-glyph width, wider than avg chars).
 - Breathing Type: SKIPPED — the signature budget is spent on world-entry; a second glyph-level gesture would break the one-move rule.
 
 ## §layout
 
-Containers: `--container-prose: 62ch` · `--container-content: 72rem` · `--container-wide: 88rem` · bleed = deliberate breakout only (world chapters are full-bleed surfaces with content at --container-content).
+Containers: `--container-prose: 55ch` (ch-unit; ≈70 real characters) · `--container-content: 72rem` · `--container-wide: 88rem` · bleed = deliberate breakout only (world chapters are full-bleed surfaces with content at --container-content).
 
 Splits: **Lead 7/5** (world chapters: narrative vs facts rail) · **Margin Note 3/9** (case-study pages: sticky world-rail beside prose) · 6/6 nowhere.
 
@@ -131,6 +131,6 @@ Reduced motion (two layers, CSS @media no-preference + useReducedMotion): worlds
 
 Two mechanisms, two axes — reconciled with the accent-only law:
 1. **The chrome tuning = the lawful world.** `[data-world="uw|hm|gt|me"]` re-points ONLY `--primary`, `--primary-foreground`, `--ring`, `--accent`, `--selection` to that world's verified accent pair. Applied as static server-rendered attributes on chapter `<section>`s; the sticky header's *visual* tuning follows the active chapter via scroll-driven `animation-timeline` flipping a `--world-accent` var (no JS state, no provider). Nested/adjacent scopes resolve by cascade proximity.
-2. **Chapter grounds = section surfaces, not worlds.** Each chapter paints its authored ground/fg from `--w1-*`/`--w2-*`/`--w3-*` tokens (§color table) as an ordinary full-bleed section background — identical in both modes (content-authored surfaces, like imagery), all pairs AA-verified above. `--background`/`--card` are never overridden.
+2. **Chapter grounds = section surfaces, not worlds.** Each chapter paints its authored ground/fg from `--w1-*`/`--w2-*`/`--w3-*` tokens as a full-bleed section background. UPDATE (gate-visual r2 d2): grounds are RE-DECIDED per theme — the anthology's one-odd-world asymmetry survives the toggle by inversion (dark mode: world 03 is the light chapter; light mode: world 03 is the dark chapter, 01/02/00 adapt light — hardmode as ink-on-hazard-paper signage). All new pairs AA-verified rendered (0 fails, 6 routes × both themes). `--background`/`--card` never overridden by worlds.
 World count: 4, each justified by content (three projects + the self-monitoring site) — none decorative. AA: verified in §color for every world pair, both the dark chrome and `.light`.
 

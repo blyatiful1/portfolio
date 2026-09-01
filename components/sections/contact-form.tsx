@@ -30,7 +30,7 @@ function Field({
   const errId = `${id}-error`;
   return (
     <div>
-      <label htmlFor={id} className="block text-sm font-medium">
+      <label htmlFor={id} className="block font-mono text-2xs font-medium tracking-[0.14em] uppercase text-muted-foreground">
         {label}
       </label>
       <div className="mt-1.5">
@@ -91,7 +91,7 @@ export function ContactForm() {
   }
 
   return (
-    <form action={formAction} className="max-w-[30rem] space-y-5">
+    <form action={formAction} className="bracket-frame max-w-[30rem] space-y-5 p-6">
       {state.formError && (
         <p
           role="alert"

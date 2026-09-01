@@ -28,7 +28,7 @@ export default function HardmodeCaseStudy() {
           <h1
             id="main-heading"
             tabIndex={-1}
-            className="display-features mt-6 max-w-[16ch] font-mono text-5xl font-bold uppercase tracking-[-0.01em] text-primary outline-none"
+            className="display-features mt-6 max-w-[16ch] font-mono text-5xl font-bold uppercase tracking-[-0.02em] [word-spacing:-0.35ch] text-primary outline-none"
           >
             Advice loses to momentum
           </h1>
@@ -178,6 +178,9 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
             </a>
             <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/work/ultraweb">
               ← previous world: ultraweb
+            </Link>
+            <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/#worlds">
+              all worlds →
             </Link>
           </div>
           <Button asChild>
