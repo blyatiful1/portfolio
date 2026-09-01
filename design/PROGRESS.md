@@ -2,9 +2,8 @@
 Engagement: studio · Scope: flagship · Started ~07:10 · Updated 07:50
 
 ## Now
-**gate-visual ROUND 5 (user-commissioned at CP6, 2026-09-01 ~10:40) — in flight.** All ten r4 defects fixed (commit 1c8e482), repo PUBLISHED at github.com/blyatiful1/portfolio (user approved; build-ledger links repointed, w0 rail now live, authorship stat self-updated to 247/249). Prod rebuilt + serving on :3001. pixel-qa round-5 shoot running in background (37 captures incl. r4's evidence gaps: 768 home/case, 375 legal, light sectionals); then design-judge round 5 = LAST round (cap 5). If resuming: check for shoot/judge agent results before re-running anything.
-Still pending from user: Impressum postal address (ship blocker), prod env + webhooks (CONTEXT-HANDOFF.md §Ship-blocking). CP6 acceptance completes after the round-5 verdict.
-Server: PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md).
+**gate-visual CLOSED (2026-09-01 ~11:25) — round 5 FIX-THEN-SHIP with both judge-named blockers fixed + self-verified post-round (cap reached; QA.md §round 5 + qa/visual/round-5/VERDICT.md).** All 7 gates now closed. SITE IS DEPLOYED: user imported the repo into Vercel — production live at portfolio-umber-tau-e3ljyjwuiq.vercel.app (verified: home 200, live stat, /studio 404, SSE streaming). Neon DB migrated + verified (events table). Webhooks created on all 4 repos BUT pings 401 — the Vercel GITHUB_WEBHOOK_SECRET doesn't match the generated value (in .env as PROD_GITHUB_WEBHOOK_SECRET); USER must correct it in Vercel, then redeliver pings. Impressum address supplied + live. Remaining: push final fixes (triggers redeploy, activates Resend key), redeliver pings, CP6 wrap message, memory update.
+Server: local PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md).
 
 ## Waiting on you
 CP6 — click through :3001, then answer: round 5 vs accept residuals · Impressum address · repo publish · prod env/webhooks. ~15 min of your time.

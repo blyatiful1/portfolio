@@ -127,3 +127,21 @@
 {"ts":"2026-09-01T09:01:30Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
 {"ts":"2026-09-01T09:01:43Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
 {"ts":"2026-09-01T09:02:00Z","event":"PostToolUse","agent":"ultraweb:design-judge","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:02:32Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:03:04Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:03:36Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:04:08Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:04:40Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:05:13Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:05:25Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:05:45Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:06:18Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:06:51Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:07:23Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:07:56Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:08:29Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:09:02Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:10:04Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:10:37Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:11:39Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}
+{"ts":"2026-09-01T09:12:31Z","event":"SubagentStop","agent":"","summary":"Design-judge round 5 final"}

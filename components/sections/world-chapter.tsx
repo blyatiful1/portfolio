@@ -100,14 +100,16 @@ export function WorldChapter({
             className={`min-w-0 border-l border-current/25 pl-6 md:mt-12 ${c.muted}`}
           >
             <dl className="space-y-3 font-mono text-xs tracking-[0.05em] uppercase">
+              {/* r5 d3: at md the rail is ~249px — labels stack over values
+                  in the md..lg band instead of squeezing a 137px column */}
               {c.facts.map((f) => (
-                <div key={f.label} className="grid grid-cols-[6.5rem_1fr] gap-2">
+                <div key={f.label} className="grid grid-cols-[6.5rem_1fr] gap-2 md:max-lg:grid-cols-1 md:max-lg:gap-0.5">
                   <dt className="opacity-60">{f.label}</dt>
                   <dd className="text-current">{f.value}</dd>
                 </div>
               ))}
               {repoFacts && repoFacts.totalCommits > 0 && (
-                <div className="grid grid-cols-[6.5rem_1fr] gap-2">
+                <div className="grid grid-cols-[6.5rem_1fr] gap-2 md:max-lg:grid-cols-1 md:max-lg:gap-0.5">
                   <dt className="opacity-60">commits</dt>
                   <dd className="tabular-nums">
                     {repoFacts.totalCommits} · {repoFacts.aiCommits} AI-authored

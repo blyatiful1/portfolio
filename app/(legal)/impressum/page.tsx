@@ -31,7 +31,7 @@ function LegalBlock({
 
 export default function Impressum() {
   return (
-    <main id="main" tabIndex={-1} className="relative overflow-x-clip outline-none">
+    <main id="main" lang="de" tabIndex={-1} className="relative overflow-x-clip outline-none">
       {/* the chapters' ghost-numeral grammar, in legal dress (r4: legal dist) */}
       <span
         aria-hidden="true"

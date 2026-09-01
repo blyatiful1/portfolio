@@ -161,3 +161,22 @@ Ranked defects (one line each; full text in VERDICT.md):
 Judge's conversion path: defect 1 alone lifts home/uw/hm over the bar; defect 6 + one distinctive legal gesture lifts both legal pages; defect 10's 404 half lifts notfound. Round 5 remains available inside the flagship cap if the user commissions it at CP6.
 Residuals (verbatim, quotable at acceptance — full wording also in VERDICT.md §Residuals): Impressum address placeholder (§5 DDG blocker); wire shows no commit message at 375; legal measure ~80 chars; impressum/datenschutz/404 dist 6 (no site moves in the corners); 404 centered vs site's left-aligned grammar; light-mode CTA stays terracotta at operator/footer; operator right half empty ~730px at 1440.
 Evidence gaps (judge): 768 home/case unshot this round (r3 d2/d4 unverified there); 375 legal unshot (r3 d5 unverified); light chapter interiors w02/03/00 only in downscaled full-page.
+
+## gate-visual — round 5 (LAST, user-commissioned at CP6) — 2026-09-01 — FIX-THEN-SHIP, blockers fixed post-round → gate CLOSED
+Verdict verbatim: "FIX-THEN-SHIP — one defect from SHIP. The bar (≥7 on all six axes, every page, zero banned-list hits) is met on 35 of 36 cells and the banned sweep is clean for the first time in five rounds. The single blocker is datenschutz craft 6." Full verbatim report: qa/visual/round-5/VERDICT.md · evidence: qa/visual/round-5/ (41 captures + postfix-datenschutz-375.png).
+| Page | hier | type | space | color | dist | craft |
+|---|---|---|---|---|---|---|
+| home | 8 | 8 | 7 | 8 | 8 | 7 |
+| work-ultraweb | 8 | 9 | 8 | 8 | 8 | 8 |
+| work-hardmode | 8 | 8 | 8 | 8 | 8 | 8 |
+| impressum | 8 | 7 | 7 | 7 | 7 | 7 |
+| datenschutz | 8 | 7 | 7 | 7 | 7 | 6 |
+| notfound | 8 | 8 | 7 | 7 | 7 | 8 |
+Banned sweep CLEAN (first time; address placeholder dead — real address renders in all three impressum captures). All ten r4 defects verified FIXED in pixels except d4 (fixed @1440, 375 only at downscale) and d9 (commits half landed, language bar pending data). Largest per-round movement of the build; no regressions.
+**Post-round fixes (cap reached — judge-named, self-verified 2026-09-01 ~11:20, commit follows):**
+- Judge defect 1 (the only <7 cell): datenschutz H1 → text-3xl sm:text-4xl. VERIFIED: browser_evaluate at 375 — fontSize 28px, H1 right edge 344 < 359, docOverflow false; capture postfix-datenschutz-375.png. Per the judge: "It takes datenschutz craft 6→7 and the whole matrix over the bar."
+- Judge defect 2 (WCAG 3.1.2): lang="de" on both legal <main>s. VERIFIED: mainLang "de" in the served DOM.
+- Judge defect 3: rail rows stack in the md..lg band (md:max-lg:grid-cols-1). VERIFIED at 768: dt y=1279, dd y=1298 (stacked), docOverflow false.
+- Judge defect 4: no code change needed — GitHub finished computing the fresh repo's languages (gh api: TS 125729/HTML 66114/CSS 26167/JS 3560); w0 language bar VERIFIED rendering TypeScript/HTML/CSS at 768 in the new build.
+- Judge low-confidence glyph observation: CONFIRMED REAL at 1:1 (impressum-light sun vs datenschutz-light crescent) and root-caused: the toggle's theme-dependent aria-label was computed on the hydration render where next-themes already resolves the stored theme → hydration attribute mismatch → React 19 silently keeps the stale server attribute. Fix: accessible name as mounted-gated sr-only text. VERIFIED: light mode renders lucide-moon + "Switch to dark theme", zero console errors on fresh navigation (an ungated intermediate version threw React #418, proving the mechanism).
+**Gate closed at cap.** Residuals surviving after the post-round fixes, in the judge's verbatim wording (full set + dead list in VERDICT.md): the two space-priced observations ("Each world chapter fills a full viewport, so on desktop every chapter ends with 120 to 240 pixels of empty ground below its call to action. This is the cost of the full-viewport chapter format, not an unfinished section." · "In the contact section at 1440 px the upper right quadrant carries no content.") and the address-confirmation note ("Please confirm the street, number and city are correct before publication") — address was supplied by the client in-session. Evidence gaps recorded in VERDICT.md: work-* at 375 (last shot r3), chapters 02/03/00 at 375, contact block 375 at 1:1, 768 light.

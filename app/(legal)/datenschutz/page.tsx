@@ -31,7 +31,7 @@ function LegalBlock({
 
 export default function Datenschutz() {
   return (
-    <main id="main" tabIndex={-1} className="relative overflow-x-clip outline-none">
+    <main id="main" lang="de" tabIndex={-1} className="relative overflow-x-clip outline-none">
       {/* the chapters' ghost-numeral grammar, in legal dress (r4: legal dist) */}
       <span
         aria-hidden="true"
@@ -42,10 +42,12 @@ export default function Datenschutz() {
       <div className="relative mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 md:grid-cols-[3fr_9fr]">
                 {/* 36rem ≈ 70 real chars at body size — max-w-prose (55ch) measured ~81 (r4 d6) */}
                 <div className="max-w-[36rem]">
+          {/* r5 d1: "Datenschutzerklärung" at the text-4xl 34px floor is wider
+              than the 375 column — one step down until sm */}
           <h1
             id="main-heading"
             tabIndex={-1}
-            className="text-4xl font-bold tracking-tight outline-none"
+            className="text-3xl font-bold tracking-tight outline-none sm:text-4xl"
           >
             Datenschutzerklärung
           </h1>
