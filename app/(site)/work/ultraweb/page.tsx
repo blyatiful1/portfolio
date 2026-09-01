@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "ultraweb — a design studio you can install · Iwan Braun",
+  title: "ultraweb — a design studio you can install",
   description:
     "Case study: an installable design studio for Claude Code — scoping interview, three mockups, a 12-phase pipeline, screenshot-verified gates. This site is its output.",
+  alternates: { canonical: "/work/ultraweb" },
 };
 
 const problems = [

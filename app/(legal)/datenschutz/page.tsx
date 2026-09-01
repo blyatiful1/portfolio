@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung · Iwan Braun",
+  title: "Datenschutzerklärung",
   description: "Informationen zur Datenverarbeitung nach Art. 13 DSGVO.",
   robots: { index: false },
+  alternates: { canonical: "/datenschutz" },
 };
 
 function H2({ children }: { children: React.ReactNode }) {

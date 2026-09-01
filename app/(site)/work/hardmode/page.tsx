@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "hardmode — a discipline floor for AI agents · Iwan Braun",
+  title: "hardmode — a discipline floor for AI agents",
   description:
     "Case study: deterministic hooks that cannot be talked out of, plus fresh-context verifiers — how AI coding agents get held to a standard.",
+  alternates: { canonical: "/work/hardmode" },
 };
 
 const failures = [

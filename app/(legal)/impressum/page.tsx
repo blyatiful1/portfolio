@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum · Iwan Braun",
+  title: "Impressum",
   description: "Anbieterkennzeichnung nach § 5 DDG.",
   robots: { index: false },
+  alternates: { canonical: "/impressum" },
 };
 
 export default function Impressum() {
