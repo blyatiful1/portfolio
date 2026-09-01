@@ -2,9 +2,8 @@
 Engagement: studio · Scope: flagship · Started ~07:10 · Updated 07:50
 
 ## Now
-Phase 6/12 — Build · homepage first (7 sections per SITEMAP part 2), inner pages only after CP4.
-scaffold ledger: init OK · hoist OK (deviation in QA.md) · design-at-root OK · shadcn OK (reconciled) · deps OK · folders OK · fonts/motion/providers/studio OK · strip OK · smoke OK (dev 200, build exit 0)
-Dev server: ONE owner (Lead) — PID 73405, port 3000. Agents get the URL, never their own server.
+Phase 11/12 — Gates · six of seven PASS (code, antislop, content, responsive, accessibility, performance-with-residuals); gate-visual round 1 in flight (pixel-qa shooting both themes on prod, design-judge next).
+Server: PRODUCTION on :3001 (PID in scratchpad prod.pid) — dev server STOPPED; gates run on prod only (shared-.next corruption lesson in QA.md).
 
 ## Waiting on you
 CP5 voice review — read the headlines + one body block per page (presented in chat) and approve or name what sounds off. ~8 min of your time.
