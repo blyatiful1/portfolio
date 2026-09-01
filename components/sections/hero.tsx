@@ -3,7 +3,7 @@ import type { Authorship } from "@/lib/data/github";
 
 export function Hero({ auth }: { auth?: Authorship }) {
   return (
-    <section className="plus-grid">
+    <section data-world-rest className="plus-grid">
       <div className="mx-auto grid max-w-content items-center gap-x-16 gap-y-12 px-4 pt-40 pb-16 sm:px-6 md:pt-48 md:pb-24 lg:grid-cols-[7fr_5fr]">
         <div>
         <p className="font-mono text-xs tracking-[0.18em] uppercase text-muted-foreground">

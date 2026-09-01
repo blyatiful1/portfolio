@@ -6,7 +6,11 @@ import { useEffect } from "react";
 // (globals.css maps data-active-world → the @property-typed --tuned-accent pair).
 export function WorldTuner() {
   useEffect(() => {
-    const sections = document.querySelectorAll<HTMLElement>("[data-world]");
+    // [data-world-rest] sections (hero, operator) release the tuning back to
+    // rest chrome — without them the last-visited world stays latched (r4 d3)
+    const sections = document.querySelectorAll<HTMLElement>(
+      "[data-world],[data-world-rest]",
+    );
     if (!sections.length) return;
     const io = new IntersectionObserver(
       (entries) => {

@@ -95,7 +95,7 @@ export default function HardmodeCaseStudy() {
                 recoverable version passes untouched.
               </p>
             </div>
-            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
+            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0 xl:mr-0 xl:rounded-md xl:border-r xl:pr-5">
               <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 tools/demo.py — unedited output, 2026-09-01
               </figcaption>
@@ -122,7 +122,7 @@ kit:   ALLOWED (exit 0) — scoped deletes pass untouched`}
                 through. The loop alarm fires on the third identical failure.
               </p>
             </div>
-            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
+            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0 xl:mr-0 xl:rounded-md xl:border-r xl:pr-5">
               <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 tools/demo.py — unedited output, 2026-09-01
               </figcaption>

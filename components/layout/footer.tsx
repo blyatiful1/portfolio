@@ -16,8 +16,7 @@ const groups = [
   {
     label: "This site",
     links: [
-      // ship-time: repoint at the published portfolio repo once it exists (design/PROGRESS.md)
-      { href: "https://github.com/blyatiful1", label: "build ledger ↗", external: true },
+      { href: "https://github.com/blyatiful1/portfolio", label: "build ledger ↗", external: true },
       { href: "https://ultraweb-site.vercel.app", label: "built by world 01 ↗", external: true },
     ],
   },
@@ -37,7 +36,7 @@ export async function Footer() {
       <div className="mx-auto max-w-content px-4 pt-16 sm:px-6">
         <nav
           aria-label="Footer"
-          className="grid grid-cols-2 gap-10 sm:grid-cols-3"
+          className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10"
         >
           {groups.map((g) => (
             <div key={g.label}>

@@ -109,7 +109,7 @@ export default function UltrawebCaseStudy() {
                 the verdict went into the ledger verbatim.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
+            <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0 xl:mr-0 xl:rounded-md xl:border-r xl:pr-5">
               <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
                 design/MOCKUPS.md — this site&apos;s actual record
               </figcaption>
@@ -137,7 +137,7 @@ round 3. Green light for Phase 3.`}
                 measure before anything ships.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
+            <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0 xl:mr-0 xl:rounded-md xl:border-r xl:pr-5">
               <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
                 design/DIRECTION.md — this site&apos;s actual record
               </figcaption>

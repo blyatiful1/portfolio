@@ -24,12 +24,12 @@ function repoLabel(repo: string): string {
   return repo === "portfolio" ? "this site" : repo;
 }
 
-function Row({ e }: { e: WireRow }) {
+function Row({ e, trailing }: { e: WireRow; trailing?: boolean }) {
   return (
     <li
-      className={`grid grid-cols-[5rem_6.5rem_1fr_auto] items-baseline gap-3 border-b border-border px-4 py-2 font-mono text-sm last:border-b-0 max-sm:grid-cols-[5rem_1fr_auto] ${
-        e.fresh ? "anim-wire-in" : ""
-      }`}
+      className={`flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-2.5 font-mono text-sm last:border-b-0 sm:grid sm:grid-cols-[5rem_6.5rem_1fr_auto] sm:py-2 ${
+        trailing ? "max-sm:hidden" : ""
+      } ${e.fresh ? "anim-wire-in" : ""}`}
     >
       <span className="text-2xs text-muted-foreground">
         <TimeAgo iso={e.date} />
@@ -37,11 +37,13 @@ function Row({ e }: { e: WireRow }) {
       <span className={`font-medium ${repoColor[e.repo] ?? "text-foreground"}`}>
         {repoLabel(e.repo)}
       </span>
-      <span className="truncate text-muted-foreground max-sm:hidden">
+      {/* the message IS the event — below sm it takes its own full-width line
+          instead of vanishing (gate-visual r4 d1) */}
+      <span className="order-last w-full text-muted-foreground max-sm:line-clamp-2 sm:order-none sm:w-auto sm:truncate">
         {e.message}
       </span>
       <span
-        className="border border-border px-1.5 text-[9px] tracking-[0.1em] text-muted-foreground uppercase"
+        className="border border-border px-1.5 text-[9px] tracking-[0.1em] text-muted-foreground uppercase max-sm:ml-auto"
         title={e.ai ? "AI-authored commit" : "human-authored commit"}
       >
         {e.ai ? "AI" : "HUM"}
@@ -93,8 +95,8 @@ export function WireLive({ initial }: { initial: WireRow[] }) {
 
   return (
     <ol aria-label="Latest repository events" aria-live="polite">
-      {rows.slice(0, 6).map((e) => (
-        <Row key={e.sha} e={e} />
+      {rows.slice(0, 6).map((e, i) => (
+        <Row key={e.sha} e={e} trailing={i >= 4} />
       ))}
     </ol>
   );

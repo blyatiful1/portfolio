@@ -14,31 +14,41 @@ export default function NotFound() {
         Skip to content
       </a>
       <Header />
+      {/* r4: the 404 speaks the site's own grammar — left-aligned on the content
+          grid with the chapters' bleeding ghost numeral, not a centered island */}
       <main
         id="main"
         tabIndex={-1}
-        className="plus-grid flex min-h-svh flex-col items-center justify-center px-6 text-center outline-none"
+        className="plus-grid relative flex min-h-svh flex-col justify-center overflow-x-clip outline-none"
       >
-        <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
-          <span aria-hidden="true">[ ?? ]</span> uncharted
-        </p>
-        <h1 className="display-features mt-5 text-5xl font-bold tracking-tighter">
-          No such world
-          <span
-            aria-hidden="true"
-            className="ml-[0.12em] inline-block size-[0.13em] bg-live"
-          />
-        </h1>
-        <p className="mt-5 max-w-[44ch] text-base text-pretty text-muted-foreground">
-          This address isn&apos;t on the wire. Four worlds exist — this
-          isn&apos;t one of them.
-        </p>
-        <Link
-          href="/"
-          className="nav-link mt-9 inline-block py-3.5 font-mono text-sm font-medium tracking-[0.08em] uppercase text-foreground"
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute top-1/2 right-[-0.08em] -translate-y-1/2 text-[clamp(10rem,32vw,30rem)] leading-none font-bold opacity-[0.05] select-none max-sm:top-[30%]"
         >
-          ← Back to world 00
-        </Link>
+          ??
+        </span>
+        <div className="relative mx-auto w-full max-w-content px-4 sm:px-6">
+          <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
+            <span aria-hidden="true">[ ?? ]</span> uncharted
+          </p>
+          <h1 className="display-features mt-5 max-w-[13ch] text-5xl font-bold tracking-tighter">
+            No such world
+            <span
+              aria-hidden="true"
+              className="ml-[0.12em] inline-block size-[0.13em] bg-live"
+            />
+          </h1>
+          <p className="mt-5 max-w-[44ch] text-base text-pretty text-muted-foreground">
+            This address isn&apos;t on the wire. Four worlds exist — this
+            isn&apos;t one of them.
+          </p>
+          <Link
+            href="/"
+            className="nav-link mt-9 inline-block py-3.5 font-mono text-sm font-medium tracking-[0.08em] uppercase text-foreground"
+          >
+            ← Back to world 00
+          </Link>
+        </div>
       </main>
       <Footer />
     </>

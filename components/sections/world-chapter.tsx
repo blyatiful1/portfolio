@@ -59,9 +59,11 @@ export function WorldChapter({
       >
         {/* Type as the Image: the world number at architectural scale, bleeding
             off the right edge (SYSTEM Edge Bleed, recurring) */}
+        {/* mobile: smaller floor + raised above the CTA line so no interactive
+            text sits on the numeral (r4 d7) */}
         <span
           aria-hidden="true"
-          className={`pointer-events-none absolute top-1/2 right-[-0.08em] -translate-y-1/2 text-[clamp(14rem,32vw,30rem)] leading-none font-bold opacity-[0.05] select-none ${c.numeralClass ?? ""}`}
+          className={`pointer-events-none absolute top-1/2 right-[-0.08em] -translate-y-1/2 text-[clamp(10rem,32vw,30rem)] leading-none font-bold opacity-[0.05] select-none max-sm:top-[30%] ${c.numeralClass ?? ""}`}
         >
           {c.number}
         </span>

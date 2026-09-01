@@ -31,10 +31,18 @@ function LegalBlock({
 
 export default function Impressum() {
   return (
-    <main id="main" tabIndex={-1} className="outline-none">
-      <div className="mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 md:grid-cols-[3fr_9fr]">
+    <main id="main" tabIndex={-1} className="relative overflow-x-clip outline-none">
+      {/* the chapters' ghost-numeral grammar, in legal dress (r4: legal dist) */}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute top-24 right-[-0.06em] text-[clamp(10rem,24vw,20rem)] leading-none font-bold text-foreground opacity-[0.05] select-none"
+      >
+        §
+      </span>
+      <div className="relative mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 md:grid-cols-[3fr_9fr]">
         {/* Margin Note rail — world 00's legal corner */}
-                <div className="max-w-prose">
+                {/* 36rem ≈ 70 real chars at body size — max-w-prose (55ch) measured ~81 (r4 d6) */}
+                <div className="max-w-[36rem]">
           <h1
             id="main-heading"
             tabIndex={-1}

@@ -7,7 +7,7 @@ import { getAuthorship } from "@/lib/data/github";
 export async function Operator() {
   const auth = await getAuthorship();
   return (
-    <section id="operator" className="plus-grid border-t border-border">
+    <section id="operator" data-world-rest className="plus-grid border-t border-border">
       <div className="mx-auto max-w-content px-4 py-28 sm:px-6 md:py-40">
         <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
           The operator
@@ -31,22 +31,24 @@ export async function Operator() {
               worlds above are where you&apos;d check.
             </p>
             <dl className="mt-8 space-y-2 font-mono text-xs tracking-[0.05em] uppercase text-muted-foreground">
-              <div className="grid grid-cols-[8.5rem_1fr] gap-2">
+              <div className="grid grid-cols-[10.5rem_1fr] gap-2 max-sm:grid-cols-1 max-sm:gap-0.5">
                 <dt className="opacity-60">what I bring</dt>
                 <dd>agent orchestration · verification design · shipped artifacts</dd>
               </div>
-              <div className="grid grid-cols-[8.5rem_1fr] gap-2">
+              <div className="grid grid-cols-[10.5rem_1fr] gap-2 max-sm:grid-cols-1 max-sm:gap-0.5">
                 <dt className="opacity-60">what I don&apos;t claim</dt>
                 <dd>lines typed by hand</dd>
               </div>
-              <div className="grid grid-cols-[8.5rem_1fr] gap-2">
+              <div className="grid grid-cols-[10.5rem_1fr] gap-2 max-sm:grid-cols-1 max-sm:gap-0.5">
                 <dt className="opacity-60">based in</dt>
                 <dd>Germany · remote / hybrid</dd>
               </div>
             </dl>
             <div id="contact" className="mt-10 scroll-mt-24">
               <ContactForm />
-              <div className="mt-6 ml-6">
+              {/* ghost aligns on its TEXT edge: -ml-3 cancels the px-3 box padding
+                  so the glyph lands on the form-field edge at every width (r4 d4) */}
+              <div className="mt-6 -ml-3">
                 <Button asChild variant="ghost" size="sm" className="h-11">
                   <a
                     href="https://github.com/blyatiful1"
@@ -60,29 +62,27 @@ export async function Operator() {
             </div>
           </Reveal>
 
-          {/* the stat card — Framed Data: the number is real DOM text, recomputed live.
-              Mobile: card leads (SITEMAP mobile order). */}
+          {/* the stat card — Framed Data with its subject INSIDE the frame:
+              self-contained at every width (r4 d2), number modest at lg so the
+              hero keeps the display-scale moment. md: sits opposite the form. */}
           <Reveal
             delay={0.06}
-            className="bracket-frame h-fit p-7 max-md:order-first md:mt-12"
+            className="bracket-frame h-fit p-7 max-md:order-first md:self-end"
           >
             <p
-              className="text-4xl font-bold tracking-tight tabular-nums lg:hidden"
+              className="text-4xl font-bold tracking-tight tabular-nums lg:text-2xl"
               aria-label={`${auth.ai} of ${auth.total} commits AI-authored`}
             >
               {auth.ai.toLocaleString("en")}
-              <span className="text-xl text-muted-foreground">
+              <span className="text-xl text-muted-foreground lg:text-base">
                 {" "}
                 / {auth.total.toLocaleString("en")}
               </span>
             </p>
-            <p className="mt-2 font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground lg:hidden">
-              commits across these worlds — AI-authored
+            <p className="mt-2 font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
+              commits across these worlds — AI-authored, verified
             </p>
-            <p className="hidden font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground lg:block">
-              the number above, verified
-            </p>
-            <div className="mt-6 border-t border-border pt-4 font-mono text-2xs leading-relaxed text-muted-foreground lg:mt-0 lg:border-t-0 lg:pt-0">
+            <div className="mt-6 border-t border-border pt-4 font-mono text-2xs leading-relaxed text-muted-foreground">
               <p>
                 recomputed from git history ·{" "}
                 <TimeAgo iso={auth.computedAt} />

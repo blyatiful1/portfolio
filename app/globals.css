@@ -115,7 +115,10 @@
 }
 
 /* WorldTuner (client leaf) stamps the active world on <html>; colors interpolate
-   because the pair is @property-typed. Reduce: instant switch (no transition). */
+   because the pair is @property-typed. Reduce: instant switch (no transition).
+   Rest chrome ≡ world 00's accent, per theme — hero/operator ([data-world-rest])
+   release the tuning back here instead of latching the last world (r4 d3). */
+html { --tuned-accent: var(--world-me); --tuned-accent-fg: var(--world-me-fg); }
 html[data-active-world="uw"] { --tuned-accent: var(--world-uw); --tuned-accent-fg: var(--world-uw-fg); }
 html[data-active-world="hm"] { --tuned-accent: var(--world-hm); --tuned-accent-fg: var(--world-hm-fg); }
 html[data-active-world="gt"] { --tuned-accent: var(--world-gt); --tuned-accent-fg: var(--world-gt-fg); }

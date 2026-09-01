@@ -50,11 +50,11 @@ export function WireSkeleton() {
       {Array.from({ length: 6 }).map((_, i) => (
         <div
           key={i}
-          className="grid grid-cols-[5rem_6.5rem_1fr_auto] items-center gap-3 border-b border-border px-4 py-2 last:border-b-0 max-sm:grid-cols-[5rem_1fr_auto]"
+          className={`grid grid-cols-[5rem_6.5rem_1fr_auto] items-center gap-3 border-b border-border px-4 py-2 last:border-b-0 max-sm:grid-cols-[5rem_1fr_auto] max-sm:py-2.5 ${i >= 4 ? "max-sm:hidden" : ""}`}
         >
           <div className="h-3 w-12 animate-pulse rounded-sm bg-muted" />
           <div className="h-3 w-16 animate-pulse rounded-sm bg-muted" />
-          <div className="h-3 w-3/5 animate-pulse rounded-sm bg-muted max-sm:hidden" />
+          <div className="h-3 w-3/5 animate-pulse rounded-sm bg-muted max-sm:order-last max-sm:col-span-full" />
           <div className="h-3 w-7 animate-pulse rounded-sm bg-muted" />
         </div>
       ))}

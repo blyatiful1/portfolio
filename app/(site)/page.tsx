@@ -136,7 +136,7 @@ const chapters: ChapterContent[] = [
       { label: "built by", value: "world 01 (ultraweb)" },
     ],
     cta: {
-      href: "https://github.com/blyatiful1",
+      href: "https://github.com/blyatiful1/portfolio",
       label: "Audit the build ↗",
       external: true,
     },
