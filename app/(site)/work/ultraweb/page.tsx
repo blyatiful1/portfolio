@@ -29,7 +29,7 @@ const problems = [
 
 export default function UltrawebCaseStudy() {
   return (
-    <main id="main" tabIndex={-1} className="outline-none">
+    <main id="main" tabIndex={-1} className="outline-none light:bg-[var(--w1-ground)]">
       {/* case-hero — world-01 dressed */}
       <section data-world="uw" className="grain bg-w1-ground text-w1-fg">
         <div className="mx-auto max-w-content px-4 pt-36 pb-20 sm:px-6 md:pt-44 md:pb-28">
@@ -109,7 +109,7 @@ export default function UltrawebCaseStudy() {
                 the verdict went into the ledger verbatim.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
+            <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
               <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
                 design/MOCKUPS.md — this site&apos;s actual record
               </figcaption>
@@ -137,7 +137,7 @@ round 3. Green light for Phase 3.`}
                 measure before anything ships.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
+            <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
               <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
                 design/DIRECTION.md — this site&apos;s actual record
               </figcaption>

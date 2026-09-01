@@ -76,7 +76,11 @@ export function Header() {
             ))
           )}
           <LiveChip />
-          <Button asChild size="sm">
+          <Button
+            asChild
+            size="sm"
+            className="bg-tuned text-tuned-fg transition-[background-color,color] duration-[var(--dur-micro)] hover:bg-tuned/85"
+          >
             <Link href="/#contact">Work with me</Link>
           </Button>
         </nav>

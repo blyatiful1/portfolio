@@ -33,37 +33,7 @@ export default function Datenschutz() {
   return (
     <main id="main" tabIndex={-1} className="outline-none">
       <div className="mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 md:grid-cols-[3fr_9fr]">
-        <aside className="mb-10 h-fit md:sticky md:top-24 md:mb-0">
-          <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-primary">
-            <span aria-hidden="true">[ § ]</span> world 00 · legal
-          </p>
-          <p className="mt-3 font-mono text-2xs leading-relaxed text-muted-foreground">
-            Informationen nach
-            <br />
-            Art. 13 DSGVO
-          </p>
-          <nav aria-label="Abschnitte" className="mt-6">
-            <ul className="space-y-2">
-              <li><a href="#verantwortlicher" className="nav-link font-mono text-2xs text-muted-foreground">Verantwortlicher</a></li>
-              <li><a href="#hosting" className="nav-link font-mono text-2xs text-muted-foreground">Hosting & Logs</a></li>
-              <li><a href="#kontakt" className="nav-link font-mono text-2xs text-muted-foreground">Kontaktaufnahme</a></li>
-              <li><a href="#github" className="nav-link font-mono text-2xs text-muted-foreground">GitHub-Daten</a></li>
-              <li><a href="#speicherung" className="nav-link font-mono text-2xs text-muted-foreground">Lokale Speicherung</a></li>
-              <li><a href="#rechte" className="nav-link font-mono text-2xs text-muted-foreground">Ihre Rechte</a></li>
-            </ul>
-          </nav>
-          <p className="mt-6 font-mono text-2xs text-muted-foreground">Stand: September 2026</p>
-          <p className="mt-5">
-            <Link
-              href="/"
-              className="nav-link font-mono text-2xs tracking-[0.08em] uppercase text-muted-foreground"
-            >
-              ← zurück zu den Welten
-            </Link>
-          </p>
-        </aside>
-
-        <div className="max-w-prose">
+                <div className="max-w-prose">
           <h1
             id="main-heading"
             tabIndex={-1}
@@ -139,6 +109,36 @@ export default function Datenschutz() {
             </p>
           </LegalBlock>
         </div>
+
+        <aside className="mt-12 h-fit md:order-first md:sticky md:top-24 md:mt-0">
+          <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-primary">
+            <span aria-hidden="true">[ § ]</span> world 00 · legal
+          </p>
+          <p className="mt-3 font-mono text-2xs leading-relaxed text-muted-foreground">
+            Informationen nach
+            <br />
+            Art. 13 DSGVO
+          </p>
+          <nav aria-label="Abschnitte" className="mt-6">
+            <ul className="space-y-2">
+              <li><a href="#verantwortlicher" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Verantwortlicher</a></li>
+              <li><a href="#hosting" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Hosting & Logs</a></li>
+              <li><a href="#kontakt" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Kontaktaufnahme</a></li>
+              <li><a href="#github" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">GitHub-Daten</a></li>
+              <li><a href="#speicherung" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Lokale Speicherung</a></li>
+              <li><a href="#rechte" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Ihre Rechte</a></li>
+            </ul>
+          </nav>
+          <p className="mt-6 font-mono text-2xs text-muted-foreground">Stand: September 2026</p>
+          <p className="mt-5">
+            <Link
+              href="/"
+              className="nav-link font-mono text-2xs tracking-[0.08em] uppercase text-muted-foreground"
+            >
+              ← zurück zu den Welten
+            </Link>
+          </p>
+        </aside>
       </div>
     </main>
   );

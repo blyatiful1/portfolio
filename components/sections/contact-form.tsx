@@ -131,7 +131,7 @@ export function ContactForm() {
         <SubmitButton />
         <a
           href="mailto:iwan.braun2004@gmail.com"
-          className="nav-link inline-block py-3.5 font-mono text-xs tracking-[0.08em] uppercase text-muted-foreground"
+          className="nav-link inline-block py-3.5 font-mono text-xs tracking-[0.08em] uppercase text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground"
         >
           or email directly
         </a>

@@ -2,8 +2,8 @@
 Engagement: studio · Scope: flagship · Started ~07:10 · Updated 07:50
 
 ## Now
-Phase 11/12 — Gates · six of seven PASS (code, antislop, content, responsive, accessibility, performance-with-residuals); gate-visual round 1 in flight (pixel-qa shooting both themes on prod, design-judge next).
-Server: PRODUCTION on :3001 (PID in scratchpad prod.pid) — dev server STOPPED; gates run on prod only (shared-.next corruption lesson in QA.md).
+Phase 11/12 — Gates · six of seven PASS; gate-visual in round 3 (r1 FIX-THEN-SHIP w/ invalid home evidence → fixed; r2 FIX-THEN-SHIP w/ real movement → all ranked defects fixed; r3 judge scoring the fresh 31-capture set now).
+Server: PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md).
 
 ## Waiting on you
 CP5 voice review — read the headlines + one body block per page (presented in chat) and approve or name what sounds off. ~8 min of your time.

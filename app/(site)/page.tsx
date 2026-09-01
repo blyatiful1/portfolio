@@ -13,10 +13,11 @@ const chapters: ChapterContent[] = [
     anchor: "w1",
     number: "01",
     eyebrow: "the studio",
+    numeralClass: "font-[family-name:var(--font-display-uw)]",
     surface: "bg-w1-ground text-w1-fg",
     muted: "text-w1-muted",
     headingClass:
-      "font-[family-name:var(--font-display-uw)] text-4xl font-medium tracking-[-0.01em]",
+      "font-[family-name:var(--font-display-uw)] text-5xl font-medium tracking-[-0.01em]",
     grain: true,
     title: (
       <>
@@ -47,9 +48,10 @@ const chapters: ChapterContent[] = [
     anchor: "w2",
     number: "02",
     eyebrow: "the discipline",
+    numeralClass: "font-mono",
     surface: "bg-w2-ground text-w2-fg",
     muted: "text-w2-muted",
-    headingClass: "font-mono text-4xl font-bold uppercase tracking-[-0.02em] [word-spacing:-0.35ch] text-primary",
+    headingClass: "font-mono text-5xl font-bold uppercase tracking-[-0.02em] [word-spacing:-0.35ch] text-primary",
     grain: true,
     hazard: true,
     title: <>hardmode</>,
@@ -75,7 +77,7 @@ const chapters: ChapterContent[] = [
     eyebrow: "the gentle one",
     surface: "bg-w3-ground text-w3-fg",
     muted: "text-w3-muted",
-    headingClass: "text-4xl font-medium tracking-[-0.025em]",
+    headingClass: "text-5xl font-medium tracking-[-0.025em]",
     title: (
       <>
         gtheme, for the{" "}
@@ -109,7 +111,7 @@ const chapters: ChapterContent[] = [
     eyebrow: "the one you're in",
     surface: "bg-card text-foreground",
     muted: "text-muted-foreground",
-    headingClass: "text-4xl font-medium tracking-[-0.02em]",
+    headingClass: "text-5xl font-medium tracking-[-0.02em]",
     title: (
       <>
         This site.{" "}

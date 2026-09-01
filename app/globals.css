@@ -161,6 +161,7 @@ html[data-active-world="me"] { --tuned-accent: var(--world-me); --tuned-accent-f
   --color-world-hm-chrome: var(--world-hm-chrome);
   --color-world-gt-chrome: var(--world-gt-chrome);
   --color-tuned: var(--tuned-accent);
+  --color-tuned-fg: var(--tuned-accent-fg);
 
   --font-sans: var(--font-space-grotesk), "Space Grotesk Fallback", system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, "Cascadia Mono", monospace;
@@ -280,7 +281,11 @@ html[data-active-world="me"] { --tuned-accent: var(--world-me); --tuned-accent-f
 
   /* texture kit (SYSTEM §imagery) — all data-URI, zero requests */
   .plus-grid {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M16 12v8M12 16h8' stroke='oklch(0.91 0.01 280 / 0.05)' stroke-width='1'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M16 12v8M12 16h8' stroke='oklch(0.91 0.01 280 / 0.05)' stroke-width='1'%3E%3C/path%3E%3C/svg%3E");
+  }
+  /* light re-decision, not inversion (judge r3 d8): dark mark on the light ground */
+  .light .plus-grid {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M16 12v8M12 16h8' stroke='oklch(0.25 0.02 270 / 0.07)' stroke-width='1'%3E%3C/path%3E%3C/svg%3E");
   }
   .grain {
     position: relative;

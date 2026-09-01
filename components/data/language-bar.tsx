@@ -7,10 +7,9 @@ const steps = ["opacity-90", "opacity-60", "opacity-40", "opacity-25"];
 export function LanguageBar({ languages }: { languages: Lang[] }) {
   if (!languages.length) return null;
   const total = languages.reduce((n, l) => n + l.bytes, 0);
-  const shares = languages.map((l) => ({
-    name: l.name,
-    pct: Math.round((l.bytes / total) * 100),
-  }));
+  const shares = languages
+    .map((l) => ({ name: l.name, pct: Math.round((l.bytes / total) * 100) }))
+    .filter((s) => s.pct >= 1); // never draw or label a 0% segment
   return (
     <div>
       <div
@@ -21,8 +20,8 @@ export function LanguageBar({ languages }: { languages: Lang[] }) {
         {shares.map((s, i) => (
           <span
             key={s.name}
-            className={`bg-current ${steps[i] ?? "opacity-20"}`}
-            style={{ width: `${Math.max(s.pct, 2)}%` }}
+            className={i === 0 ? "bg-primary" : `bg-current ${steps[i] ?? "opacity-20"}`}
+            style={{ width: `${s.pct}%` }}
           />
         ))}
       </div>

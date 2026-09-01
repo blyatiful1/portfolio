@@ -29,7 +29,7 @@ export default function NotFound() {
             className="ml-[0.12em] inline-block size-[0.13em] bg-live"
           />
         </h1>
-        <p className="mt-5 max-w-[44ch] text-base text-muted-foreground">
+        <p className="mt-5 max-w-[44ch] text-base text-pretty text-muted-foreground">
           This address isn&apos;t on the wire. Four worlds exist — this
           isn&apos;t one of them.
         </p>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getYear } from "@/lib/data/now";
+import { getAuthorship } from "@/lib/data/github";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 const groups = [
@@ -30,7 +31,7 @@ const groups = [
 ] as const;
 
 export async function Footer() {
-  const year = await getYear();
+  const [year, auth] = await Promise.all([getYear(), getAuthorship()]);
   return (
     <footer className="border-t border-border bg-card">
       <div className="mx-auto max-w-content px-4 pt-16 sm:px-6">
@@ -65,7 +66,11 @@ export async function Footer() {
         <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-3 pb-2 font-mono text-2xs text-muted-foreground">
           <p>© {year} Iwan Braun · agent infrastructure</p>
           <div className="flex items-center gap-4">
-            <p>254/256 commits: not mine. That is the point.</p>
+            <p>
+              {auth.total > 0
+                ? `${auth.ai}/${auth.total} commits: not mine. That is the point.`
+                : "The commits are not mine. That is the point."}
+            </p>
             <ThemeToggle />
           </div>
         </div>

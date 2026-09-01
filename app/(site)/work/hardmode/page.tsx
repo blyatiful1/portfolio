@@ -18,7 +18,7 @@ const failures = [
 
 export default function HardmodeCaseStudy() {
   return (
-    <main id="main" tabIndex={-1} className="outline-none">
+    <main id="main" tabIndex={-1} className="outline-none light:bg-[var(--w2-ground)]">
       {/* case-hero — world-02 dressed */}
       <section data-world="hm" className="grain hazard-edge bg-w2-ground text-w2-fg" style={{ "--hazard-offset": "3.5rem" } as React.CSSProperties}>
         <div className="mx-auto max-w-content px-4 pt-36 pb-20 sm:px-6 md:pt-44 md:pb-28">
@@ -95,7 +95,7 @@ export default function HardmodeCaseStudy() {
                 recoverable version passes untouched.
               </p>
             </div>
-            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
+            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
               <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 tools/demo.py — unedited output, 2026-09-01
               </figcaption>
@@ -122,7 +122,7 @@ kit:   ALLOWED (exit 0) — scoped deletes pass untouched`}
                 through. The loop alarm fires on the third identical failure.
               </p>
             </div>
-            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
+            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0">
               <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 tools/demo.py — unedited output, 2026-09-01
               </figcaption>

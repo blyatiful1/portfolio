@@ -51,7 +51,7 @@ export function Hero({ auth }: { auth?: Authorship }) {
               </span>
             </p>
             <p className="mt-2 font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
-              commits AI-authored — not mine. That is the point.
+              commits AI-authored, not mine — the point.
             </p>
             <p className="mt-5 font-mono text-2xs text-live">
               ● recomputed <TimeAgo iso={auth.computedAt} />

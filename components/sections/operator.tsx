@@ -46,7 +46,7 @@ export async function Operator() {
             </dl>
             <div id="contact" className="mt-10 scroll-mt-24">
               <ContactForm />
-              <div className="mt-6">
+              <div className="mt-6 ml-6">
                 <Button asChild variant="ghost" size="sm" className="h-11">
                   <a
                     href="https://github.com/blyatiful1"
@@ -64,10 +64,10 @@ export async function Operator() {
               Mobile: card leads (SITEMAP mobile order). */}
           <Reveal
             delay={0.06}
-            className="h-fit border border-border bg-card p-7 max-md:order-first md:mt-12"
+            className="bracket-frame h-fit p-7 max-md:order-first md:mt-12"
           >
             <p
-              className="text-4xl font-bold tracking-tight tabular-nums"
+              className="text-4xl font-bold tracking-tight tabular-nums lg:hidden"
               aria-label={`${auth.ai} of ${auth.total} commits AI-authored`}
             >
               {auth.ai.toLocaleString("en")}
@@ -76,17 +76,20 @@ export async function Operator() {
                 / {auth.total.toLocaleString("en")}
               </span>
             </p>
-            <p className="mt-2 font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
+            <p className="mt-2 font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground lg:hidden">
               commits across these worlds — AI-authored
             </p>
-            <div className="mt-6 border-t border-border pt-4 font-mono text-2xs leading-relaxed text-muted-foreground">
+            <p className="hidden font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground lg:block">
+              the number above, verified
+            </p>
+            <div className="mt-6 border-t border-border pt-4 font-mono text-2xs leading-relaxed text-muted-foreground lg:mt-0 lg:border-t-0 lg:pt-0">
               <p>
                 recomputed from git history ·{" "}
                 <TimeAgo iso={auth.computedAt} />
               </p>
               <p className="mt-2">
                 don&apos;t take the site&apos;s word:{" "}
-                <code className="text-live">
+                <code className="block overflow-x-auto whitespace-nowrap text-live">
                   git log --no-merges | grep -ci claude
                 </code>
               </p>

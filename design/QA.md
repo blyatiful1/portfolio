@@ -88,3 +88,24 @@ Fixes applied after round 1 (each traceable to the judge's ranked list):
 - d12+d6 bleed figures carry the code itself across the edge (md:pr-0, border-r-0); per-world figure gestures (uw: Fraunces italic figcaptions · hm: hazard left rule)
 - d3 impressum address: REMAINS — material-unconfirmed marker, blocks production ship until the user supplies it (CP6)
 Post-fix SSR verification: `curl | grep -c 'opacity:0'` = 0 (content visible in raw HTML), 10 .reveal nodes present, 5/5 routes 200, build exit 0.
+
+## gate-visual — round 2 — 2026-09-01 — FIX-THEN-SHIP (evidence VALID; real movement)
+Shoot: reduce-emulated + verified, 6 routes (incl. 404) × both themes (qa/visual/round-2/). Judge verbatim scores:
+| Page | hier | type | space | color | dist | craft |
+|---|---|---|---|---|---|---|
+| home | 7 | 8 | 7 | 7 | 7 | 6 |
+| work-ultraweb | 7 | 9 | 7 | 8 | 8 | 7 |
+| work-hardmode | 7 | 8 | 7 | 7 | 8 | 7 |
+| impressum | 7 | 6 | 6 | 7 | 6 | 7 |
+| datenschutz | 7 | 6 | 6 | 7 | 6 | 7 |
+| notfound | 8 | 9 | 6 | 6 | 6 | 4 |
+Movement vs r1: uw +1/+1/+2/+1, hm +1/+2/+2, legal dist/craft +3/+3. Banned sweep clean. Verdict blockers → fixes applied:
+- d1 404 now renders full site chrome (header/footer/legal links — §5 DDG ständig verfügbar) + identity live-dot
+- d2 LIGHT THEME chapter grounds re-decided (not inverted): one odd world per mode — light mode makes world 03 the dark chapter, 01/02/00 adapt light; hardmode's light identity = ink-on-hazard-paper (tinted ground + inverted stripe). Rendered contrast after: 0 fails, 6 routes × both themes
+- d3 prose measure: --container-prose 62ch→55ch (ch-unit vs real-chars conflation found empirically; ≈70 real chars now)
+- d4 wire + contact form dressed in the bracket/instrument motif; labels mono-caps; hero gains the Framed-Data authorship counterweight (also resolves d7's dead right half)
+- d5 verified-minor by crop inspection: numeral/label edges within 2–4px (judge's 20px estimate was thumbnail-scale artifact); brackets render as designed — no change
+- d6 legal rails now carry the section index (anchor nav), Stand date, back-link; H1s → text-4xl
+- d8 mono display: tracking −0.02em + word-spacing −0.35ch on hardmode display lines
+- minors: hm closer forward link added; 404 live-dot added
+- d3(address) unchanged — tracked production blocker for CP6
