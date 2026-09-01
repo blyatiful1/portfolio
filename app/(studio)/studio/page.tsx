@@ -31,8 +31,10 @@ function gateColor(line: string): string | undefined {
 }
 
 export default async function StudioPage() {
-  await connection(); // request-time rendering under cacheComponents
+  // NODE_ENV is inlined at build time: in a production build this prerenders
+  // the route as a permanent 404 BEFORE any dynamic API can flush a 200 shell.
   if (process.env.NODE_ENV === "production") notFound();
+  await connection(); // dev: request-time rendering under cacheComponents
 
   const progress = await readArtifact("PROGRESS.md");
   const qa = await readArtifact("QA.md");

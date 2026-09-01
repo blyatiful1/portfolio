@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getYear } from "@/lib/data/now";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 const groups = [
   {
@@ -31,7 +32,7 @@ const groups = [
 export async function Footer() {
   const year = await getYear();
   return (
-    <footer className="border-t border-border bg-[oklch(0.12_0.01_280)]">
+    <footer className="border-t border-border bg-card">
       <div className="mx-auto max-w-content px-4 pt-16 sm:px-6">
         <nav
           aria-label="Footer"
@@ -50,7 +51,7 @@ export async function Footer() {
                       {...("external" in l && l.external
                         ? { target: "_blank", rel: "noreferrer" }
                         : {})}
-                      className="nav-link py-1.5 text-sm text-foreground/85 hover:text-foreground"
+                      className="nav-link relative py-1.5 text-sm text-foreground/85 before:absolute before:-inset-x-2 before:-inset-y-1.5 before:content-[''] hover:text-foreground"
                     >
                       {l.label}
                     </Link>
@@ -61,9 +62,12 @@ export async function Footer() {
           ))}
         </nav>
 
-        <div className="mt-14 flex flex-wrap items-baseline justify-between gap-4 border-t border-border pt-5 pb-2 font-mono text-2xs text-muted-foreground">
+        <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-3 pb-2 font-mono text-2xs text-muted-foreground">
           <p>© {year} Iwan Braun · agent infrastructure</p>
-          <p>254/256 commits: not mine. That is the point.</p>
+          <div className="flex items-center gap-4">
+            <p>254/256 commits: not mine. That is the point.</p>
+            <ThemeToggle />
+          </div>
         </div>
       </div>
 

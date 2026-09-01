@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s · Iwan Braun",
   },
   description:
-    "One operator, four worlds. AI agents write the code; the standard is human. A portfolio that verifies its own claims, live.",
+    "One operator, four worlds. AI agents write the code; the standard is human. A portfolio wired to its own repos — it verifies its claims live, while you read.",
   alternates: { canonical: "/" },
 };
 

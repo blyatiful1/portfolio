@@ -2,15 +2,16 @@
 
 import Link from "next/link";
 import { Dialog } from "radix-ui";
-import { Menu, X } from "lucide-react";
+import { X } from "lucide-react";
 
-// Radix Dialog supplies focus trap, Escape, scroll lock, focus return.
+// Radix Dialog supplies focus trap, Escape, scroll lock. The TRIGGER lives in
+// header.tsx (this chunk loads on first open; focus return is handled there).
 // Choreography is CSS-only (anim-fade-rise + transition-delay stagger).
 const items = [
   { href: "/#worlds", label: "Worlds", cls: "text-foreground" },
-  { href: "/#w1", label: "ultraweb", cls: "text-world-uw" },
-  { href: "/#w2", label: "hardmode", cls: "text-world-hm" },
-  { href: "/#w3", label: "gtheme", cls: "text-[oklch(0.60_0.14_250)]" },
+  { href: "/#w1", label: "ultraweb", cls: "text-world-uw-chrome" },
+  { href: "/#w2", label: "hardmode", cls: "text-world-hm-chrome" },
+  { href: "/#w3", label: "gtheme", cls: "text-world-gt-chrome" },
   { href: "/#w0", label: "this site", cls: "text-muted-foreground" },
   { href: "/#operator", label: "Operator", cls: "text-foreground" },
 ] as const;
@@ -18,26 +19,25 @@ const items = [
 export function MobileMenu({
   open,
   onOpenChange,
+  returnFocus,
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  returnFocus?: () => void;
 }) {
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
-      <Dialog.Trigger asChild>
-        <button
-          type="button"
-          aria-label="Open menu"
-          className="flex size-11 items-center justify-center text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          <Menu className="size-5" aria-hidden="true" />
-        </button>
-      </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-50 bg-background/60" />
         <Dialog.Content
           className="fixed inset-0 z-50 flex flex-col bg-background p-6"
           aria-describedby={undefined}
+          onCloseAutoFocus={(e) => {
+            // the trigger lives in header.tsx (outside this Root) — radix can't
+            // find it, so we return focus ourselves
+            e.preventDefault();
+            returnFocus?.();
+          }}
         >
           <Dialog.Title className="sr-only">Menu</Dialog.Title>
           <div className="flex items-center justify-between">

@@ -47,7 +47,7 @@ export async function Operator() {
             <div id="contact" className="mt-10 scroll-mt-24">
               <ContactForm />
               <div className="mt-6">
-                <Button asChild variant="ghost" size="sm">
+                <Button asChild variant="ghost" size="sm" className="h-11">
                   <a
                     href="https://github.com/blyatiful1"
                     target="_blank"

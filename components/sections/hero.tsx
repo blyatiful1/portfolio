@@ -13,9 +13,9 @@ export function Hero() {
         >
           One operator.
           <br />
-          <span className="text-world-uw">Four</span>{" "}
-          <span className="text-world-hm">wor</span>
-          <span className="text-[var(--w3-display)]">lds</span>.
+          <span className="text-world-uw-chrome">Four</span>{" "}
+          <span className="text-world-hm-chrome">wor</span>
+          <span className="text-world-gt-chrome">lds</span>.
         </h1>
         <p className="mt-7 max-w-[58ch] text-lg text-muted-foreground">
           Three projects, each in its own world — and{" "}

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "hardmode — a discipline floor for AI agents",
   description:
-    "Case study: deterministic hooks that cannot be talked out of, plus fresh-context verifiers — how AI coding agents get held to a standard.",
+    "Case study: deterministic hooks that cannot be talked out of, plus fresh-context verifier agents — how AI coding agents get held to a real standard.",
   alternates: { canonical: "/work/hardmode" },
 };
 
@@ -64,7 +64,7 @@ export default function HardmodeCaseStudy() {
                 key={item.n}
                 className="grid grid-cols-[4.5rem_1fr] items-baseline gap-6 border-b border-border py-7 last:border-b-0"
               >
-                <span aria-hidden="true" className="font-mono text-3xl font-medium text-world-hm/50">
+                <span aria-hidden="true" className="font-mono text-3xl font-medium text-world-hm-chrome/70">
                   {item.n}
                 </span>
                 <div>
@@ -78,7 +78,7 @@ export default function HardmodeCaseStudy() {
       </section>
 
       {/* the-floor — splits with GENUINE demo output */}
-      <section>
+      <section className="overflow-x-clip">
         <div className="mx-auto max-w-content px-4 py-20 sm:px-6 md:py-28">
           <h2 className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
             The floor — real output, captured from the shipped hooks
@@ -173,7 +173,7 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
       <section className="border-t border-border bg-card">
         <div className="mx-auto flex max-w-content flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6">
           <div className="flex flex-wrap gap-x-7 gap-y-3 font-mono text-sm">
-            <a className="nav-link uppercase tracking-[0.08em] text-world-hm" href="https://github.com/blyatiful1/hardmode" target="_blank" rel="noreferrer">
+            <a className="nav-link uppercase tracking-[0.08em] text-world-hm-chrome" href="https://github.com/blyatiful1/hardmode" target="_blank" rel="noreferrer">
               the repo ↗
             </a>
             <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/work/ultraweb">

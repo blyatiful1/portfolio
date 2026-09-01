@@ -1,0 +1,365 @@
+npm notice run app-scaffold@0.1.0 dev
+npm notice run next dev
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.60:3000
+- Environments: .env
+✓ Ready in 152ms
+✓ Running next.config.ts took 15ms
+- Cache Components enabled
+
+ GET /work/ultraweb 200 in 1609ms (next.js: 1359ms, application-code: 251ms)
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+ GET /manifest.webmanifest 200 in 186ms (next.js: 178ms, application-code: 8ms)
+ GET / 200 in 2.5s (next.js: 1411ms, application-code: 1065ms)
+ GET /work/ultraweb 200 in 47ms (next.js: 5ms, application-code: 41ms)
+ GET /manifest.webmanifest 200 in 5ms (next.js: 3ms, application-code: 3ms)
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+ GET /work/ultraweb 200 in 41ms (next.js: 2.0ms, application-code: 39ms)
+ GET /manifest.webmanifest 200 in 4ms (next.js: 1.6ms, application-code: 3ms)
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+ GET /work/ultraweb 200 in 33ms (next.js: 1.5ms, application-code: 31ms)
+ GET /work/ultraweb?fresh=1 200 in 38ms (next.js: 1.7ms, application-code: 36ms)
+ GET /manifest.webmanifest 200 in 3ms (next.js: 1.3ms, application-code: 2ms)
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+ GET /work/ultraweb 200 in 44ms (next.js: 1.5ms, application-code: 43ms)
+ GET /manifest.webmanifest 200 in 4ms (next.js: 1.4ms, application-code: 2ms)
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+    at SiteLayout (app/(site)/layout.tsx:20:7)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+[browser] Uncaught Error: Module [project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript) was instantiated because it was required from module [project]/components/layout/header.tsx [app-client] (ecmascript), but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at module evaluation (components/layout/header.tsx:7:1)
+   5 | import { usePathname } from "next/navigation";
+   6 | import { useRef, type ComponentType } from "react";
+>  7 | import { Menu } from "lucide-react";
+     | ^
+   8 | import { Wordmark } from "@/components/brand/wordmark";
+   9 | import { LiveChip } from "@/components/wire/live-chip";
+  10 | import { Button } from "@/components/ui/button";
+ GET /work/ultraweb 200 in 32ms (next.js: 1.1ms, application-code: 31ms)
+ GET / 200 in 65ms (next.js: 4ms, application-code: 61ms)
+[?25h

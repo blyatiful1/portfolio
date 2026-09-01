@@ -76,7 +76,7 @@ export function WorldChapter({
                 {...(c.cta.external
                   ? { target: "_blank", rel: "noreferrer" }
                   : {})}
-                className="nav-link font-mono text-sm font-medium tracking-[0.08em] uppercase text-primary"
+                className="nav-link inline-block py-3.5 font-mono text-sm font-medium tracking-[0.08em] uppercase text-primary"
               >
                 {c.cta.label}
               </Link>

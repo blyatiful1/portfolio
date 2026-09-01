@@ -3,10 +3,17 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRef, type ComponentType } from "react";
+import { Menu } from "lucide-react";
 import { Wordmark } from "@/components/brand/wordmark";
 import { LiveChip } from "@/components/wire/live-chip";
 import { Button } from "@/components/ui/button";
-import { MobileMenu } from "./mobile-menu";
+import type { MobileMenu as MobileMenuT } from "./mobile-menu";
+
+// radix Dialog stays out of the cold load: a plain import() on first open —
+// no next/dynamic Loadable/Suspense wrapper, so hydration has nothing to
+// disagree about (server and client both render just the trigger button).
+type MenuComponent = ComponentType<Parameters<typeof MobileMenuT>[0]>;
 
 const anchors = [
   { href: "/#worlds", label: "Worlds" },
@@ -18,6 +25,8 @@ export function Header() {
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [MenuComp, setMenuComp] = useState<MenuComponent | null>(null);
+  const menuTriggerRef = useRef<HTMLButtonElement>(null);
   const onWork = pathname.startsWith("/work");
 
   useEffect(() => {
@@ -44,7 +53,7 @@ export function Header() {
       <div className="mx-auto flex h-14 max-w-content items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
-          className="text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="flex h-14 items-center text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           aria-label="Iwan Braun — home"
         >
           <Wordmark className="h-3.5 w-auto" aria-hidden="true" />
@@ -74,7 +83,30 @@ export function Header() {
 
         <div className="flex items-center gap-3 sm:hidden">
           <LiveChip />
-          <MobileMenu open={menuOpen} onOpenChange={setMenuOpen} />
+          <button
+            ref={menuTriggerRef}
+            type="button"
+            aria-label="Open menu"
+            aria-expanded={menuOpen}
+            aria-haspopup="dialog"
+            onClick={async () => {
+              if (!MenuComp) {
+                const mod = await import("./mobile-menu");
+                setMenuComp(() => mod.MobileMenu);
+              }
+              setMenuOpen(true);
+            }}
+            className="flex size-11 shrink-0 items-center justify-center text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <Menu className="size-5" aria-hidden="true" />
+          </button>
+          {MenuComp && (
+            <MenuComp
+              open={menuOpen}
+              onOpenChange={setMenuOpen}
+              returnFocus={() => menuTriggerRef.current?.focus()}
+            />
+          )}
         </div>
       </div>
     </header>

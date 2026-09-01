@@ -14,9 +14,9 @@ export type WireRow = {
 };
 
 const repoColor: Record<string, string> = {
-  ultraweb: "text-world-uw",
-  hardmode: "text-world-hm",
-  gtheme: "text-[var(--w3-display)]",
+  ultraweb: "text-world-uw-chrome",
+  hardmode: "text-world-hm-chrome",
+  gtheme: "text-world-gt-chrome",
   portfolio: "text-foreground",
 };
 

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "ultraweb — a design studio you can install",
   description:
-    "Case study: an installable design studio for Claude Code — scoping interview, three mockups, a 12-phase pipeline, screenshot-verified gates. This site is its output.",
+    "Case study: an installable design studio for Claude Code — scoping interview, three mockups, a 12-phase pipeline, screenshot-verified quality gates.",
   alternates: { canonical: "/work/ultraweb" },
 };
 
@@ -75,7 +75,7 @@ export default function UltrawebCaseStudy() {
               >
                 <span
                   aria-hidden="true"
-                  className="font-mono text-3xl font-medium text-world-uw/50"
+                  className="font-mono text-3xl font-medium text-world-uw-chrome/70"
                 >
                   {item.n}
                 </span>
@@ -92,7 +92,7 @@ export default function UltrawebCaseStudy() {
       </section>
 
       {/* how-it-works — alternating splits with REAL ledger excerpts */}
-      <section>
+      <section className="overflow-x-clip">
         <div className="mx-auto max-w-content px-4 py-20 sm:px-6 md:py-28">
           <h2 className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
             How it works — shown on this very site
@@ -188,10 +188,10 @@ ultraweb-site already owns it; this site may not echo it.`}
       <section className="border-t border-border bg-card">
         <div className="mx-auto flex max-w-content flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6">
           <div className="flex flex-wrap gap-x-7 gap-y-3 font-mono text-sm">
-            <a className="nav-link uppercase tracking-[0.08em] text-world-uw" href="https://github.com/blyatiful1/ultraweb" target="_blank" rel="noreferrer">
+            <a className="nav-link uppercase tracking-[0.08em] text-world-uw-chrome" href="https://github.com/blyatiful1/ultraweb" target="_blank" rel="noreferrer">
               the repo ↗
             </a>
-            <a className="nav-link uppercase tracking-[0.08em] text-world-uw" href="https://ultraweb-site.vercel.app" target="_blank" rel="noreferrer">
+            <a className="nav-link uppercase tracking-[0.08em] text-world-uw-chrome" href="https://ultraweb-site.vercel.app" target="_blank" rel="noreferrer">
               ultraweb-site ↗
             </a>
             <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/work/hardmode">
