@@ -43,11 +43,9 @@ export default async function Image() {
           }}
         >
           <div style={{ display: "flex" }}>One operator.</div>
-          <div style={{ display: "flex" }}>
-            <span style={{ color: d.worldUw }}>Four&nbsp;</span>
-            <span style={{ color: "#e8c545" }}>wor</span>
-            <span style={{ color: "#5f8ee8" }}>lds</span>
-            <span>.</span>
+          <div style={{ display: "flex", alignItems: "baseline" }}>
+            <span>Four worlds</span>
+            <div style={{ display: "flex", width: 15, height: 15, marginLeft: 8, background: d.live }} />
           </div>
         </div>
         <div

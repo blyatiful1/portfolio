@@ -81,9 +81,10 @@
   --input: oklch(0.62 0.02 265);
   --live: oklch(0.50 0.14 155);
   --world-me: oklch(0.30 0.03 270);   --world-me-fg: oklch(0.97 0.008 260);
-  /* chrome-facing world accents, re-decided for the light ground */
+  /* chrome-facing world accents, re-decided for the light ground
+     (hm: richer bronze so the world keeps identity — judge r1 d11) */
   --world-uw-chrome: oklch(0.50 0.13 45);
-  --world-hm-chrome: oklch(0.45 0.10 90);
+  --world-hm-chrome: oklch(0.48 0.13 87);
   --world-gt-chrome: oklch(0.45 0.14 255);
   --shadow-md-v: 0 1px 2px oklch(0.3 0.02 265 / 0.05), 0 2px 6px oklch(0.3 0.02 265 / 0.06);
   --shadow-xl-v: 0 4px 8px oklch(0.3 0.02 265 / 0.06), 0 16px 36px oklch(0.3 0.02 265 / 0.10);
@@ -245,6 +246,23 @@ html[data-active-world="me"] { --tuned-accent: var(--world-me); --tuned-accent-f
     .anim-wire-in { animation: var(--animate-wire-in); }
   }
 
+  /* SUBTRACTIVE section reveal: hidden ONLY when JS has confirmed itself
+     (html[data-js], inline pre-paint script) and motion is allowed. */
+  .reveal {
+    transition:
+      opacity var(--dur-section) var(--ease-out) var(--reveal-delay, 0ms),
+      transform var(--dur-section) var(--ease-out) var(--reveal-delay, 0ms);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html[data-js] .reveal[data-pending] {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { transition: none; }
+  }
+
   /* display-scale craft (SYSTEM §type) */
   .display-features { font-feature-settings: "kern" 1, "liga" 1, "calt" 1; }
 
@@ -264,16 +282,44 @@ html[data-active-world="me"] { --tuned-accent: var(--world-me); --tuned-accent-f
     mix-blend-mode: soft-light;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
-  /* hardmode world edge — parametric hazard stripe (SYSTEM §shape: period 44px, band 22px, −45°) */
+  /* hardmode world edge — parametric hazard stripe (SYSTEM §shape: period 44px,
+     band 22px, −45°). 28px tall so the 44px period actually reads (judge r1 d5);
+     --hazard-offset clears the glass header on page-top heroes. */
   .hazard-edge::before {
     content: "";
     display: block;
-    height: 10px;
+    height: 28px;
+    margin-top: var(--hazard-offset, 0px);
     background: repeating-linear-gradient(
       -45deg,
       var(--world-hm) 0 22px,
       var(--w2-ground) 22px 44px
     );
+  }
+
+  /* Framed Data dressing for stat rows (judge r1 d8) — rule & bracket motif */
+  .bracket-frame {
+    position: relative;
+  }
+  .bracket-frame::before,
+  .bracket-frame::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+  }
+  .bracket-frame::before {
+    top: 0;
+    left: 0;
+    border-top: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+  }
+  .bracket-frame::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
   }
 
   /* THE one glass surface (SYSTEM §depth) — sticky header only */

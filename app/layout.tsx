@@ -35,6 +35,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
+        {/* pre-paint JS marker: the subtractive .reveal rule keys on it, so
+            content is never hidden for no-JS visitors or crawlers */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.setAttribute("data-js","")`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

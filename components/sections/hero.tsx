@@ -13,9 +13,11 @@ export function Hero() {
         >
           One operator.
           <br />
-          <span className="text-world-uw-chrome">Four</span>{" "}
-          <span className="text-world-hm-chrome">wor</span>
-          <span className="text-world-gt-chrome">lds</span>.
+          Four worlds
+          <span
+            aria-hidden="true"
+            className="ml-[0.12em] inline-block size-[0.13em] bg-live"
+          />
         </h1>
         <p className="mt-7 max-w-[58ch] text-lg text-muted-foreground">
           Three projects, each in its own world — and{" "}

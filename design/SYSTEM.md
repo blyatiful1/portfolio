@@ -114,7 +114,7 @@ Every SVG authored animation-ready (one path per animatable element, stable IDs,
 
 Intensity: **3 (Theatrical), scope-locked** — DIRECTION.md names the one theatrical grant: the world-entry expansion (scroll-driven, pinned/scrubbed). Everything outside it behaves at level 1–2 discipline. Rationale: portfolio energy budget + the signature move is scroll choreography by definition.
 
-Easing family: **Decisive** — `--ease-out: cubic-bezier(0.22,1,0.36,1)` (entrances/hover) · `--ease-in-out: cubic-bezier(0.83,0,0.17,1)` (moves/expansion) · `--ease-in: cubic-bezier(0.64,0,0.78,0)` (exits). Durations: `--dur-micro: 200ms · --dur-small: 320ms · --dur-section: 560ms`. lib/motion.ts mirrors identical values (seconds/arrays). Raw numbers exist ONLY in globals.css + lib/motion.ts.
+Easing family: **Decisive** — `--ease-out: cubic-bezier(0.22,1,0.36,1)` (entrances/hover) · `--ease-in-out: cubic-bezier(0.83,0,0.17,1)` (moves/expansion) · `--ease-in: cubic-bezier(0.64,0,0.78,0)` (exits). Durations: `--dur-micro: 200ms · --dur-small: 320ms · --dur-section: 560ms`. All motion is CSS-driven (subtractive reveals + scroll timelines); raw numbers exist ONLY in globals.css. The `motion` library was removed as unused — reinstall per stack-lock if a future feature needs springs/gestures.
 
 Choreography plan (homepage):
 - Hero: headline is LCP — renders static, zero-delay; only the scroll-hint fades in (once).

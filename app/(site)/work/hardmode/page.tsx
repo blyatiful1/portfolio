@@ -20,7 +20,7 @@ export default function HardmodeCaseStudy() {
   return (
     <main id="main" tabIndex={-1} className="outline-none">
       {/* case-hero — world-02 dressed */}
-      <section data-world="hm" className="grain hazard-edge bg-w2-ground text-w2-fg">
+      <section data-world="hm" className="grain hazard-edge bg-w2-ground text-w2-fg" style={{ "--hazard-offset": "3.5rem" } as React.CSSProperties}>
         <div className="mx-auto max-w-content px-4 pt-36 pb-20 sm:px-6 md:pt-44 md:pb-28">
           <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-primary">
             <span aria-hidden="true">[ 02 ]</span> world 02 · case study
@@ -58,7 +58,7 @@ export default function HardmodeCaseStudy() {
           <h2 className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
             The enemies — each one repeatable
           </h2>
-          <div className="mx-auto mt-6 max-w-[46rem]">
+          <div className="mt-6 max-w-[46rem]">
             {failures.map((item) => (
               <div
                 key={item.n}
@@ -95,7 +95,7 @@ export default function HardmodeCaseStudy() {
                 recoverable version passes untouched.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md">
+            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
               <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 tools/demo.py — unedited output, 2026-09-01
               </figcaption>
@@ -122,7 +122,7 @@ kit:   ALLOWED (exit 0) — scoped deletes pass untouched`}
                 through. The loop alarm fires on the third identical failure.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md">
+            <figure className="border border-border border-l-2 border-l-world-hm-chrome bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
               <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 tools/demo.py — unedited output, 2026-09-01
               </figcaption>
@@ -148,10 +148,10 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
             {[
               ["6", "hooks, deterministic"],
               ["3", "fresh-context verifier agents"],
-              ["4/4", "demo scenarios blocked as claimed — CI, every push"],
+              ["4/4", "demo scenarios blocked — proven in CI"],
             ].map(([v, l]) => (
-              <div key={l}>
-                <p className="text-4xl font-bold tracking-tight tabular-nums">{v}</p>
+              <div key={l} className="bracket-frame p-5">
+                <p className="text-5xl font-bold tracking-tight tabular-nums">{v}</p>
                 <p className="mt-1 font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                   {l}
                 </p>

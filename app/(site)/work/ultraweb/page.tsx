@@ -67,7 +67,7 @@ export default function UltrawebCaseStudy() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-content px-4 py-16 sm:px-6 md:py-24">
           <h2 className="sr-only">Why it exists</h2>
-          <div className="mx-auto max-w-[46rem]">
+          <div className="max-w-[46rem]">
             {problems.map((item) => (
               <div
                 key={item.n}
@@ -109,8 +109,8 @@ export default function UltrawebCaseStudy() {
                 the verdict went into the ledger verbatim.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md">
-              <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
+            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
+              <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
                 design/MOCKUPS.md — this site&apos;s actual record
               </figcaption>
               <pre className="mt-3 overflow-x-auto font-mono text-xs leading-relaxed whitespace-pre-wrap text-muted-foreground">
@@ -137,8 +137,8 @@ round 3. Green light for Phase 3.`}
                 measure before anything ships.
               </p>
             </div>
-            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md">
-              <figcaption className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
+            <figure className="border border-border bg-card p-5 md:mr-[calc(50%-50vw)] md:rounded-l-md md:border-r-0 md:pr-0">
+              <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
                 design/DIRECTION.md — this site&apos;s actual record
               </figcaption>
               <pre className="mt-3 overflow-x-auto font-mono text-xs leading-relaxed whitespace-pre-wrap text-muted-foreground">
@@ -164,8 +164,8 @@ ultraweb-site already owns it; this site may not echo it.`}
               ["12", "phases, interview to ship"],
               ["7", "gates — screenshot-verified"],
             ].map(([v, l]) => (
-              <div key={l}>
-                <p className="text-4xl font-bold tracking-tight tabular-nums">{v}</p>
+              <div key={l} className="bracket-frame p-5">
+                <p className="text-5xl font-bold tracking-tight tabular-nums">{v}</p>
                 <p className="mt-1 font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                   {l}
                 </p>
