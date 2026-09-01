@@ -1,0 +1,8 @@
+/* TEAM */
+Operator: Iwan Braun — Germany
+Code: AI agents, directed (essentially every line — that is the point)
+
+/* SITE */
+Built by: ultraweb, the design studio in world 01
+Stack: Next.js 16, Tailwind 4, real commits
+Standard held by: hardmode, world 02

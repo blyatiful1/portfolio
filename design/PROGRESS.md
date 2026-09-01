@@ -7,10 +7,10 @@ scaffold ledger: init OK · hoist OK (deviation in QA.md) · design-at-root OK �
 Dev server: ONE owner (Lead) — PID 73405, port 3000. Agents get the URL, never their own server.
 
 ## Waiting on you
-CP4 first-page review — look at http://localhost:3000 (and the 375/1440 screenshots in design/screenshots/cp4/) and confirm the built homepage delivers mockup B3, or name what's wrong. ~5 min of your time.
+CP5 voice review — read the headlines + one body block per page (presented in chat) and approve or name what sounds off. ~8 min of your time.
 
 ## Next time I need you
-After CP4: silence through inner pages + backend + voice → CP5 voice review · ~45–80 min away · ~8 min
+After CP5: silence through motion + SEO + gates → CP6 acceptance · ~40–70 min away · ~15 min
 
 ## Done
 ✓ P0 Preflight ~07:10 (node/npm/git OK, Playwright browser installed mid-run)

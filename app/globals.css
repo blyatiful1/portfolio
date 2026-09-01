@@ -79,11 +79,26 @@
   --shadow-xl-v: 0 4px 8px oklch(0.3 0.02 265 / 0.06), 0 16px 36px oklch(0.3 0.02 265 / 0.10);
 }
 
-/* — the chrome tuning: an interpolating color token (the ONE registered property) — */
+/* — the chrome tuning: interpolating color tokens (the registered pair) — */
 @property --tuned-accent {
   syntax: "<color>";
   inherits: true;
   initial-value: oklch(0.91 0.01 280);
+}
+@property --tuned-accent-fg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(0.14 0.01 280);
+}
+
+/* WorldTuner (client leaf) stamps the active world on <html>; colors interpolate
+   because the pair is @property-typed. Reduce: instant switch (no transition). */
+html[data-active-world="uw"] { --tuned-accent: var(--world-uw); --tuned-accent-fg: var(--world-uw-fg); }
+html[data-active-world="hm"] { --tuned-accent: var(--world-hm); --tuned-accent-fg: var(--world-hm-fg); }
+html[data-active-world="gt"] { --tuned-accent: var(--world-gt); --tuned-accent-fg: var(--world-gt-fg); }
+html[data-active-world="me"] { --tuned-accent: var(--world-me); --tuned-accent-fg: var(--world-me-fg); }
+@media (prefers-reduced-motion: no-preference) {
+  html { transition: --tuned-accent var(--dur-micro) var(--ease-out), --tuned-accent-fg var(--dur-micro) var(--ease-out); }
 }
 
 /* — worlds: accent re-map ONLY (never surfaces; theme-worlds law).
@@ -201,7 +216,8 @@
     -webkit-font-smoothing: antialiased;
     @apply bg-background text-foreground;
   }
-  ::selection { background: var(--primary); color: var(--primary-foreground); }
+  ::selection { background: var(--tuned-accent); color: var(--tuned-accent-fg); }
+  html { scrollbar-color: color-mix(in oklab, var(--tuned-accent) 40%, transparent) transparent; }
   h1, h2, h3 { text-wrap: balance; }
   p { text-wrap: pretty; }
   :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
@@ -251,6 +267,29 @@
   .glass-header {
     background: color-mix(in oklab, var(--background) 85%, transparent);
     backdrop-filter: blur(8px);
+  }
+
+  /* THE signature: world-entry expansion — scroll-driven, compositor-only.
+     Default state is fully expanded; the animation is pure enhancement. */
+  .world-surface { overflow: hidden; }
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .world-surface {
+        animation: world-enter linear both;
+        animation-timeline: view(block);
+        animation-range: entry 0% cover 32%;
+      }
+      @keyframes world-enter {
+        from {
+          clip-path: inset(9% 6% round 12px);
+          transform: scale(0.985);
+        }
+        to {
+          clip-path: inset(0% 0% round 0px);
+          transform: scale(1);
+        }
+      }
+    }
   }
 
   /* nav link underline draw — the ONE link hover move site-wide */

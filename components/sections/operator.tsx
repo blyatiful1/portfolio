@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { TimeAgo } from "@/components/data/time-ago";
 import { ContactForm } from "@/components/sections/contact-form";
+import { Reveal } from "@/components/motion/reveal";
 import { getAuthorship } from "@/lib/data/github";
 
 export async function Operator() {
@@ -12,7 +13,7 @@ export async function Operator() {
           The operator
         </p>
         <div className="mt-6 grid gap-x-16 gap-y-12 md:grid-cols-[7fr_5fr]">
-          <div>
+          <Reveal>
             <h2 className="display-features max-w-[18ch] text-4xl font-bold tracking-tight">
               The code is theirs.{" "}
               <em className="font-[family-name:var(--font-display-uw)] font-medium text-muted-foreground">
@@ -57,11 +58,14 @@ export async function Operator() {
                 </Button>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* the stat card — Framed Data: the number is real DOM text, recomputed live.
               Mobile: card leads (SITEMAP mobile order). */}
-          <div className="h-fit border border-border bg-card p-7 max-md:order-first md:mt-12">
+          <Reveal
+            delay={0.06}
+            className="h-fit border border-border bg-card p-7 max-md:order-first md:mt-12"
+          >
             <p
               className="text-4xl font-bold tracking-tight tabular-nums"
               aria-label={`${auth.ai} of ${auth.total} commits AI-authored`}
@@ -87,7 +91,7 @@ export async function Operator() {
                 </code>
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
