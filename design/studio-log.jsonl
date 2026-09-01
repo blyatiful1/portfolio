@@ -105,3 +105,25 @@
 {"ts":"2026-09-01T08:27:25Z","event":"SubagentStop","agent":"","summary":"Design-judge round 4 final"}
 {"ts":"2026-09-01T08:28:15Z","event":"SubagentStop","agent":"","summary":"Design-judge round 4 final"}
 {"ts":"2026-09-01T08:30:17Z","event":"SubagentStop","agent":"","summary":""}
+{"ts":"2026-09-01T08:51:12Z","event":"PostToolUse","agent":"ultraweb:pixel-qa","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:51:44Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:52:15Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:52:46Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:53:17Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:53:48Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:54:20Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:54:51Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:55:22Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:55:47Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:55:53Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:56:24Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:56:56Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:57:27Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:57:58Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:58:30Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:59:02Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:59:33Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T08:59:36Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T09:01:30Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T09:01:43Z","event":"SubagentStop","agent":"","summary":"Round-5 gate-visual shoot"}
+{"ts":"2026-09-01T09:02:00Z","event":"PostToolUse","agent":"ultraweb:design-judge","summary":"Design-judge round 5 final"}

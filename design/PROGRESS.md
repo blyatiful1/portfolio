@@ -2,7 +2,8 @@
 Engagement: studio · Scope: flagship · Started ~07:10 · Updated 07:50
 
 ## Now
-**CP6 acceptance OPEN** (2026-09-01 10:35). Phase 11 gates closed: six PASS + gate-visual CLOSED at round 4 (declared final; cap 5) with verdict FIX-THEN-SHIP — scores/defects/residuals in QA.md, full verbatim report at qa/visual/round-4/VERDICT.md. Pending user decisions: residuals (commission round 5 — allowed within cap — or accept), Impressum postal address (ship blocker), repo publish, webhooks, prod env (all listed in CONTEXT-HANDOFF.md §Ship-blocking). Then Phase 12 ship.
+**gate-visual ROUND 5 (user-commissioned at CP6, 2026-09-01 ~10:40) — in flight.** All ten r4 defects fixed (commit 1c8e482), repo PUBLISHED at github.com/blyatiful1/portfolio (user approved; build-ledger links repointed, w0 rail now live, authorship stat self-updated to 247/249). Prod rebuilt + serving on :3001. pixel-qa round-5 shoot running in background (37 captures incl. r4's evidence gaps: 768 home/case, 375 legal, light sectionals); then design-judge round 5 = LAST round (cap 5). If resuming: check for shoot/judge agent results before re-running anything.
+Still pending from user: Impressum postal address (ship blocker), prod env + webhooks (CONTEXT-HANDOFF.md §Ship-blocking). CP6 acceptance completes after the round-5 verdict.
 Server: PRODUCTION on :3001 — dev STOPPED (shared-.next corruption lesson in QA.md).
 
 ## Waiting on you
