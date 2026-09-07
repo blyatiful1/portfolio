@@ -185,8 +185,11 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
               As wired in hooks/hooks.json at v3.1.0 — the event each binds and
               what its exit code does.
             </p>
+            <p className="mt-6 font-mono text-2xs tracking-[0.1em] uppercase text-muted-foreground sm:hidden" aria-hidden="true">
+              scroll sideways →
+            </p>
             <div
-              className="mt-6 overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="mt-2 overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-ring sm:mt-6"
               role="region"
               aria-label="The twelve hooks"
               tabIndex={0}
@@ -219,8 +222,11 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
               Fresh-context agents, read-only by the readonly-agent hook — not by
               promise. What triggers each, what it is handed, what it must return.
             </p>
+            <p className="mt-6 font-mono text-2xs tracking-[0.1em] uppercase text-muted-foreground sm:hidden" aria-hidden="true">
+              scroll sideways →
+            </p>
             <div
-              className="mt-6 overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="mt-2 overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-ring sm:mt-6"
               role="region"
               aria-label="The four agents"
               tabIndex={0}

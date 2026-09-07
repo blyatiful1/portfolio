@@ -96,7 +96,7 @@ export async function Operator() {
               self-contained at every width (r4 d2), number modest at lg so the
               hero keeps the display-scale moment. md: sits opposite the form. */}
           {auth.total > 0 ? (
-            <div className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:self-end">
+            <div className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:mt-2 md:self-start">
               {/* the sentence lives in the flow, not in an aria-label on a <p>
                   (prohibited there — panel I41) */}
               <p className="text-4xl font-bold tracking-tight tabular-nums lg:text-2xl">
@@ -142,14 +142,22 @@ export async function Operator() {
                 </p>
                 <p className="mt-2">
                   don’t take the site’s word — per repo, on its default branch:{" "}
-                  <code className="block max-w-full break-normal whitespace-pre-wrap text-live">
-                    {VERIFY_COMMAND}
+                  {/* each token nowrap: lines break only at the spaces between
+                      flags, never inside `--grep=` or `co-authored-by:` (judge r7 d1);
+                      copy-paste still yields plain spaces */}
+                  <code className="block max-w-full whitespace-pre-wrap text-live">
+                    {VERIFY_COMMAND.split(" ").map((token, i, all) => (
+                      <span key={i}>
+                        <span className="whitespace-nowrap">{token}</span>
+                        {i < all.length - 1 ? " " : ""}
+                      </span>
+                    ))}
                   </code>
                 </p>
               </div>
             </div>
           ) : (
-            <div className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:self-end">
+            <div className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:mt-2 md:self-start">
               <p className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 ○ authorship stat unavailable
               </p>
