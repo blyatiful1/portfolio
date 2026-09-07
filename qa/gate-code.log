@@ -1,0 +1,90 @@
+=== gate-code raw log — 2026-09-07T10:32:18Z ===
+
+--- check 7: unused dependency audit (raw loop) ---
+UNUSED: @electric-sql/pglite
+UNUSED: @neondatabase/serverless
+UNUSED: @react-email/components
+UNUSED: shadcn
+UNUSED: tw-animate-css
+
+--- check 7: false-positive resolution (root configs / other dirs) ---
+pglite -> next.config.ts:36 (serverExternalPackages) + db/index.ts -- USED
+36:  serverExternalPackages: ["@electric-sql/pglite"],
+neondatabase -> db/index.ts -- USED
+db/index.ts:13:    const { neon } = await import("@neondatabase/serverless");
+react-email -> emails/contact-notification.tsx -- USED
+emails/contact-notification.tsx
+tw-animate-css -> app/globals.css:2 (@import, not JS import) -- USED
+2:@import "tw-animate-css";
+shadcn -> zero import hits in app/components/lib; zero hits in next.config.ts/proxy.ts/drizzle.config.ts/globals.css; components.json present (CLI config only) -- GENUINELY UNUSED as a runtime import
+28:    "shadcn": "^4.19.1",
+
+--- check 9: wallace-cli census on .next/static/chunks/3uwi9b0ztu57i.css ---
+───────────────────────────────────────────────────────────
+Lines of Code │ Filesize │ Rules │ Selectors │ Declarations
+1,437         │ 59.8KB   │ 442   │ 486       │ 889
+───────────────────────────────────────────────────────────
+
+Comments                      0B    (0 items)
+Embedded Content            670B    (3 items)
+
+Rulesets             Most common      Average      Maximum
+Selectors / rule               1         1.10            8
+Declarations / rule            1         1.70           68
+Empty rules                                              0
+
+Selectors            Most common      Average      Maximum
+Complexity                     1         1.20           11
+Specificity                0/1/0    0/0.8/0.2        0/3/1
+
+                           Total       Unique        Ratio
+All Selectors                486          428        88.1%
+ID Selectors                   0            0         0.0%
+Accessibility                  0            0         0.0%
+Vendor prefixed               17           16        94.1%
+
+AtRules                    Total       Unique     Unique %
+@media                        11            8        72.7%
+@supports                     21            5        23.8%
+@font-face                    22           22       100.0%
+@import                        0            0         0.0%
+@keyframes                     1            1       100.0%
+@container                     0            0         0.0%
+@property                      0            0         0.0%
+
+Declarations               Total       Unique     Unique %
+All Declarations             889          708        79.6%
+!important                     1
+
+Properties                 Total       Unique     Unique %
+All Properties               889          261        29.4%
+Custom Properties            165          127        77.0%
+Vendor Prefixed               18            9        50.0%
+Browserhacks                   0            0         0.0%
+
+Values                     Total       Unique     Unique %
+Colors                        46           11        23.9%
+Gradients                      1            1       100.0%
+Font-sizes                    17           17       100.0%
+Font-families                 31           15        48.4%
+Line-heights                  19           18        94.7%
+Text-shadows                   0            0         0.0%
+Box-shadows                    2            1        50.0%
+Z-indexes                      2            2       100.0%
+Vendor Prefixed                2            2       100.0%
+Browserhacks                   0            0         0.0%
+Units                        234           11         4.7%
+Resets                        15            3        20.0%
+
+--- check 9: !important occurrence (built CSS, single hit) ---
+auto}[hidden]:where(:not([hidden=until-found])){display:none!important}*{bo
+source trace: zero !important in app/components/lib source (grep -rn '!important' app components lib -> 0 hits); this is Tailwind Preflight's own [hidden] rule, not authored by the project
+
+--- check 9: orphaned custom property scan (:root/.light hand-declared tokens vs var() usage in app/components/lib + globals.css) ---
+app/globals.css:59-60 context:
+  --dur-section: 560ms;
+  /* shadcn radius base — resolves their calc chain to our Sharp scale */
+  --radius: 0.25rem;
+}
+shadcn/dist/tailwind.css grep for radius (checking the comment's claim that shadcn's calc chain consumes --radius):
+(no hits — the comment's claim does not hold)

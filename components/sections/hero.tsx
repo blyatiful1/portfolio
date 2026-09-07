@@ -4,7 +4,7 @@ import { REPOS, type Authorship } from "@/lib/data/github";
 export function Hero({ auth }: { auth?: Authorship }) {
   return (
     <section data-world-rest className="plus-grid">
-      <div className="mx-auto grid max-w-content items-center gap-x-16 gap-y-12 px-4 pt-40 pb-16 sm:px-6 md:pt-48 md:pb-24 lg:grid-cols-[7fr_5fr]">
+      <div className="mx-auto grid max-w-content items-center gap-x-10 gap-y-12 px-4 pt-40 pb-16 sm:px-6 md:grid-cols-[7fr_5fr] md:pt-48 md:pb-24 lg:gap-x-16">
         <div>
         <p className="font-mono text-xs tracking-[0.18em] uppercase text-muted-foreground">
           Agent infrastructure · Germany
@@ -38,10 +38,11 @@ export function Hero({ auth }: { auth?: Authorship }) {
         </div>
 
         {/* Framed-Data counterweight (judge r2 d7): the claim, as a live number.
+            Re-composed at md rather than deleted below lg (judge r6 d1).
             A partial recompute says so and drops the live dot (panel I23). */}
         {auth && auth.total > 0 && (
-          <div className="bracket-frame hidden h-fit p-7 lg:block">
-            <p className="text-5xl font-bold tracking-tight tabular-nums">
+          <div className="bracket-frame hidden h-fit min-w-0 p-6 md:block lg:p-7">
+            <p className="text-4xl font-bold tracking-tight tabular-nums lg:text-5xl">
               <span aria-hidden="true">
                 {auth.ai.toLocaleString("en")}
                 <span className="text-2xl text-muted-foreground">

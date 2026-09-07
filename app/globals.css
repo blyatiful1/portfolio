@@ -56,8 +56,6 @@
   --dur-micro: 200ms;
   --dur-small: 320ms;
   --dur-section: 560ms;
-  /* shadcn radius base — resolves their calc chain to our Sharp scale */
-  --radius: 0.25rem;
 }
 
 .light {

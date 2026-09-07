@@ -35,11 +35,11 @@ export default function Datenschutz() {
       {/* the chapters' ghost-numeral grammar, in legal dress (r4: legal dist) */}
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute top-24 right-[-0.06em] text-[clamp(10rem,24vw,20rem)] leading-none font-bold text-foreground opacity-[0.05] select-none"
+        className="pointer-events-none absolute top-24 right-[-0.06em] text-[clamp(10rem,24vw,20rem)] leading-none font-bold text-foreground opacity-[0.05] select-none md:max-lg:top-40 md:max-lg:text-[9rem]"
       >
         §
       </span>
-      <div className="relative mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 md:grid-cols-[3fr_9fr]">
+      <div className="relative mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 lg:grid-cols-[3fr_9fr]">
                 {/* 36rem ≈ 70 real chars at body size — max-w-prose (55ch) measured ~81 (r4 d6) */}
                 <div className="max-w-[36rem]">
           {/* r5 d1: "Datenschutzerklärung" at the text-4xl 34px floor is wider
@@ -143,7 +143,7 @@ export default function Datenschutz() {
           </LegalBlock>
         </div>
 
-        <aside className="mt-12 h-fit md:order-first md:sticky md:top-24 md:mt-0">
+        <aside className="mt-12 h-fit lg:order-first lg:sticky lg:top-24 lg:mt-0">
           <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-primary">
             <span aria-hidden="true">[ § ]</span> world 00 · legal
           </p>

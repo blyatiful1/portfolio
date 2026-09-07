@@ -63,10 +63,12 @@ export default function UltrawebCaseStudy() {
           </p>
           {/* the timeline: dates and what was cut, so the study shows work
               to a clock, not only a result (panel I16) */}
-          <p className="mt-3 font-mono text-xs tracking-[0.06em] uppercase text-w1-muted">
-            First commit 16 Jul 2026 · v1.9.0 on 2 Sep 2026 · 7 weeks — on this
-            site’s build it binned two full mockup rounds and cut the motion
-            library it had scaffolded.
+          {/* a second voice, not a second spec row: sentence case, body face,
+              ≤70-character measure (judge r6 d4) */}
+          <p className="mt-4 max-w-[58ch] text-sm text-w1-muted">
+            First commit 16 July 2026; v1.9.0 on 2 September — seven weeks. On
+            this site’s build it binned two full mockup rounds and cut the
+            motion library it had scaffolded.
           </p>
         </div>
       </section>
@@ -225,13 +227,13 @@ ultraweb-site already owns it; this site may not echo it.`}
       <section className="border-t border-border bg-card">
         <div className="mx-auto flex max-w-content flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6">
           <div className="flex flex-wrap gap-x-7 gap-y-3 font-mono text-sm">
-            <a className="nav-link uppercase tracking-[0.08em] text-world-uw-chrome" href="https://github.com/blyatiful1/ultraweb" target="_blank" rel="noreferrer">
+            <a className="nav-link inline-block py-2 uppercase tracking-[0.08em] text-world-uw-chrome" href="https://github.com/blyatiful1/ultraweb" target="_blank" rel="noreferrer">
               ultraweb on GitHub <span aria-hidden="true">↗</span>
             </a>
-            <a className="nav-link uppercase tracking-[0.08em] text-world-uw-chrome" href="https://ultraweb-site.vercel.app" target="_blank" rel="noreferrer">
+            <a className="nav-link inline-block py-2 uppercase tracking-[0.08em] text-world-uw-chrome" href="https://ultraweb-site.vercel.app" target="_blank" rel="noreferrer">
               ultraweb-site, the live proof <span aria-hidden="true">↗</span>
             </a>
-            <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/work/hardmode">
+            <Link className="nav-link inline-block py-2 uppercase tracking-[0.08em] text-muted-foreground" href="/work/hardmode">
               next world: hardmode <span aria-hidden="true">→</span>
             </Link>
           </div>

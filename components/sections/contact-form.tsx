@@ -5,7 +5,7 @@ import { useFormStatus } from "react-dom";
 import { LoaderCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { submitContact, type ContactState } from "@/app/actions/contact";
-import { CONTACT_LIMITS } from "@/lib/schemas/contact";
+import { CONTACT_LIMITS } from "@/lib/schemas/contact-limits";
 
 // Optional booking link (panel I33) — set NEXT_PUBLIC_BOOKING_URL to a
 // Cal.com / Calendly page; absent, the row keeps only the mailto.
@@ -14,12 +14,14 @@ const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL;
 function Field({
   label,
   name,
+  required,
   error,
   defaultValue,
   children,
 }: {
   label: string;
   name: string;
+  required?: boolean;
   error?: string;
   defaultValue?: string;
   children: (props: {
@@ -37,6 +39,8 @@ function Field({
     <div>
       <label htmlFor={id} className="block font-mono text-2xs font-medium tracking-[0.14em] uppercase text-muted-foreground">
         {label}
+        {/* the visible half of "required" — the attribute is the programmatic half */}
+        {required && <span className="font-normal text-muted-foreground/75"> (required)</span>}
       </label>
       <div className="mt-1.5">
         {children({
@@ -139,17 +143,17 @@ export function ContactForm() {
           {state.formError}
         </p>
       )}
-      <Field label="Name" name="name" error={state.fieldErrors?.name} defaultValue={state.values?.name}>
+      <Field label="Name" name="name" required error={state.fieldErrors?.name} defaultValue={state.values?.name}>
         {(p) => (
           <input type="text" autoComplete="name" required maxLength={CONTACT_LIMITS.name} {...p} />
         )}
       </Field>
-      <Field label="Email" name="email" error={state.fieldErrors?.email} defaultValue={state.values?.email}>
+      <Field label="Email" name="email" required error={state.fieldErrors?.email} defaultValue={state.values?.email}>
         {(p) => (
           <input type="email" autoComplete="email" required maxLength={CONTACT_LIMITS.email} {...p} />
         )}
       </Field>
-      <Field label="What are you building?" name="message" error={state.fieldErrors?.message} defaultValue={state.values?.message}>
+      <Field label="What are you building?" name="message" required error={state.fieldErrors?.message} defaultValue={state.values?.message}>
         {(p) => (
           <textarea
             rows={4}

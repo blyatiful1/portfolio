@@ -32,20 +32,22 @@ export type ChapterContent = {
 function LiveLine({
   facts,
   fallback,
+  muted,
 }: {
   facts: RepoFacts | undefined;
   fallback: string;
+  muted: string;
 }) {
   if (facts && facts.available && !facts.reachable) {
     return (
-      <p className="font-mono text-2xs tracking-[0.06em] uppercase opacity-70">
+      <p className={`font-mono text-2xs tracking-[0.06em] uppercase ${muted}`}>
         <span aria-hidden="true">○ </span>
         github unreachable — retrying
       </p>
     );
   }
   return (
-    <p className="font-mono text-2xs tracking-[0.06em] uppercase opacity-70">
+    <p className={`font-mono text-2xs tracking-[0.06em] uppercase ${muted}`}>
       <span aria-hidden="true" className="text-live">● </span>
       {facts?.pushedAt ? (
         <TimeAgo iso={facts.pushedAt} prefix="pushed " />
@@ -87,7 +89,7 @@ export function WorldChapter({
           <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-primary">
             <span aria-hidden="true">[ {c.number} ]</span> {c.eyebrow}
           </p>
-          <LiveLine facts={repoFacts} fallback="streaming" />
+          <LiveLine facts={repoFacts} fallback="streaming" muted={c.muted} />
         </div>
 
         <div className="mt-8 grid gap-x-16 gap-y-10 md:grid-cols-[7fr_5fr]">

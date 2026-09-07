@@ -1,0 +1,70 @@
+gate-accessibility — re-gate run 2026-09-07
+Playwright MCP: NOT REGISTERED this session. No browser-dependent check run directly by the runner.
+Lead-provided evidence read from /home/user/portfolio/qa/gate-lead-round6.json (axe wcag2a/2aa/22aa, contrast-matrix, landmarks-headings, forms-a11y, alt-and-labels, targets@375, links-collect — both themes, 375+1440 where applicable, all 6 routes) plus a Lead behavior script (wire pause aria-live/localStorage, contact-form focus management, 404 title/focus, CSP console silence).
+
+=== prodUrl check ===
+curl -sI http://localhost:3100 -> HTTP/1.1 200 OK, CSP/X-Frame-Options/X-Content-Type-Options/Referrer-Policy present.
+
+=== axe (item 10) — Lead JSON, 24 views (6 routes x 2 themes x 2 widths) ===
+Every view: 1 violation, id=color-contrast, impact=serious, node=".translate-y-\[14\%\]" (footer.tsx:97, aria-hidden IWAN·BRAUN watermark) — the one documented WCAG 1.4.3 decorative/logotype exception. source: "path" (axe-core loaded from node_modules) on every view. Zero other violations anywhere.
+
+=== contrast-matrix (item 1) — Lead JSON, 24 views ===
+2476 pairs checked total across views; exactly 1 failing pair per view, always the same node: selector "html > body > footer > div:nth-of-type(2) > p", text "IWAN·BRAUN", fg #292a30, bg #0e0f15, ratio 1.34, required 3 (large bold text) — the watermark exception, ratio/selector identical dark+light. 0 bgAssumed:true anywhere. 0 other failing pairs (I02 fully resolved).
+grep -n "opacity-60" components/sections/operator.tsx components/sections/world-chapter.tsx app/globals.css -> no hits (only comments referencing the old defect remain).
+SYSTEM.md §Amendments 2026-09-07 records the label-pair fix superseding the prior "0 failing pairs" QA row.
+
+=== landmarks-headings (item 3) — Lead JSON, 12 views (1440 only) ===
+issues: [] on all 6 routes x 2 themes.
+curl-derived <main>/<h1> counts (raw SSR HTML, NOT hydrated DOM): / =1/1, /impressum=1/1, /datenschutz=1/1, /this-world-does-not-exist=1/1. /work/ultraweb and /work/hardmode show 2x "<main" in raw curl output — traced to Next.js Suspense streaming: a `<main aria-busy="true">` loading shell plus the real `<main id="main">` inside a hidden `<div id="S:0">` template swapped in during hydration (SITEMAP.md: "/work/* needs loading.tsx"). Not a real duplicate landmark in the resolved DOM — Lead's Playwright-measured landmarks-headings (post-hydration) confirms issues:[] on both routes.
+
+=== alt-and-labels (item 4) — Lead JSON, 12 views ===
+issues: [] on all 6 routes x 2 themes.
+
+=== forms-a11y (item 7) — Lead JSON, home only, both themes ===
+labelled:true + autocomplete present on all 4 fields (name/email/message/honeypot). issues: 3x "required-unmarked" (name, email, message) — required attribute present but nothing VISIBLE marks the field as required. describedByResolved all {exists:false} (no active error state captured in this static pass). NOT one of the re-gate's named items (I02/I18/I19/I20/I39/I40/I41/I07) — flagged here for the Lead's attention, unverified by the runner (no browser).
+curl-derived served HTML: <label for="contact-name">, <label for="contact-email">, <label for="contact-message">, <label for="contact-company-url"> all present with matching ids; inputs carry autoComplete, maxLength, required.
+I07: grep "noValidate" components/sections/contact-form.tsx:129 -> present on <form>.
+I20: grep "statusRef|alertRef|focus()" contact-form.tsx -> statusRef/alertRef refs + .focus() calls into role="status" tabIndex={-1} nodes on both success and error paths. Lead behavior script independently verified focus lands there.
+
+=== text-spacing / overflow (item 8) — Lead JSON, 36 views (375/768/1440 x both themes x 6 routes) ===
+overflowX: false on every view. (Lead JSON only carries the boolean; the per-element `clipped[]` array was not included in the summarized JSON — visual clip check at 1.4.12 remains unverified beyond overflowX.)
+grep "prefers-reduced-motion" app/globals.css -> 6 occurrences: reduce-branch drops .reveal transition and world-enter scroll animation; no-preference branch gates all entrance motion. Matches SYSTEM.md §motion two-layer policy. No persistent WebGL/canvas scene in DIRECTION.md scope (explicitly excluded: "no set-design, no showpiece") so the scene-specific reduced-motion sweep (item 5 second half) does not apply to this build.
+
+=== targets (item 6) — Lead JSON @375 only (spec calls for 1440; gap) ===
+Only real (non-skip-link) undersized targets: /work/ultraweb and /work/hardmode closer "next" sections, 3 links each (repo/site/next-world), h=21px < 24px threshold, both themes, both routes. "Skip to content" 1x1 is the off-screen pre-focus skip link, expected.
+Code-derivable confirmation (no browser needed): app/(site)/work/ultraweb/page.tsx:228-236 and .../hardmode/page.tsx:293-299 — anchors use only `.nav-link` (position:relative + underline decoration, zero padding, globals.css:380-399) + `font-mono text-sm` (Tailwind text-sm line-height 1.25rem=20px) with no py-* on the <a> itself — height is pure line-height, under 24px on every viewport (not viewport-dependent, so also fails at 1440 despite no Lead data there). WCAG 2.5.8: standalone nav-style links in a flex-wrap row, not inline prose — the "Inline" SC exception does not plausibly apply.
+
+=== links-collect (item 4/2 support, I39) — Lead JSON sample home-dark-1440 ===
+CTA text: "Enter world 01 — ultraweb case study →" etc; case-study closer links: "ultraweb on GitHub ↗", "ultraweb-site, the live proof ↗", "next world: hardmode →" — all destination-bearing.
+grep confirms arrow glyphs wrapped `aria-hidden="true"`, destination named either inline or via a `.sr-only` span (world-chapter.tsx:107-109; work/ultraweb/page.tsx:228-236) in every case checked.
+
+=== I40 sr-only chip/badge ===
+components/wire/live-chip.tsx: visible "live"/"wire" token is aria-hidden; sr-only span carries "Wire status: live — receiving events from GitHub in real time" / "Wire status: idle"; title= kept as hover extra only.
+components/wire/wire-live.tsx:66-69: visible "AI"/"HUM" aria-hidden; sr-only span "AI-authored commit"/"human-authored commit" sibling added; title kept as hover extra.
+
+=== I41 aria-label on <p> ===
+grep -rn "<p...aria-label" (multiline) across components/ and app/ -> 0 hits. hero.tsx and operator.tsx both now wrap the visible digits in aria-hidden spans with a sibling .sr-only sentence inside the same <p> (no aria-label attribute on any <p>).
+
+=== I19 404 title/focus ===
+curl http://localhost:3100/this-world-does-not-exist -> <title>No such world · Iwan Braun</title>, HTTP 404.
+app/not-found.tsx: metadata.title = "No such world"; <main id="main" tabIndex={-1}> matches the skip-link's #main target and FocusOnNavigate's convention.
+
+=== I18 wire pause ===
+components/wire/wire-pause.tsx: <button aria-pressed={paused}> with .sr-only " the live feed" suffix; components/wire/status.ts: localStorage PAUSE_KEY persistence (get/set + hydrateWirePaused). components/wire/wire-live.tsx:85-92,130: paused -> no EventSource opened at all + aria-live="off"; unpaused -> es opens, aria-live="polite"; cleanup always es.close().
+
+=== I02 lang / legal <main> ===
+app/(legal)/impressum/page.tsx:34 and datenschutz/page.tsx:34: <main lang="de">. app/layout.tsx:41: <html lang="en">. Confirmed in served HTML via curl (nested lang="de" inside lang="en" — correct per spec, no full-page lang mismatch).
+
+=== Statement scoping (item 9) evidence ===
+market: DE (Germany). BRIEF.md §Compliance facts verbatim: "Seat: Germany (assumed from user context). Individual, no employees, no online contract conclusion, nothing sold." SITEMAP.md: "No /barrierefreiheit: BFSG out of scope — no consumer contracts concluded online, individual with 0 employees (microenterprise); reasoning recorded per EAA rule, gate-accessibility re-derives."
+Routes: curl -> /impressum 200, /datenschutz 200, /barrierefreiheit 404 (not built). Footer legal group (components/layout/footer.tsx:27-28): Impressum, Datenschutz only — no barrierefreiheit link, no statement page exists, no conformance sentence to quote.
+
+=== anti-pattern sweeps ===
+grep "focus:outline-none|focus:outline-hidden" **/*.tsx -> 0 hits.
+grep 'tabindex="[1-9]|tabIndex={[1-9]' **/*.tsx -> 0 hits.
+grep "onDragStart|draggable=|useDrag|PointerSensor" app components -> 0 hits (no drag interactions to gate).
+
+=== NOT measured this dispatch (no browser) ===
+Keyboard walk (item 2) — no keyboard-walk.mjs data present anywhere in gate-lead-round6.json (key absent from top-level). Full tab-order/focus-ring/Escape/modal-trap path is UNVERIFIED beyond the Lead behavior script's narrow confirmations (wire pause, contact-form focus, 404 focus target).
+Focus-ring contrast sampling (item 1 sub-check) — screenshot-sampling only, not in JSON.
+1.4.12 per-element clipped[] list (item 8) — only the overflowX boolean was in the JSON; visual truncation inside fixed-height containers unverified.

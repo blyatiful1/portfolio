@@ -1,12 +1,10 @@
 import { z } from "zod";
 
+import { CONTACT_LIMITS } from "./contact-limits.ts";
+
 // ONE schema, both sides of the wire import it. Upper bounds keep a public
 // form from pushing arbitrary payload sizes into an email (panel I44).
-export const CONTACT_LIMITS = {
-  name: 100,
-  email: 254,
-  message: 5000,
-} as const;
+export { CONTACT_LIMITS };
 
 export const contactSchema = z.object({
   name: z

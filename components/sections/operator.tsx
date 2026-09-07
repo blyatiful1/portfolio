@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TimeAgo } from "@/components/data/time-ago";
 import { ContactForm } from "@/components/sections/contact-form";
-import { Reveal } from "@/components/motion/reveal";
 import { REPOS, getAuthorship, getOperatorFacts } from "@/lib/data/github";
 import { VERIFY_COMMAND } from "@/lib/data/authorship";
 
@@ -30,7 +29,7 @@ export async function Operator() {
           The operator
         </p>
         <div className="mt-6 grid gap-x-16 gap-y-12 md:grid-cols-[7fr_5fr]">
-          <Reveal>
+          <div>
             <h2 className="display-features max-w-[18ch] text-4xl font-bold tracking-tight">
               The code is theirs.{" "}
               <em className="font-[family-name:var(--font-display-uw)] font-medium text-muted-foreground">
@@ -91,16 +90,13 @@ export async function Operator() {
                 </Button>
               </div>
             </div>
-          </Reveal>
+          </div>
 
           {/* the stat card — Framed Data with its subject INSIDE the frame:
               self-contained at every width (r4 d2), number modest at lg so the
               hero keeps the display-scale moment. md: sits opposite the form. */}
           {auth.total > 0 ? (
-            <Reveal
-              delay={0.06}
-              className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:self-end"
-            >
+            <div className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:self-end">
               {/* the sentence lives in the flow, not in an aria-label on a <p>
                   (prohibited there — panel I41) */}
               <p className="text-4xl font-bold tracking-tight tabular-nums lg:text-2xl">
@@ -146,17 +142,14 @@ export async function Operator() {
                 </p>
                 <p className="mt-2">
                   don’t take the site’s word — per repo, on its default branch:{" "}
-                  <code className="block max-w-full break-all whitespace-pre-wrap text-live">
+                  <code className="block max-w-full break-normal whitespace-pre-wrap text-live">
                     {VERIFY_COMMAND}
                   </code>
                 </p>
               </div>
-            </Reveal>
+            </div>
           ) : (
-            <Reveal
-              delay={0.06}
-              className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:self-end"
-            >
+            <div className="bracket-frame h-fit min-w-0 p-7 max-md:order-first md:self-end">
               <p className="font-mono text-2xs tracking-[0.14em] uppercase text-muted-foreground">
                 ○ authorship stat unavailable
               </p>
@@ -172,7 +165,7 @@ export async function Operator() {
                   github.com/blyatiful1 <span aria-hidden="true">↗</span>
                 </a>
               </p>
-            </Reveal>
+            </div>
           )}
         </div>
       </div>

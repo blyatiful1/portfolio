@@ -1,4 +1,275 @@
 {
+ "coldJs": {
+  "home-dark-375": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": null,
+   "scripts": [
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3yfl9fgvivx3-.js",
+     "transferSize": 0,
+     "encodedBodySize": 3614,
+     "initiatorType": "link",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3_dxs88nd37e0.js",
+     "transferSize": 0,
+     "encodedBodySize": 7380,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2-bcvy8yo1xzt.js",
+     "transferSize": 0,
+     "encodedBodySize": 71596,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2alk5jat6fxj-.js",
+     "transferSize": 0,
+     "encodedBodySize": 43990,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/turbopack-3ouor59mk-j9e.js",
+     "transferSize": 0,
+     "encodedBodySize": 4303,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3f6p16owkfxom.js",
+     "transferSize": 0,
+     "encodedBodySize": 1741,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3waqbfmmni2mf.js",
+     "transferSize": 0,
+     "encodedBodySize": 3748,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2-3v8wnpscox_.js",
+     "transferSize": 0,
+     "encodedBodySize": 8765,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2zh9iq6qxaunq.js",
+     "transferSize": 0,
+     "encodedBodySize": 10059,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/0-l762cp6fpck.js",
+     "transferSize": 0,
+     "encodedBodySize": 89092,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/0_eior844o8si.js",
+     "transferSize": 0,
+     "encodedBodySize": 628,
+     "initiatorType": "script",
+     "duration": 0
+    }
+   ],
+   "count": 11,
+   "totalTransfer": 0,
+   "totalEncoded": 244916,
+   "waitedFor": "load",
+   "truncated": false
+  },
+  "work-ultraweb-dark-375": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": null,
+   "scripts": [
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3yfl9fgvivx3-.js",
+     "transferSize": 0,
+     "encodedBodySize": 3614,
+     "initiatorType": "link",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3_dxs88nd37e0.js",
+     "transferSize": 0,
+     "encodedBodySize": 7380,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2-bcvy8yo1xzt.js",
+     "transferSize": 0,
+     "encodedBodySize": 71596,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2alk5jat6fxj-.js",
+     "transferSize": 0,
+     "encodedBodySize": 43990,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/turbopack-3ouor59mk-j9e.js",
+     "transferSize": 0,
+     "encodedBodySize": 4303,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3f6p16owkfxom.js",
+     "transferSize": 0,
+     "encodedBodySize": 1741,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3waqbfmmni2mf.js",
+     "transferSize": 0,
+     "encodedBodySize": 3748,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2-3v8wnpscox_.js",
+     "transferSize": 0,
+     "encodedBodySize": 8765,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2zh9iq6qxaunq.js",
+     "transferSize": 0,
+     "encodedBodySize": 10059,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2rp0_txwy34_u.js",
+     "transferSize": 0,
+     "encodedBodySize": 5583,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/0_eior844o8si.js",
+     "transferSize": 0,
+     "encodedBodySize": 628,
+     "initiatorType": "script",
+     "duration": 0
+    }
+   ],
+   "count": 11,
+   "totalTransfer": 0,
+   "totalEncoded": 161407,
+   "waitedFor": "load",
+   "truncated": false
+  },
+  "work-hardmode-dark-375": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": null,
+   "scripts": [
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3yfl9fgvivx3-.js",
+     "transferSize": 0,
+     "encodedBodySize": 3614,
+     "initiatorType": "link",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3_dxs88nd37e0.js",
+     "transferSize": 0,
+     "encodedBodySize": 7380,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2-bcvy8yo1xzt.js",
+     "transferSize": 0,
+     "encodedBodySize": 71596,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2alk5jat6fxj-.js",
+     "transferSize": 0,
+     "encodedBodySize": 43990,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/turbopack-3ouor59mk-j9e.js",
+     "transferSize": 0,
+     "encodedBodySize": 4303,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3f6p16owkfxom.js",
+     "transferSize": 0,
+     "encodedBodySize": 1741,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/3waqbfmmni2mf.js",
+     "transferSize": 0,
+     "encodedBodySize": 3748,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2-3v8wnpscox_.js",
+     "transferSize": 0,
+     "encodedBodySize": 8765,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/2zh9iq6qxaunq.js",
+     "transferSize": 0,
+     "encodedBodySize": 10059,
+     "initiatorType": "script",
+     "duration": 0
+    },
+    {
+     "name": "http://localhost:3100/_next/static/chunks/0_eior844o8si.js",
+     "transferSize": 0,
+     "encodedBodySize": 628,
+     "initiatorType": "script",
+     "duration": 0
+    }
+   ],
+   "count": 10,
+   "totalTransfer": 0,
+   "totalEncoded": 155824,
+   "waitedFor": "load",
+   "truncated": false
+  }
+ },
  "console": {
   "home-dark-375": [],
   "home-dark-768": [],
@@ -365,8 +636,44 @@
  },
  "contrast": {
   "home-dark-375": {
-   "pairs": 240,
+   "pairs": 242,
    "failing": [
+    {
+     "selector": "#contact > form > div:nth-of-type(1) > label > span",
+     "text": "(required)",
+     "fg": "#72737d",
+     "bg": "#08090d",
+     "ratio": 4.25,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(2) > label > span",
+     "text": "(required)",
+     "fg": "#72737d",
+     "bg": "#08090d",
+     "ratio": 4.25,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(3) > label > span",
+     "text": "(required)",
+     "fg": "#72737d",
+     "bg": "#08090d",
+     "ratio": 4.25,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
     {
      "selector": "html > body > footer > div:nth-of-type(2) > p",
      "text": "IWAN·BRAUN",
@@ -384,8 +691,44 @@
    "themeSeen": "dark"
   },
   "home-dark-1440": {
-   "pairs": 266,
+   "pairs": 268,
    "failing": [
+    {
+     "selector": "#contact > form > div:nth-of-type(1) > label > span",
+     "text": "(required)",
+     "fg": "#72737d",
+     "bg": "#08090d",
+     "ratio": 4.25,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(2) > label > span",
+     "text": "(required)",
+     "fg": "#72737d",
+     "bg": "#08090d",
+     "ratio": 4.25,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(3) > label > span",
+     "text": "(required)",
+     "fg": "#72737d",
+     "bg": "#08090d",
+     "ratio": 4.25,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
     {
      "selector": "html > body > footer > div:nth-of-type(2) > p",
      "text": "IWAN·BRAUN",
@@ -593,8 +936,44 @@
    "themeSeen": "dark"
   },
   "home-light-375": {
-   "pairs": 240,
+   "pairs": 242,
    "failing": [
+    {
+     "selector": "#contact > form > div:nth-of-type(1) > label > span",
+     "text": "(required)",
+     "fg": "#7a7f89",
+     "bg": "#f0f4f9",
+     "ratio": 3.63,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(2) > label > span",
+     "text": "(required)",
+     "fg": "#7a7f89",
+     "bg": "#f0f4f9",
+     "ratio": 3.63,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(3) > label > span",
+     "text": "(required)",
+     "fg": "#7a7f89",
+     "bg": "#f0f4f9",
+     "ratio": 3.63,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
     {
      "selector": "html > body > footer > div:nth-of-type(2) > p",
      "text": "IWAN·BRAUN",
@@ -612,8 +991,44 @@
    "themeSeen": "light"
   },
   "home-light-1440": {
-   "pairs": 266,
+   "pairs": 268,
    "failing": [
+    {
+     "selector": "#contact > form > div:nth-of-type(1) > label > span",
+     "text": "(required)",
+     "fg": "#7a7f89",
+     "bg": "#f0f4f9",
+     "ratio": 3.63,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(2) > label > span",
+     "text": "(required)",
+     "fg": "#7a7f89",
+     "bg": "#f0f4f9",
+     "ratio": 3.63,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(3) > label > span",
+     "text": "(required)",
+     "fg": "#7a7f89",
+     "bg": "#f0f4f9",
+     "ratio": 3.63,
+     "fontSize": 11,
+     "weight": 400,
+     "required": 4.5,
+     "pass": false,
+     "bgAssumed": false
+    },
     {
      "selector": "html > body > footer > div:nth-of-type(2) > p",
      "text": "IWAN·BRAUN",
@@ -1913,7 +2328,7 @@
      "fields": [
       {
        "selector": "#contact-name",
-       "name": "Name",
+       "name": "Name (required)",
        "type": "text",
        "labelled": true,
        "required": true,
@@ -1930,7 +2345,7 @@
       },
       {
        "selector": "#contact-email",
-       "name": "Email",
+       "name": "Email (required)",
        "type": "email",
        "labelled": true,
        "required": true,
@@ -1947,7 +2362,7 @@
       },
       {
        "selector": "#contact-message",
-       "name": "What are you building?",
+       "name": "What are you building? (required)",
        "type": "textarea",
        "labelled": true,
        "required": true,
@@ -1986,27 +2401,11 @@
      }
     }
    ],
-   "issues": [
-    {
-     "kind": "required-unmarked",
-     "selector": "#contact-name",
-     "detail": "required but nothing visible marks it: \"Name\""
-    },
-    {
-     "kind": "required-unmarked",
-     "selector": "#contact-email",
-     "detail": "required but nothing visible marks it: \"Email\""
-    },
-    {
-     "kind": "required-unmarked",
-     "selector": "#contact-message",
-     "detail": "required but nothing visible marks it: \"What are you building?\""
-    }
-   ],
+   "issues": [],
    "counts": {
     "forms": 1,
     "fields": 4,
-    "issues": 3
+    "issues": 0
    },
    "truncated": false
   },
@@ -2023,7 +2422,7 @@
      "fields": [
       {
        "selector": "#contact-name",
-       "name": "Name",
+       "name": "Name (required)",
        "type": "text",
        "labelled": true,
        "required": true,
@@ -2040,7 +2439,7 @@
       },
       {
        "selector": "#contact-email",
-       "name": "Email",
+       "name": "Email (required)",
        "type": "email",
        "labelled": true,
        "required": true,
@@ -2057,7 +2456,7 @@
       },
       {
        "selector": "#contact-message",
-       "name": "What are you building?",
+       "name": "What are you building? (required)",
        "type": "textarea",
        "labelled": true,
        "required": true,
@@ -2096,27 +2495,11 @@
      }
     }
    ],
-   "issues": [
-    {
-     "kind": "required-unmarked",
-     "selector": "#contact-name",
-     "detail": "required but nothing visible marks it: \"Name\""
-    },
-    {
-     "kind": "required-unmarked",
-     "selector": "#contact-email",
-     "detail": "required but nothing visible marks it: \"Email\""
-    },
-    {
-     "kind": "required-unmarked",
-     "selector": "#contact-message",
-     "detail": "required but nothing visible marks it: \"What are you building?\""
-    }
-   ],
+   "issues": [],
    "counts": {
     "forms": 1,
     "fields": 4,
-    "issues": 3
+    "issues": 0
    },
    "truncated": false
   }
@@ -2143,6 +2526,41 @@
    "checked": 27,
    "truncated": false
   },
+  "home-dark-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 30,
+   "truncated": false
+  },
   "work-ultraweb-dark-375": {
    "url": "http://localhost:3100/work/ultraweb",
    "viewport": {
@@ -2158,31 +2576,38 @@
      "text": "Skip to content",
      "w": 1,
      "h": 1
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
-     "tag": "a",
-     "text": "ultraweb on GitHub ↗",
-     "w": 182.8,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
-     "tag": "a",
-     "text": "ultraweb-site, the live proof ↗",
-     "w": 283.2,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
-     "tag": "a",
-     "text": "next world: hardmode →",
-     "w": 201.1,
-     "h": 21
     }
    ],
-   "count": 4,
+   "count": 1,
    "checked": 17,
+   "truncated": false
+  },
+  "work-ultraweb-dark-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "← All worlds",
+     "w": 95.8,
+     "h": 16.8
+    }
+   ],
+   "count": 2,
+   "checked": 19,
    "truncated": false
   },
   "work-hardmode-dark-375": {
@@ -2200,31 +2625,38 @@
      "text": "Skip to content",
      "w": 1,
      "h": 1
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
-     "tag": "a",
-     "text": "hardmode on GitHub ↗",
-     "w": 182.8,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
-     "tag": "a",
-     "text": "← previous world: ultraweb",
-     "w": 237.6,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
-     "tag": "a",
-     "text": "all worlds →",
-     "w": 109.9,
-     "h": 21
     }
    ],
-   "count": 4,
+   "count": 1,
    "checked": 20,
+   "truncated": false
+  },
+  "work-hardmode-dark-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "← All worlds",
+     "w": 95.8,
+     "h": 16.8
+    }
+   ],
+   "count": 2,
+   "checked": 22,
    "truncated": false
   },
   "impressum-dark-375": {
@@ -2248,6 +2680,41 @@
    "checked": 19,
    "truncated": false
   },
+  "impressum-dark-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 22,
+   "truncated": false
+  },
   "datenschutz-dark-375": {
    "url": "http://localhost:3100/datenschutz",
    "viewport": {
@@ -2267,6 +2734,41 @@
    ],
    "count": 1,
    "checked": 21,
+   "truncated": false
+  },
+  "datenschutz-dark-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 24,
    "truncated": false
   },
   "notfound-dark-375": {
@@ -2290,6 +2792,41 @@
    "checked": 13,
    "truncated": false
   },
+  "notfound-dark-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 16,
+   "truncated": false
+  },
   "home-light-375": {
    "url": "http://localhost:3100/",
    "viewport": {
@@ -2311,6 +2848,41 @@
    "checked": 27,
    "truncated": false
   },
+  "home-light-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 30,
+   "truncated": false
+  },
   "work-ultraweb-light-375": {
    "url": "http://localhost:3100/work/ultraweb",
    "viewport": {
@@ -2326,31 +2898,38 @@
      "text": "Skip to content",
      "w": 1,
      "h": 1
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
-     "tag": "a",
-     "text": "ultraweb on GitHub ↗",
-     "w": 182.8,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
-     "tag": "a",
-     "text": "ultraweb-site, the live proof ↗",
-     "w": 283.2,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
-     "tag": "a",
-     "text": "next world: hardmode →",
-     "w": 201.1,
-     "h": 21
     }
    ],
-   "count": 4,
+   "count": 1,
    "checked": 17,
+   "truncated": false
+  },
+  "work-ultraweb-light-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "← All worlds",
+     "w": 95.8,
+     "h": 16.8
+    }
+   ],
+   "count": 2,
+   "checked": 19,
    "truncated": false
   },
   "work-hardmode-light-375": {
@@ -2368,31 +2947,38 @@
      "text": "Skip to content",
      "w": 1,
      "h": 1
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
-     "tag": "a",
-     "text": "hardmode on GitHub ↗",
-     "w": 182.8,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
-     "tag": "a",
-     "text": "← previous world: ultraweb",
-     "w": 237.6,
-     "h": 21
-    },
-    {
-     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
-     "tag": "a",
-     "text": "all worlds →",
-     "w": 109.9,
-     "h": 21
     }
    ],
-   "count": 4,
+   "count": 1,
    "checked": 20,
+   "truncated": false
+  },
+  "work-hardmode-light-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "← All worlds",
+     "w": 95.8,
+     "h": 16.8
+    }
+   ],
+   "count": 2,
+   "checked": 22,
    "truncated": false
   },
   "impressum-light-375": {
@@ -2416,6 +3002,41 @@
    "checked": 19,
    "truncated": false
   },
+  "impressum-light-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 22,
+   "truncated": false
+  },
   "datenschutz-light-375": {
    "url": "http://localhost:3100/datenschutz",
    "viewport": {
@@ -2437,6 +3058,41 @@
    "checked": 21,
    "truncated": false
   },
+  "datenschutz-light-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 24,
+   "truncated": false
+  },
   "notfound-light-375": {
    "url": "http://localhost:3100/this-world-does-not-exist",
    "viewport": {
@@ -2456,6 +3112,41 @@
    ],
    "count": 1,
    "checked": 13,
+   "truncated": false
+  },
+  "notfound-light-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "Worlds",
+     "w": 47.8,
+     "h": 16.8
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "Operator",
+     "w": 63.7,
+     "h": 16.8
+    }
+   ],
+   "count": 3,
+   "checked": 16,
    "truncated": false
   }
  },
@@ -2557,7 +3248,7 @@
      "selector": "div:nth-of-type(1) > div > div > div > button",
      "tag": "button",
      "type": "button",
-     "name": "❚❚ pause the live feed",
+     "name": "pause the live feed",
      "labelled": true,
      "issue": null
     },
@@ -2621,7 +3312,7 @@
      "selector": "#contact-name",
      "tag": "input",
      "type": "text",
-     "name": "Name",
+     "name": "Name (required)",
      "labelled": true,
      "issue": null
     },
@@ -2629,7 +3320,7 @@
      "selector": "#contact-email",
      "tag": "input",
      "type": "email",
-     "name": "Email",
+     "name": "Email (required)",
      "labelled": true,
      "issue": null
     },
@@ -2637,7 +3328,7 @@
      "selector": "#contact-message",
      "tag": "textarea",
      "type": null,
-     "name": "What are you building?",
+     "name": "What are you building? (required)",
      "labelled": true,
      "issue": null
     },
@@ -3812,7 +4503,7 @@
      "selector": "div:nth-of-type(1) > div > div > div > button",
      "tag": "button",
      "type": "button",
-     "name": "❚❚ pause the live feed",
+     "name": "pause the live feed",
      "labelled": true,
      "issue": null
     },
@@ -3876,7 +4567,7 @@
      "selector": "#contact-name",
      "tag": "input",
      "type": "text",
-     "name": "Name",
+     "name": "Name (required)",
      "labelled": true,
      "issue": null
     },
@@ -3884,7 +4575,7 @@
      "selector": "#contact-email",
      "tag": "input",
      "type": "email",
-     "name": "Email",
+     "name": "Email (required)",
      "labelled": true,
      "issue": null
     },
@@ -3892,7 +4583,7 @@
      "selector": "#contact-message",
      "tag": "textarea",
      "type": null,
-     "name": "What are you building?",
+     "name": "What are you building? (required)",
      "labelled": true,
      "issue": null
     },
@@ -7706,6 +8397,1730 @@
     "checked": 6,
     "broken": 1
    },
+   "truncated": false
+  }
+ },
+ "keyboard": {
+  "home-dark-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "stops": [
+    {
+     "index": 0,
+     "tag": "a",
+     "role": null,
+     "href": "#main",
+     "name": "Skip to content",
+     "selector": "html > body > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 1,
+     "tag": "a",
+     "role": null,
+     "href": "/",
+     "name": "Iwan Braun — home",
+     "selector": "html > body > header > div > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 2,
+     "tag": "a",
+     "role": null,
+     "href": "/#worlds",
+     "name": "Worlds",
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 3,
+     "tag": "a",
+     "role": null,
+     "href": "/#operator",
+     "name": "Operator",
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 4,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "Switch to light theme",
+     "selector": "body > header > div > nav > button",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 5,
+     "tag": "a",
+     "role": null,
+     "href": "/#contact",
+     "name": "Work with me",
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 6,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "pause the live feed",
+     "selector": "div:nth-of-type(1) > div > div > div > button",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 7,
+     "tag": "a",
+     "role": null,
+     "href": "/work/ultraweb",
+     "name": "Enter world 01 — ultraweb case study →",
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 8,
+     "tag": "a",
+     "role": null,
+     "href": "https://ultraweb-site.vercel.app",
+     "name": "ultraweb-site.vercel.app ↗",
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 9,
+     "tag": "a",
+     "role": null,
+     "href": "/work/hardmode",
+     "name": "Enter world 02 — hardmode case study →",
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 10,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/hardmode/actions",
+     "name": "tools/demo.py — CI proves every hook blocks ↗",
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 11,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/gtheme",
+     "name": "Visit world 03 — gtheme on GitHub ↗",
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 12,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/gtheme/actions",
+     "name": "2,610 tests · CI green ↗",
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 13,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/portfolio",
+     "name": "Audit the build — this site’s repo on GitHub ↗",
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 14,
+     "tag": "input",
+     "role": null,
+     "href": null,
+     "name": "Name (required)",
+     "selector": "#contact-name",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 15,
+     "tag": "input",
+     "role": null,
+     "href": null,
+     "name": "Email (required)",
+     "selector": "#contact-email",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 16,
+     "tag": "textarea",
+     "role": null,
+     "href": null,
+     "name": "What are you building? (required)",
+     "selector": "#contact-message",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 17,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "Work with me",
+     "selector": "#contact > form > div:nth-of-type(5) > button[data-slot=\"button\"]",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 18,
+     "tag": "a",
+     "role": null,
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "name": "or email directly",
+     "selector": "#contact > form > div:nth-of-type(5) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 19,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1",
+     "name": "GitHub profile ↗",
+     "selector": "#contact > div > a[data-slot=\"button\"]",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 20,
+     "tag": "a",
+     "role": null,
+     "href": "/work/ultraweb",
+     "name": "ultraweb — case study",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 21,
+     "tag": "a",
+     "role": null,
+     "href": "/work/hardmode",
+     "name": "hardmode — case study",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 22,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/gtheme",
+     "name": "gtheme on GitHub ↗",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 23,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1",
+     "name": "GitHub profile ↗",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 24,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/portfolio",
+     "name": "build ledger — this repo ↗",
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 25,
+     "tag": "a",
+     "role": null,
+     "href": "https://ultraweb-site.vercel.app",
+     "name": "built by world 01 — ultraweb-site ↗",
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 26,
+     "tag": "a",
+     "role": null,
+     "href": "/impressum",
+     "name": "Impressum",
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 27,
+     "tag": "a",
+     "role": null,
+     "href": "/datenschutz",
+     "name": "Datenschutz",
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 28,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "Switch to light theme",
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "visibleFocusRing": true,
+     "inViewport": true
+    }
+   ],
+   "skipLinkFirst": true,
+   "trap": false,
+   "cycledWithin": [],
+   "count": 29,
+   "truncated": false
+  },
+  "work-hardmode-dark-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "stops": [
+    {
+     "index": 0,
+     "tag": "a",
+     "role": null,
+     "href": "#main",
+     "name": "Skip to content",
+     "selector": "html > body > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 1,
+     "tag": "a",
+     "role": null,
+     "href": "/",
+     "name": "Iwan Braun — home",
+     "selector": "html > body > header > div > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 2,
+     "tag": "a",
+     "role": null,
+     "href": "/",
+     "name": "← All worlds",
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 3,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "Switch to light theme",
+     "selector": "body > header > div > nav > button",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 4,
+     "tag": "a",
+     "role": null,
+     "href": "/#contact",
+     "name": "Work with me",
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 5,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/hardmode",
+     "name": "hardmode repo on GitHub ↗",
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 6,
+     "tag": "div",
+     "role": "region",
+     "href": null,
+     "name": "The twelve hooks",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(3) > div",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 7,
+     "tag": "div",
+     "role": "region",
+     "href": null,
+     "name": "The four agents",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(4) > div",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 8,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/hardmode/actions",
+     "name": "hardmode’s Actions on GitHub ↗",
+     "selector": "#main > section:nth-of-type(4) > div > p > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 9,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/hardmode",
+     "name": "hardmode on GitHub ↗",
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 10,
+     "tag": "a",
+     "role": null,
+     "href": "/work/ultraweb",
+     "name": "← previous world: ultraweb",
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 11,
+     "tag": "a",
+     "role": null,
+     "href": "/#worlds",
+     "name": "all worlds →",
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 12,
+     "tag": "a",
+     "role": null,
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "name": "Work with me",
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 13,
+     "tag": "a",
+     "role": null,
+     "href": "/work/ultraweb",
+     "name": "ultraweb — case study",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 14,
+     "tag": "a",
+     "role": null,
+     "href": "/work/hardmode",
+     "name": "hardmode — case study",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 15,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/gtheme",
+     "name": "gtheme on GitHub ↗",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 16,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1",
+     "name": "GitHub profile ↗",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 17,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/portfolio",
+     "name": "build ledger — this repo ↗",
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 18,
+     "tag": "a",
+     "role": null,
+     "href": "https://ultraweb-site.vercel.app",
+     "name": "built by world 01 — ultraweb-site ↗",
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 19,
+     "tag": "a",
+     "role": null,
+     "href": "/impressum",
+     "name": "Impressum",
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 20,
+     "tag": "a",
+     "role": null,
+     "href": "/datenschutz",
+     "name": "Datenschutz",
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 21,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "Switch to light theme",
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "visibleFocusRing": true,
+     "inViewport": true
+    }
+   ],
+   "skipLinkFirst": true,
+   "trap": false,
+   "cycledWithin": [],
+   "count": 22,
+   "truncated": false
+  },
+  "notfound-dark-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "stops": [
+    {
+     "index": 0,
+     "tag": "a",
+     "role": null,
+     "href": "#main",
+     "name": "Skip to content",
+     "selector": "html > body > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 1,
+     "tag": "a",
+     "role": null,
+     "href": "/",
+     "name": "Iwan Braun — home",
+     "selector": "html > body > header > div > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 2,
+     "tag": "a",
+     "role": null,
+     "href": "/#worlds",
+     "name": "Worlds",
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 3,
+     "tag": "a",
+     "role": null,
+     "href": "/#operator",
+     "name": "Operator",
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 4,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "Switch to light theme",
+     "selector": "body > header > div > nav > button",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 5,
+     "tag": "a",
+     "role": null,
+     "href": "/#contact",
+     "name": "Work with me",
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 6,
+     "tag": "a",
+     "role": null,
+     "href": "/",
+     "name": "← Back to world 00 — home",
+     "selector": "#main > div > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 7,
+     "tag": "a",
+     "role": null,
+     "href": "/work/ultraweb",
+     "name": "ultraweb — case study",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 8,
+     "tag": "a",
+     "role": null,
+     "href": "/work/hardmode",
+     "name": "hardmode — case study",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 9,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/gtheme",
+     "name": "gtheme on GitHub ↗",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 10,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1",
+     "name": "GitHub profile ↗",
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 11,
+     "tag": "a",
+     "role": null,
+     "href": "https://github.com/blyatiful1/portfolio",
+     "name": "build ledger — this repo ↗",
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 12,
+     "tag": "a",
+     "role": null,
+     "href": "https://ultraweb-site.vercel.app",
+     "name": "built by world 01 — ultraweb-site ↗",
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 13,
+     "tag": "a",
+     "role": null,
+     "href": "/impressum",
+     "name": "Impressum",
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 14,
+     "tag": "a",
+     "role": null,
+     "href": "/datenschutz",
+     "name": "Datenschutz",
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "visibleFocusRing": true,
+     "inViewport": true
+    },
+    {
+     "index": 15,
+     "tag": "button",
+     "role": null,
+     "href": null,
+     "name": "Switch to light theme",
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "visibleFocusRing": true,
+     "inViewport": true
+    }
+   ],
+   "skipLinkFirst": true,
+   "trap": false,
+   "cycledWithin": [],
+   "count": 16,
+   "truncated": false
+  }
+ },
+ "spacing": {
+  "home-dark-375": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "clipped": [
+    {
+     "selector": "html > body > a",
+     "text": "Skip to content",
+     "axis": "both",
+     "scrollWidth": 158,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > div > span > span:nth-of-type(3)",
+     "text": "Wire status: live — receiving events from GitHub in real tim",
+     "axis": "both",
+     "scrollWidth": 525,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div > div > button > span",
+     "text": "the live feed",
+     "axis": "both",
+     "scrollWidth": 112,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-03 14:55 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > ol > li:nth-of-type(1) > span:nth-of-type(3)",
+     "text": "qa: panel findings — verified fix list from the 16-reader re",
+     "axis": "y",
+     "scrollWidth": 311,
+     "clientWidth": 311,
+     "scrollHeight": 63,
+     "clientHeight": 42
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(1) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(2) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 21:51 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(2) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(3) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 21:42 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > ol > li:nth-of-type(3) > span:nth-of-type(3)",
+     "text": "Context diet v1.9.0: gate-runner, seven-rule discipline, mea",
+     "axis": "y",
+     "scrollWidth": 311,
+     "clientWidth": 311,
+     "scrollHeight": 63,
+     "clientHeight": 42
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(3) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(4) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 20:17 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(4) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "#w1 > div",
+     "text": "01[ 01 ] the studio● pushed 5 d agoultraweb, a design studio",
+     "axis": "x",
+     "scrollWidth": 388,
+     "clientWidth": 375,
+     "scrollHeight": 1377,
+     "clientHeight": 1377
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— ultraweb case study",
+     "axis": "both",
+     "scrollWidth": 210,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "README: what changed in v1.9.0, for users",
+     "axis": "x",
+     "scrollWidth": 352,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "Context diet v1.9.0: gate-runner, seven-rule discipline, mea",
+     "axis": "x",
+     "scrollWidth": 645,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > span:nth-of-type(2)",
+     "text": "Rewrite README as a reference document",
+     "axis": "x",
+     "scrollWidth": 325,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#w2 > div",
+     "text": "02[ 02 ] the discipline● pushed 5 d agohardmodeA discipline ",
+     "axis": "x",
+     "scrollWidth": 388,
+     "clientWidth": 375,
+     "scrollHeight": 1219,
+     "clientHeight": 1219
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— hardmode case study",
+     "axis": "both",
+     "scrollWidth": 210,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "Give the compaction test's direct git calls the hermetic ide",
+     "axis": "x",
+     "scrollWidth": 592,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "Close the adversarial review's 54 findings and test every on",
+     "axis": "x",
+     "scrollWidth": 593,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > span:nth-of-type(2)",
+     "text": "v3.1: re-verify every hook contract against Claude Code 2.1.",
+     "axis": "x",
+     "scrollWidth": 1095,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#w3 > div",
+     "text": "03[ 03 ] the gentle one● pushed 10 d agogtheme, for the nerv",
+     "axis": "x",
+     "scrollWidth": 388,
+     "clientWidth": 375,
+     "scrollHeight": 1321,
+     "clientHeight": 1321
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— gtheme on GitHub",
+     "axis": "both",
+     "scrollWidth": 181,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "PKGBUILD: checksum for the re-cut v2.0.0 tarball",
+     "axis": "x",
+     "scrollWidth": 410,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "ci: make the twelve container-only failures state their prec",
+     "axis": "x",
+     "scrollWidth": 588,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > span:nth-of-type(2)",
+     "text": "PKGBUILD: real checksum for the v2.0.0 tarball",
+     "axis": "x",
+     "scrollWidth": 393,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#w0 > div",
+     "text": "00[ 00 ] the one you’re in● pushed 4 d agoThis site. It watc",
+     "axis": "x",
+     "scrollWidth": 388,
+     "clientWidth": 375,
+     "scrollHeight": 1481,
+     "clientHeight": 1481
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— this site’s repo on GitHub",
+     "axis": "both",
+     "scrollWidth": 282,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "qa: panel findings — verified fix list from the 16-reader re",
+     "axis": "x",
+     "scrollWidth": 550,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "ultraweb: BUILD COMPLETE — shipped, all systems verified liv",
+     "axis": "x",
+     "scrollWidth": 522,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > span:nth-of-type(2)",
+     "text": "ultraweb: gate-visual CLOSED — round-5 verdict + the two jud",
+     "axis": "x",
+     "scrollWidth": 710,
+     "clientWidth": 252,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(4)",
+     "text": "Leave this empty",
+     "axis": "both",
+     "scrollWidth": 360,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div > div:nth-of-type(2) > p:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "253 of 255 commits carry an agent co-author trailer",
+     "axis": "both",
+     "scrollWidth": 1123,
+     "clientWidth": 1,
+     "scrollHeight": 51,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 180,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "html > body > footer > div:nth-of-type(2)",
+     "text": "IWAN·BRAUN",
+     "axis": "x",
+     "scrollWidth": 454,
+     "clientWidth": 375,
+     "scrollHeight": 224,
+     "clientHeight": 224
+    }
+   ],
+   "overflowX": false,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "innerWidth": 375,
+   "styleKept": false,
+   "truncated": false
+  },
+  "home-dark-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "clipped": [
+    {
+     "selector": "html > body > a",
+     "text": "Skip to content",
+     "axis": "both",
+     "scrollWidth": 158,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > nav > span > span:nth-of-type(3)",
+     "text": "Wire status: live — receiving events from GitHub in real tim",
+     "axis": "both",
+     "scrollWidth": 525,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > nav > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 218,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "section:nth-of-type(1) > div > div:nth-of-type(2) > p:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "253 of 255 commits carry an agent co-author trailer",
+     "axis": "both",
+     "scrollWidth": 3137,
+     "clientWidth": 1,
+     "scrollHeight": 144,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div > div > button > span",
+     "text": "the live feed",
+     "axis": "both",
+     "scrollWidth": 112,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-03 14:55 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(1) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(2) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 21:51 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(2) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(3) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 21:42 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(3) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(4) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 20:17 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(4) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(5) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 08:05 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(5) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(6) > span:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "2026-09-02 08:03 UTC",
+     "axis": "both",
+     "scrollWidth": 170,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > ol > li:nth-of-type(6) > span:nth-of-type(4) > span:nth-of-type(2)",
+     "text": "AI-authored commit",
+     "axis": "both",
+     "scrollWidth": 111,
+     "clientWidth": 1,
+     "scrollHeight": 14,
+     "clientHeight": 1
+    },
+    {
+     "selector": "#w1 > div",
+     "text": "01[ 01 ] the studio● pushed 5 d agoultraweb, a design studio",
+     "axis": "x",
+     "scrollWidth": 1477,
+     "clientWidth": 1440,
+     "scrollHeight": 1330,
+     "clientHeight": 1330
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— ultraweb case study",
+     "axis": "both",
+     "scrollWidth": 210,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "README: what changed in v1.9.0, for users",
+     "axis": "x",
+     "scrollWidth": 352,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "Context diet v1.9.0: gate-runner, seven-rule discipline, mea",
+     "axis": "x",
+     "scrollWidth": 645,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#w2 > div",
+     "text": "02[ 02 ] the discipline● pushed 5 d agohardmodeA discipline ",
+     "axis": "x",
+     "scrollWidth": 1477,
+     "clientWidth": 1440,
+     "scrollHeight": 901,
+     "clientHeight": 901
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— hardmode case study",
+     "axis": "both",
+     "scrollWidth": 210,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "Give the compaction test's direct git calls the hermetic ide",
+     "axis": "x",
+     "scrollWidth": 592,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "Close the adversarial review's 54 findings and test every on",
+     "axis": "x",
+     "scrollWidth": 593,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > span:nth-of-type(2)",
+     "text": "v3.1: re-verify every hook contract against Claude Code 2.1.",
+     "axis": "x",
+     "scrollWidth": 1095,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#w3 > div",
+     "text": "03[ 03 ] the gentle one● pushed 10 d agogtheme, for the nerv",
+     "axis": "x",
+     "scrollWidth": 1477,
+     "clientWidth": 1440,
+     "scrollHeight": 1143,
+     "clientHeight": 1143
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— gtheme on GitHub",
+     "axis": "both",
+     "scrollWidth": 181,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "PKGBUILD: checksum for the re-cut v2.0.0 tarball",
+     "axis": "x",
+     "scrollWidth": 410,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "ci: make the twelve container-only failures state their prec",
+     "axis": "x",
+     "scrollWidth": 588,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > span:nth-of-type(2)",
+     "text": "PKGBUILD: real checksum for the v2.0.0 tarball",
+     "axis": "x",
+     "scrollWidth": 393,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#w0 > div",
+     "text": "00[ 00 ] the one you’re in● pushed 4 d agoThis site. It watc",
+     "axis": "x",
+     "scrollWidth": 1477,
+     "clientWidth": 1440,
+     "scrollHeight": 1618,
+     "clientHeight": 1618
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a > span:nth-of-type(1)",
+     "text": "— this site’s repo on GitHub",
+     "axis": "both",
+     "scrollWidth": 282,
+     "clientWidth": 1,
+     "scrollHeight": 21,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "qa: panel findings — verified fix list from the 16-reader re",
+     "axis": "x",
+     "scrollWidth": 550,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2) > span:nth-of-type(2)",
+     "text": "ultraweb: BUILD COMPLETE — shipped, all systems verified liv",
+     "axis": "x",
+     "scrollWidth": 522,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3) > span:nth-of-type(2)",
+     "text": "ultraweb: gate-visual CLOSED — round-5 verdict + the two jud",
+     "axis": "x",
+     "scrollWidth": 710,
+     "clientWidth": 342,
+     "scrollHeight": 17,
+     "clientHeight": 17
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(4)",
+     "text": "Leave this empty",
+     "axis": "both",
+     "scrollWidth": 360,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div > div:nth-of-type(2) > p:nth-of-type(1) > span:nth-of-type(2)",
+     "text": "253 of 255 commits carry an agent co-author trailer",
+     "axis": "both",
+     "scrollWidth": 1127,
+     "clientWidth": 1,
+     "scrollHeight": 51,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 180,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "html > body > footer > div:nth-of-type(2)",
+     "text": "IWAN·BRAUN",
+     "axis": "x",
+     "scrollWidth": 1592,
+     "clientWidth": 1440,
+     "scrollHeight": 781,
+     "clientHeight": 781
+    }
+   ],
+   "overflowX": false,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "innerWidth": 1440,
+   "styleKept": false,
+   "truncated": false
+  },
+  "work-ultraweb-dark-375": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "clipped": [
+    {
+     "selector": "html > body > a",
+     "text": "Skip to content",
+     "axis": "both",
+     "scrollWidth": 158,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > div > span > span:nth-of-type(3)",
+     "text": "Wire status: idle",
+     "axis": "both",
+     "scrollWidth": 145,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "#main > section:nth-of-type(2) > div > h2",
+     "text": "Why it exists",
+     "axis": "both",
+     "scrollWidth": 128,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 180,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "html > body > footer > div:nth-of-type(2)",
+     "text": "IWAN·BRAUN",
+     "axis": "x",
+     "scrollWidth": 454,
+     "clientWidth": 375,
+     "scrollHeight": 224,
+     "clientHeight": 224
+    }
+   ],
+   "overflowX": false,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "innerWidth": 375,
+   "styleKept": false,
+   "truncated": false
+  },
+  "work-ultraweb-dark-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "clipped": [
+    {
+     "selector": "html > body > a",
+     "text": "Skip to content",
+     "axis": "both",
+     "scrollWidth": 158,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > nav > span > span:nth-of-type(3)",
+     "text": "Wire status: idle",
+     "axis": "both",
+     "scrollWidth": 145,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > nav > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 218,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "#main > section:nth-of-type(2) > div > h2",
+     "text": "Why it exists",
+     "axis": "both",
+     "scrollWidth": 128,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 180,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "html > body > footer > div:nth-of-type(2)",
+     "text": "IWAN·BRAUN",
+     "axis": "x",
+     "scrollWidth": 1592,
+     "clientWidth": 1440,
+     "scrollHeight": 781,
+     "clientHeight": 781
+    }
+   ],
+   "overflowX": false,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "innerWidth": 1440,
+   "styleKept": false,
+   "truncated": false
+  },
+  "work-hardmode-dark-375": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "clipped": [
+    {
+     "selector": "html > body > a",
+     "text": "Skip to content",
+     "axis": "both",
+     "scrollWidth": 158,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > div > span > span:nth-of-type(3)",
+     "text": "Wire status: idle",
+     "axis": "both",
+     "scrollWidth": 145,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div:nth-of-type(3) > div > table > caption",
+     "text": "The twelve hardmode hooks: name, bound event, exit-code sema",
+     "axis": "both",
+     "scrollWidth": 564,
+     "clientWidth": 1,
+     "scrollHeight": 18,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div:nth-of-type(4) > div > table > caption",
+     "text": "The four hardmode agents: trigger, context received, contrac",
+     "axis": "both",
+     "scrollWidth": 606,
+     "clientWidth": 1,
+     "scrollHeight": 18,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 180,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "html > body > footer > div:nth-of-type(2)",
+     "text": "IWAN·BRAUN",
+     "axis": "x",
+     "scrollWidth": 454,
+     "clientWidth": 375,
+     "scrollHeight": 224,
+     "clientHeight": 224
+    }
+   ],
+   "overflowX": false,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "innerWidth": 375,
+   "styleKept": false,
+   "truncated": false
+  },
+  "work-hardmode-dark-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "clipped": [
+    {
+     "selector": "html > body > a",
+     "text": "Skip to content",
+     "axis": "both",
+     "scrollWidth": 158,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > nav > span > span:nth-of-type(3)",
+     "text": "Wire status: idle",
+     "axis": "both",
+     "scrollWidth": 145,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "header > div > nav > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 218,
+     "clientWidth": 1,
+     "scrollHeight": 24,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div:nth-of-type(3) > div > table > caption",
+     "text": "The twelve hardmode hooks: name, bound event, exit-code sema",
+     "axis": "both",
+     "scrollWidth": 564,
+     "clientWidth": 1,
+     "scrollHeight": 18,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div > div:nth-of-type(4) > div > table > caption",
+     "text": "The four hardmode agents: trigger, context received, contrac",
+     "axis": "both",
+     "scrollWidth": 606,
+     "clientWidth": 1,
+     "scrollHeight": 18,
+     "clientHeight": 1
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > button > span",
+     "text": "Switch to light theme",
+     "axis": "both",
+     "scrollWidth": 180,
+     "clientWidth": 1,
+     "scrollHeight": 17,
+     "clientHeight": 1
+    },
+    {
+     "selector": "html > body > footer > div:nth-of-type(2)",
+     "text": "IWAN·BRAUN",
+     "axis": "x",
+     "scrollWidth": 1592,
+     "clientWidth": 1440,
+     "scrollHeight": 781,
+     "clientHeight": 781
+    }
+   ],
+   "overflowX": false,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "innerWidth": 1440,
+   "styleKept": false,
    "truncated": false
   }
  },

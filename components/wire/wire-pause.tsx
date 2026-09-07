@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
+import { Pause, Play } from "lucide-react";
 import {
   getWirePaused,
   getWirePausedServer,
@@ -23,9 +24,13 @@ export function WirePause() {
       type="button"
       aria-pressed={paused}
       onClick={() => setWirePaused(!paused)}
-      className="nav-link -my-1.5 min-h-6 py-1.5 font-mono text-2xs tracking-[0.1em] uppercase text-muted-foreground outline-none hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+      className="-my-1.5 inline-flex min-h-6 items-center border border-border px-2 py-1 font-mono text-2xs tracking-[0.1em] uppercase text-muted-foreground outline-none transition-[border-color,color] duration-[var(--dur-micro)] hover:border-foreground/40 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
     >
-      <span aria-hidden="true">{paused ? "▶ " : "❚❚ "}</span>
+      {paused ? (
+        <Play className="mr-1.5 inline size-3 align-[-0.1em]" aria-hidden="true" />
+      ) : (
+        <Pause className="mr-1.5 inline size-3 align-[-0.1em]" aria-hidden="true" />
+      )}
       {paused ? "resume" : "pause"}
       <span className="sr-only"> the live feed</span>
     </button>

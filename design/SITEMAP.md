@@ -26,7 +26,7 @@ app/
   api/github/webhook/route.ts        ← webhook receiver (not a page)
   api/wire/route.ts                  ← SSE stream (not a page)
   not-found.tsx                      ← designed 404: "no such world" (build: routing); own <title>, footer without the live fraction (2026-09-07, I19/I06)
-  error.tsx                          ← honest failure, wire degrades gracefully (build: routing)
+  error.tsx                          ← honest failure, wire degrades gracefully (build: routing); left-aligned in the 404's grammar with bracket eyebrow + ghost glyph (2026-09-07, judge r6 d7)
 Segments needing loading.tsx: /work/* (light skeleton). (build: routing)
 
 ---
@@ -37,7 +37,7 @@ Site-level: header — skill: navigation — variant: slim-bar, glass (the one g
 Site-level: footer — skill: footer — variant: columnar sitemap (3 groups per part 1) + monogram closing — density: 3 groups ≤4 links each + mono wordmark + legal line — job: exits, obligations, one last wink.
 
 ### / (Home) — goal: contact (Work with me)
-1. hero — skill: hero — variant: typographic — density: H1 ≤6 words + sub ≤30 words + scroll-hint (no CTA button: the header carries the ask; the page IS the argument) — width: contained — rhythm: open, extra air below — job: state the stance (one operator, four worlds)
+1. hero — skill: hero — variant: typographic — density: H1 ≤6 words + sub ≤30 words + scroll-hint (no CTA button: the header carries the ask; the page IS the argument) + the Framed-Data stat card from `md` (re-composed at tablet, not deleted — 2026-09-07, judge r6 d1) — width: contained — rhythm: open, extra air below — job: state the stance (one operator, four worlds)
 2. wire — skill: data-display — variant: live feed panel — density: 5 latest events (time·repo·msg·AI-chip) + streaming status + pause/resume control (WCAG 2.2.2, 2026-09-07) — width: contained — rhythm: tight after hero, quiet neighbor of the signature — job: prove "live" within 10 seconds
 3. world-01-ultraweb — skill: feature-sections — variant: world chapter (Lead 7/5, facts rail offset +3rem) — density: eyebrow + H2 ≤7 words + ≤45 words + 4 facts + case-study CTA + live repo strip (languages bar + last 3 commits) — width: full-bleed ground, contained content — rhythm: FULL-VIEWPORT on entry — job: the flagship, entered — SIGNATURE: world-entry expansion — scroll-scrubbed chapter growth to full viewport + chrome tuning, scope: chapters 01→02→03→00 on / (reduced-motion/static fallback: chapters render fully expanded, statically stacked; tuning applies instantly per section)
 4. world-02-hardmode — skill: feature-sections — variant: world chapter (as 01, hazard-stripe edge) — density: as 01, proof line = tools/demo.py CI — width: full-bleed — rhythm: same choreography, internals quiet — job: the discipline, entered
@@ -63,13 +63,13 @@ Mobile: 3 stacks media-first; 4 drops to 2 stats.
 Mobile: 3 stacks media-first.
 
 ### /impressum · /datenschutz — goal: —
-Single prose sections — skill: copywriting (headed plain-language structure per sitemap legal rules) — width: narrow (prose container) — chrome unthemed (world 00). Mobile: as-is.
+Single prose sections — skill: copywriting (headed plain-language structure per sitemap legal rules) — width: narrow (prose container) — chrome unthemed (world 00). Margin Note 3/9 rail holds from `lg` only (2026-09-07, judge r6 d2/d3: at 768 the 3fr rail orphaned its labels and the ghost § ran under the H1); below lg the rail follows the prose. Mobile: as-is.
 
 ---
 
 # Part 3 — RSC/client boundary plan (app-structure)
 
-Layouts and pages: 100% server, zero exceptions. Client-leaf budget: ≤9 files.
+Layouts and pages: 100% server, zero exceptions. Client-leaf budget: ≤9 files at planning; RE-BASED at gate-code 2026-09-01 to ≤16 (the built set: providers, focus-on-navigate, header, mobile-menu, theme-toggle, reveal, world-tuner, wire-live, live-chip, wire-pause, contact-form, time-ago, console-signature, error, + shadcn button/dialog primitives) — 16 on 2026-09-07 after the wire pause control; every leaf justified by a browser API, an interaction or a hydration-safe time read.
 
 | Leaf | Justification (one sentence) |
 |---|---|

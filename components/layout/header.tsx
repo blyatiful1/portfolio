@@ -62,15 +62,17 @@ export function Header() {
 
         <nav aria-label="Main" className="hidden items-center gap-7 sm:flex">
           {onWork ? (
-            <Link href="/" className="nav-link font-mono text-xs tracking-[0.08em] uppercase text-muted-foreground hover:text-foreground">
-              ← All worlds
+            <Link href="/" className="nav-link relative font-mono text-xs tracking-[0.08em] uppercase text-muted-foreground before:absolute before:-inset-x-2 before:-inset-y-2 before:content-[''] hover:text-foreground">
+              <span aria-hidden="true">← </span>All worlds
             </Link>
           ) : (
             anchors.map((a) => (
               <Link
                 key={a.href}
                 href={a.href}
-                className="nav-link font-mono text-xs tracking-[0.08em] uppercase text-muted-foreground hover:text-foreground"
+                // hit area ≥24px via the same ::before device the footer links use —
+                // the 17px text box stays, the underline draw does not move (WCAG 2.5.8)
+                className="nav-link relative font-mono text-xs tracking-[0.08em] uppercase text-muted-foreground before:absolute before:-inset-x-2 before:-inset-y-2 before:content-[''] hover:text-foreground"
               >
                 {a.label}
               </Link>

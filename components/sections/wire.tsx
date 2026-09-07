@@ -9,7 +9,7 @@ export async function Wire() {
   return (
     <div className="bracket-frame border-y border-border bg-card">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 border-b border-border px-4 py-2.5">
-        <h2 className="font-mono text-2xs font-medium tracking-[0.16em] text-muted-foreground uppercase">
+        <h2 className="font-mono text-2xs font-medium tracking-[0.16em] text-muted-foreground uppercase max-sm:basis-full">
           The wire — all worlds, as it happens
         </h2>
         <div className="flex items-baseline gap-4">

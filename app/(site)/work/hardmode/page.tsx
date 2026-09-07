@@ -79,10 +79,12 @@ export default function HardmodeCaseStudy() {
           </p>
           {/* the timeline: dates and what was cut, so the study shows work
               to a clock, not only a result (panel I16) */}
-          <p className="mt-3 font-mono text-xs tracking-[0.06em] uppercase text-w2-muted">
-            Started Jul 2026 as fable-protocol · re-based and renamed v3.0, Aug
-            2026 · v3.1, 2 Sep 2026 — cut: the succession premise it was built
-            for.
+          {/* a second voice, not a second spec row: sentence case, body face,
+              ≤70-character measure (judge r6 d4) */}
+          <p className="mt-4 max-w-[58ch] text-sm text-w2-muted">
+            Started July 2026 as fable-protocol. Re-based and renamed for v3.0
+            in August; v3.1.0 landed 2 Sep 2026. Cut along the way: the
+            succession premise it was built for.
           </p>
         </div>
       </section>
@@ -290,13 +292,13 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
       <section className="border-t border-border bg-card">
         <div className="mx-auto flex max-w-content flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6">
           <div className="flex flex-wrap gap-x-7 gap-y-3 font-mono text-sm">
-            <a className="nav-link uppercase tracking-[0.08em] text-world-hm-chrome" href="https://github.com/blyatiful1/hardmode" target="_blank" rel="noreferrer">
+            <a className="nav-link inline-block py-2 uppercase tracking-[0.08em] text-world-hm-chrome" href="https://github.com/blyatiful1/hardmode" target="_blank" rel="noreferrer">
               hardmode on GitHub <span aria-hidden="true">↗</span>
             </a>
-            <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/work/ultraweb">
+            <Link className="nav-link inline-block py-2 uppercase tracking-[0.08em] text-muted-foreground" href="/work/ultraweb">
               <span aria-hidden="true">← </span>previous world: ultraweb
             </Link>
-            <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/#worlds">
+            <Link className="nav-link inline-block py-2 uppercase tracking-[0.08em] text-muted-foreground" href="/#worlds">
               all worlds <span aria-hidden="true">→</span>
             </Link>
           </div>
