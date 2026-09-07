@@ -1,0 +1,90 @@
+gate-performance dispatch 2026-09-07T10:35:27Z
+prodUrl http://localhost:3100 responded 200
+Playwright MCP: not registered (ToolSearch '+playwright browser' returned no matching tools)
+
+=== Lighthouse (Lead-measured, cited as evidence) ===
+/ perf=0.92 LCP=2964.985ms CLS=0.00034320799784997864 TBT=166ms totalByteWeight='368 KiB' LCPnode='One operator.\nFour worlds'
+/work/ultraweb perf=0.94 LCP=2896.558ms CLS=0 TBT=92.1105ms totalByteWeight='376 KiB'
+/work/hardmode perf=0.97 LCP=2572.5867ms CLS=0.00043413314781116176 TBT=41ms totalByteWeight='331 KiB'
+
+=== Lighthouse (runner-measured, asserted) ===
+/impressum perf=1 LCP=1848.6291ms CLS=0 TBT~50ms totalByteWeight='337 KiB'
+/datenschutz perf=0.99 LCP~1.9s CLS=0 TBT~60ms totalByteWeight='339 KiB'
+
+=== cold-load JS (curl gzip proxy, per route: script count / total gzip bytes) ===
+/ 12 284332
+/work/ultraweb 12 201034
+/work/hardmode 11 195451
+/impressum 10 194409
+/datenschutz 10 194409
+budget: 140000 bytes marketing route — ALL 5 ROUTES OVER
+
+=== client bundle: use client files (excl. (studio), which 404s in prod) ===
+app/(site)/error.tsx
+components/sections/contact-form.tsx
+components/craft/console-signature.tsx
+components/layout/focus-on-navigate.tsx
+components/layout/header.tsx
+components/layout/theme-toggle.tsx
+components/layout/mobile-menu.tsx
+components/layout/providers.tsx
+components/data/time-ago.tsx
+components/motion/reveal.tsx
+components/motion/world-tuner.tsx
+components/wire/live-chip.tsx
+components/wire/wire-pause.tsx
+components/wire/wire-live.tsx
+count: 14 vs budget <=9 (SITEMAP.md Part 3)
+
+=== fonts (lib/fonts.ts) ===
+import { Space_Grotesk, Fraunces, IBM_Plex_Mono } from "next/font/google";
+
+// display:"optional" — the hero H1 is the LCP; a late swap would re-trigger
+// LCP paint. Metric-matched fallback holds on very slow first loads instead.
+export const sans = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "optional",
+});
+
+// preload:false — the LCP is Space Grotesk text; these swap in lazily.
+// Static 500 cuts only: the variable files cost 66+80kB of pre-LCP bandwidth
+// for a face the site uses at exactly one weight.
+export const displayUw = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  weight: "500",
+  style: ["normal", "italic"],
+  preload: false,
+});
+
+export const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-plex-mono",
+  weight: ["400", "500"],
+  preload: false,
+});
+
+=== dependency diff ===
+
+=== engine sweep ===
+animejs hits: 0
+three hits: 0
+motion/react hits: 0
+
+=== image asset ===
+-rw-r--r-- 1 root root 34748 Sep  7 10:08 public/work/ultraweb-b3-mockup.webp
+public/work/ultraweb-b3-mockup.webp: RIFF (little-endian) data, Web/P image, VP8 encoding, 1200x750, Scaling: [none]x[none], YUV color, decoders should clamp
+155:              <Image
+156-                src="/work/ultraweb-b3-mockup.webp"
+157-                width={1200}
+158-                height={750}
+159-                alt="The approved B3 mockup: a near-black chrome holding four full-bleed world chapters — ultraweb in terracotta, hardmode in hazard yellow, gtheme in soft light — with the live wire under the headline One operator, four worlds."
+160-                sizes="(min-width: 1280px) 40rem, (min-width: 768px) 60vw, 100vw"
+161-                className="mt-3 h-auto w-full rounded-sm border border-border"
+162-              />
+163-            </figure>
+
+=== check10 scroll/dynamic ===
+components/layout/header.tsx:43:    window.addEventListener("scroll", onScroll, { passive: true });
+components/layout/header.tsx:15:// no next/dynamic Loadable/Suspense wrapper, so hydration has nothing to

@@ -2,7 +2,7 @@
 
 import { headers } from "next/headers";
 import { contactSchema } from "@/lib/schemas/contact";
-import { checkRateLimit } from "@/lib/api";
+import { checkRateLimit, clientKey } from "@/lib/api";
 import { getResend } from "@/lib/email";
 import ContactNotification from "@/emails/contact-notification";
 
@@ -22,8 +22,7 @@ export async function submitContact(
   // honeypot: real users never fill "company_url"
   if (raw.company_url) return { status: "success" };
 
-  const h = await headers();
-  const ip = h.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "local";
+  const ip = clientKey(await headers());
   if (!checkRateLimit(`contact:${ip}`)) {
     return {
       status: "error",
@@ -45,7 +44,7 @@ export async function submitContact(
     return {
       status: "error",
       formError:
-        "The mail line isn't wired up yet — email me directly: iwan.braun2004@gmail.com",
+        "The mail line isn’t wired up yet — email me directly: iwan.braun2004@gmail.com",
       values: raw,
     };
   }
@@ -63,7 +62,7 @@ export async function submitContact(
       return {
         status: "error",
         formError:
-          "Didn't send — your message is still here. Try again, or email me directly.",
+          "Didn’t send — your message is still here. Try again, or email me directly.",
         values: raw,
       };
     }
@@ -71,7 +70,7 @@ export async function submitContact(
     return {
       status: "error",
       formError:
-        "Didn't send — your message is still here. Try again, or email me directly.",
+        "Didn’t send — your message is still here. Try again, or email me directly.",
       values: raw,
     };
   }

@@ -5,7 +5,12 @@ import {
   WorldChapter,
   type ChapterContent,
 } from "@/components/sections/world-chapter";
-import { getAuthorship, getRepoFacts, getWireEvents } from "@/lib/data/github";
+import {
+  WORLD_OF,
+  getAuthorship,
+  getRepoFacts,
+  getWireEvents,
+} from "@/lib/data/github";
 
 const chapters: ChapterContent[] = [
   {
@@ -15,6 +20,7 @@ const chapters: ChapterContent[] = [
     eyebrow: "the studio",
     numeralClass: "font-[family-name:var(--font-display-uw)]",
     surface: "bg-w1-ground text-w1-fg",
+    fg: "text-w1-fg",
     muted: "text-w1-muted",
     headingClass:
       "font-[family-name:var(--font-display-uw)] text-5xl font-medium tracking-[-0.01em]",
@@ -33,15 +39,15 @@ const chapters: ChapterContent[] = [
       </>
     ),
     facts: [
-      { label: "stack", value: "Next.js pipeline · 80 skills" },
+      { label: "stack", value: "Next.js pipeline · 80 skills · 4 subagents" },
       { label: "proof", value: (
           <a href="https://ultraweb-site.vercel.app" target="_blank" rel="noreferrer" className="underline underline-offset-2">
-            ultraweb-site.vercel.app ↗
+            ultraweb-site.vercel.app <span aria-hidden="true">↗</span>
           </a>
         ) },
       { label: "gates", value: "7, screenshot-verified" },
     ],
-    cta: { href: "/work/ultraweb", label: "Enter world 01 →" },
+    cta: { href: "/work/ultraweb", label: "Enter world 01", destination: "ultraweb case study" },
   },
   {
     world: "hm",
@@ -50,6 +56,7 @@ const chapters: ChapterContent[] = [
     eyebrow: "the discipline",
     numeralClass: "font-mono",
     surface: "bg-w2-ground text-w2-fg",
+    fg: "text-w2-fg",
     muted: "text-w2-muted",
     headingClass: "font-mono text-5xl font-bold uppercase tracking-[-0.02em] [word-spacing:-0.35ch] text-primary",
     grain: true,
@@ -64,11 +71,16 @@ const chapters: ChapterContent[] = [
       </>
     ),
     facts: [
-      { label: "stack", value: "Python · 6 hooks · 3 agents" },
-      { label: "proof", value: "tools/demo.py — CI proves every hook blocks" },
+      { label: "stack", value: "Python · 12 hooks · 4 agents" },
+      // the one proof claim links to the run that backs it (panel I26)
+      { label: "proof", value: (
+          <a href="https://github.com/blyatiful1/hardmode/actions" target="_blank" rel="noreferrer" className="underline underline-offset-2">
+            tools/demo.py — CI proves every hook blocks <span aria-hidden="true">↗</span>
+          </a>
+        ) },
       { label: "status", value: "live on the machine that built this" },
     ],
-    cta: { href: "/work/hardmode", label: "Enter world 02 →" },
+    cta: { href: "/work/hardmode", label: "Enter world 02", destination: "hardmode case study" },
   },
   {
     world: "gt",
@@ -76,12 +88,17 @@ const chapters: ChapterContent[] = [
     number: "03",
     eyebrow: "the gentle one",
     surface: "bg-w3-ground text-w3-fg",
+    fg: "text-w3-fg",
     muted: "text-w3-muted",
-    headingClass: "text-5xl font-medium tracking-[-0.025em]",
+    // leading opened a notch so the pill clears the line above (panel I58)
+    headingClass: "text-5xl leading-[1.06] font-medium tracking-[-0.025em]",
     title: (
       <>
         gtheme, for the{" "}
-        <span className="rounded-full bg-primary px-3 text-primary-foreground">
+        {/* inline-block: the pill's box is its own line-box, sized by its
+            leading — it can no longer run under the previous line's
+            descenders (panel I58) */}
+        <span className="inline-block rounded-full bg-primary px-3 py-1 leading-[0.9] text-primary-foreground">
           nervous
         </span>
       </>
@@ -95,12 +112,18 @@ const chapters: ChapterContent[] = [
     ),
     facts: [
       { label: "stack", value: "Python · GTK4 / libadwaita" },
-      { label: "proof", value: "2,610 tests · CI green" },
+      // the strongest claim on the page points at the run behind it (panel I26)
+      { label: "proof", value: (
+          <a href="https://github.com/blyatiful1/gtheme/actions" target="_blank" rel="noreferrer" className="underline underline-offset-2">
+            2,610 tests · CI green <span aria-hidden="true">↗</span>
+          </a>
+        ) },
       { label: "release", value: "v2.0.0" },
     ],
     cta: {
       href: "https://github.com/blyatiful1/gtheme",
-      label: "Visit world 03 ↗",
+      label: "Visit world 03",
+      destination: "gtheme on GitHub",
       external: true,
     },
   },
@@ -108,8 +131,9 @@ const chapters: ChapterContent[] = [
     world: "me",
     anchor: "w0",
     number: "00",
-    eyebrow: "the one you're in",
+    eyebrow: "the one you’re in",
     surface: "bg-card text-foreground",
+    fg: "text-foreground",
     muted: "text-muted-foreground",
     headingClass: "text-5xl font-medium tracking-[-0.02em]",
     title: (
@@ -122,22 +146,25 @@ const chapters: ChapterContent[] = [
     ),
     copy: (
       <>
-        Every event on the wire is real and seconds old, delivered by webhook.
-        The authorship numbers are recomputed from git history — never typed in.
-        And this site&apos;s own repo is monitored too:{" "}
+        Every event on the wire is real, delivered by webhook the moment it is
+        pushed. The authorship numbers are recomputed from git history — never
+        typed in. And this site’s own repo is monitored too:{" "}
         <span className="text-foreground">
           the page you are reading reports on itself being built.
         </span>
       </>
     ),
     facts: [
+      // the runtime, named: "React" is the word a screener searches (panel I63)
+      { label: "stack", value: "Next.js 16 · React 19 · TypeScript" },
       { label: "feed", value: "webhook → SSE" },
       { label: "claims", value: "self-verifying — re-run them" },
       { label: "built by", value: "world 01 (ultraweb)" },
     ],
     cta: {
       href: "https://github.com/blyatiful1/portfolio",
-      label: "Audit the build ↗",
+      label: "Audit the build",
+      destination: "this site’s repo on GitHub",
       external: true,
     },
   },
@@ -149,14 +176,10 @@ export default async function Home() {
     getWireEvents(),
     getAuthorship(),
   ]);
-  const factsFor = (w: string) =>
-    facts.find(
-      (f) =>
-        f.available &&
-        f.name === ({ uw: "ultraweb", hm: "hardmode", gt: "gtheme", me: "portfolio" } as const)[
-          w as "uw" | "hm" | "gt" | "me"
-        ],
-    );
+  // facts are passed whether or not the repo answered — the chapter renders
+  // the honest state for each (panel I23)
+  const factsFor = (world: ChapterContent["world"]) =>
+    facts.find((f) => WORLD_OF[f.name] === world && f.available);
   const recentFor = (repo?: string) =>
     repo ? events.filter((e) => e.repo === repo) : [];
 

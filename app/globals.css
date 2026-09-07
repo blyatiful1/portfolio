@@ -56,8 +56,6 @@
   --dur-micro: 200ms;
   --dur-small: 320ms;
   --dur-section: 560ms;
-  /* shadcn radius base — resolves their calc chain to our Sharp scale */
-  --radius: 0.25rem;
 }
 
 .light {
@@ -133,6 +131,11 @@ html[data-active-world="me"] { --tuned-accent: var(--world-me); --tuned-accent-f
 [data-world="uw"] { --primary: var(--world-uw); --primary-foreground: var(--world-uw-fg); --tuned-accent: var(--world-uw); }
 [data-world="hm"] { --primary: var(--world-hm); --primary-foreground: var(--world-hm-fg); --tuned-accent: var(--world-hm); }
 [data-world="gt"] { --primary: var(--world-gt); --primary-foreground: var(--world-gt-fg); --tuned-accent: var(--world-gt); }
+/* world 03 is the inverted chapter (light in dark mode, dark in light mode), so the
+   live-dot token that clears every other ground failed on its (1.69 / 3.13):
+   it takes the OTHER theme's --live inside this scope — 2026-09-07 gate re-run */
+[data-world="gt"] { --live: oklch(0.47 0.14 155); }
+.light [data-world="gt"] { --live: oklch(0.75 0.17 150); }
 
 @theme inline {
   --color-background: var(--background);

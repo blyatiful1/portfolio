@@ -35,11 +35,11 @@ export default function Datenschutz() {
       {/* the chapters' ghost-numeral grammar, in legal dress (r4: legal dist) */}
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute top-24 right-[-0.06em] text-[clamp(10rem,24vw,20rem)] leading-none font-bold text-foreground opacity-[0.05] select-none"
+        className="pointer-events-none absolute top-24 right-[-0.06em] text-[clamp(10rem,24vw,20rem)] leading-none font-bold text-foreground opacity-[0.05] select-none md:max-lg:top-40 md:max-lg:text-[9rem]"
       >
         §
       </span>
-      <div className="relative mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 md:grid-cols-[3fr_9fr]">
+      <div className="relative mx-auto grid max-w-content gap-x-12 px-4 pt-36 pb-24 sm:px-6 lg:grid-cols-[3fr_9fr]">
                 {/* 36rem ≈ 70 real chars at body size — max-w-prose (55ch) measured ~81 (r4 d6) */}
                 <div className="max-w-[36rem]">
           {/* r5 d1: "Datenschutzerklärung" at the text-4xl 34px floor is wider
@@ -72,12 +72,16 @@ export default function Datenschutz() {
 
           <LegalBlock id="hosting" label="Hosting und Server-Logs">
             <p>
-              Diese Website wird bei Vercel Inc. gehostet. Beim Aufruf werden
-              technisch notwendige Daten verarbeitet (IP-Adresse, Zeitpunkt,
-              abgerufene Seite, User-Agent), um die Seite auszuliefern und die
-              Sicherheit des Betriebs zu gewährleisten (Art. 6 Abs. 1 lit. f
-              DSGVO). Log-Daten werden nicht mit anderen Datenquellen
-              zusammengeführt.
+              Diese Website wird bei Vercel Inc. (San Francisco, USA) gehostet.
+              Beim Aufruf werden technisch notwendige Daten verarbeitet
+              (IP-Adresse, Zeitpunkt, abgerufene Seite, User-Agent), um die
+              Seite auszuliefern und die Sicherheit des Betriebs zu
+              gewährleisten (Art. 6 Abs. 1 lit. f DSGVO). Diese Log-Daten hält
+              der Hoster nur kurzzeitig vor (nach dessen Angaben tarifabhängig
+              Stunden bis wenige Tage) und löscht sie danach automatisch; ich
+              werte sie nicht aus und führe sie nicht mit anderen Datenquellen
+              zusammen. Die Übermittlung in die USA erfolgt auf der unter
+              „Empfänger“ genannten Grundlage.
             </p>
           </LegalBlock>
 
@@ -87,7 +91,26 @@ export default function Datenschutz() {
               mitgeteilten Daten (Name, E-Mail-Adresse, Nachricht) zur
               Bearbeitung der Anfrage verarbeitet (Art. 6 Abs. 1 lit. b DSGVO)
               und gelöscht, sobald die Anfrage abgeschlossen ist und keine
-              gesetzlichen Aufbewahrungspflichten bestehen.
+              gesetzlichen Aufbewahrungspflichten bestehen. Eine Nachricht aus
+              dem Formular wird über den Versanddienst Resend Inc. (USA) als
+              E-Mail zugestellt und landet in einem bei Google (Google Ireland
+              Limited bzw. Google LLC, USA) geführten Postfach. Beide Anbieter
+              verarbeiten die Daten in meinem Auftrag ausschließlich zur
+              Zustellung und Aufbewahrung der Nachricht.
+            </p>
+          </LegalBlock>
+
+          <LegalBlock id="empfaenger" label="Empfänger und Drittlandtransfer" tight>
+            <p>
+              Auftragsverarbeiter bzw. Empfänger sind: Vercel Inc. (Hosting,
+              USA), Resend Inc. (E-Mail-Zustellung des Kontaktformulars, USA)
+              und Google (Postfach, Irland/USA). Öffentliche Repository-Daten
+              werden von GitHub, Inc. (USA) abgerufen, ohne dass dabei Daten
+              von Besucherinnen und Besuchern übermittelt werden. Soweit ein
+              Anbieter unter dem EU-U.S. Data Privacy Framework zertifiziert
+              ist, erfolgt die Übermittlung in die USA auf dieser Grundlage
+              (Art. 45 DSGVO); andernfalls auf Grundlage der
+              EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
             </p>
           </LegalBlock>
 
@@ -120,7 +143,7 @@ export default function Datenschutz() {
           </LegalBlock>
         </div>
 
-        <aside className="mt-12 h-fit md:order-first md:sticky md:top-24 md:mt-0">
+        <aside className="mt-12 h-fit lg:order-first lg:sticky lg:top-24 lg:mt-0">
           <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-primary">
             <span aria-hidden="true">[ § ]</span> world 00 · legal
           </p>
@@ -134,6 +157,7 @@ export default function Datenschutz() {
               <li><a href="#verantwortlicher" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Verantwortlicher</a></li>
               <li><a href="#hosting" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Hosting & Logs</a></li>
               <li><a href="#kontakt" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Kontaktaufnahme</a></li>
+              <li><a href="#empfaenger" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Empfänger</a></li>
               <li><a href="#github" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">GitHub-Daten</a></li>
               <li><a href="#speicherung" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Lokale Speicherung</a></li>
               <li><a href="#rechte" className="nav-link font-mono text-2xs text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground">Ihre Rechte</a></li>

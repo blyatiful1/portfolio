@@ -1,9 +1,10 @@
-import { createHmac, timingSafeEqual } from "node:crypto";
 import { revalidateTag } from "next/cache";
 import { z } from "zod";
 import { apiError } from "@/lib/api";
 import { insertEvents } from "@/lib/events/store";
 import { CACHE_TAGS, REPOS } from "@/lib/data/github";
+import { isAiAuthored } from "@/lib/data/authorship";
+import { verifyGithubSignature } from "@/lib/webhook-signature";
 
 // GitHub push-webhook receiver — the wire's inbound half.
 // Configure on each monitored repo: payload URL /api/github/webhook,
@@ -23,18 +24,16 @@ const pushSchema = z.object({
     .default([]),
 });
 
-function verify(signature: string | null, body: string): boolean {
-  const secret = process.env.GITHUB_WEBHOOK_SECRET;
-  if (!secret || !signature?.startsWith("sha256=")) return false;
-  const expected = createHmac("sha256", secret).update(body).digest("hex");
-  const given = signature.slice("sha256=".length);
-  if (given.length !== expected.length) return false;
-  return timingSafeEqual(Buffer.from(given, "hex"), Buffer.from(expected, "hex"));
-}
-
 export async function POST(req: Request) {
   const body = await req.text();
-  if (!verify(req.headers.get("x-hub-signature-256"), body)) {
+  // fail closed on any malformed signature — never a 500 in the auth path (I34)
+  if (
+    !verifyGithubSignature(
+      process.env.GITHUB_WEBHOOK_SECRET,
+      req.headers.get("x-hub-signature-256"),
+      body,
+    )
+  ) {
     return apiError(401, "unauthorized", "Bad signature.");
   }
 
@@ -42,7 +41,13 @@ export async function POST(req: Request) {
   if (eventType === "ping") return Response.json({ ok: true });
   if (eventType !== "push") return Response.json({ ignored: eventType });
 
-  const parsed = pushSchema.safeParse(JSON.parse(body));
+  let json: unknown;
+  try {
+    json = JSON.parse(body);
+  } catch {
+    return apiError(400, "validation_failed", "Body is not JSON.");
+  }
+  const parsed = pushSchema.safeParse(json);
   if (!parsed.success) {
     return apiError(400, "validation_failed", "Unrecognized push payload.");
   }
@@ -57,16 +62,17 @@ export async function POST(req: Request) {
       repo,
       sha: c.id.slice(0, 7),
       message: c.message.split("\n")[0],
-      ai:
-        c.message.toLowerCase().includes("co-authored-by: claude") ||
-        (c.author.name ?? "").toLowerCase().includes("claude"),
+      ai: isAiAuthored({ message: c.message, authorName: c.author.name }),
       committedAt: new Date(c.timestamp),
     })),
   );
 
-  // the pushed repo's facts and the wire snapshot are now stale
-  revalidateTag(CACHE_TAGS.wire, "minutes");
-  revalidateTag(CACHE_TAGS.repoFacts, "hours");
+  // only real work makes the wire and the repo facts stale — a replayed
+  // delivery inserts nothing and purges nothing (panel I59)
+  if (inserted > 0) {
+    revalidateTag(CACHE_TAGS.wire, "minutes");
+    revalidateTag(CACHE_TAGS.repoFacts, "hours");
+  }
 
   return Response.json({ ok: true, inserted }, { status: 202 });
 }

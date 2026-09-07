@@ -1,19 +1,24 @@
 import { getWireEvents } from "@/lib/data/github";
 import { TimeAgo } from "@/components/data/time-ago";
 import { WireLive } from "@/components/wire/wire-live";
+import { WirePause } from "@/components/wire/wire-pause";
 
 export async function Wire() {
   const events = await getWireEvents();
   const newest = events[0]?.date ?? null;
   return (
     <div className="bracket-frame border-y border-border bg-card">
-      <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-border px-4 py-2.5">
-        <h2 className="font-mono text-2xs font-medium tracking-[0.16em] text-muted-foreground uppercase">
-          The wire — all worlds, as it happens
+      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 border-b border-border px-4 py-2.5">
+        <h2 className="font-mono text-2xs font-medium tracking-[0.16em] text-muted-foreground uppercase max-sm:basis-full">
+          The wire<span className="max-sm:hidden"> —</span>{" "}
+          <span className="max-sm:block">all worlds, as it happens</span>
         </h2>
-        <p className="font-mono text-2xs text-live">
-          ● updated <TimeAgo iso={newest} />
-        </p>
+        <div className="flex items-baseline gap-4">
+          <p className="font-mono text-2xs text-live">
+            ● updated <TimeAgo iso={newest} />
+          </p>
+          {events.length > 0 && <WirePause />}
+        </div>
       </div>
       {events.length ? (
         <WireLive
@@ -27,7 +32,7 @@ export async function Wire() {
         />
       ) : (
         <p className="px-4 py-6 font-mono text-sm text-muted-foreground">
-          The wire can&apos;t reach GitHub right now — the repos are still
+          The wire can’t reach GitHub right now — the repos are still
           there:{" "}
           <a
             className="underline underline-offset-4"

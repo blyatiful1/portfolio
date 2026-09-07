@@ -23,6 +23,14 @@ const personJsonLd = {
   jobTitle: "Agent infrastructure developer",
   url: siteUrl(),
   sameAs: ["https://github.com/blyatiful1"],
+  // city + region only — the same fact the operator block shows; no street
+  // (that stays on the noindex Impressum where § 5 DDG wants it) — panel I32
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bochum",
+    addressRegion: "NRW",
+    addressCountry: "DE",
+  },
 };
 
 export default function RootLayout({

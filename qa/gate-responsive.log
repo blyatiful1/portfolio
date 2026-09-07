@@ -1,0 +1,60 @@
+gate-responsive — run log — 2026-09-07
+=======================================
+
+Preflight
+- pluginRoot validated: /home/user/ultraweb/.claude-plugin/plugin.json exists.
+- prodUrl check: curl -sI http://localhost:3100 -> HTTP/1.1 200 OK
+- ToolSearch "playwright browser navigate" -> no playwright tools returned. Playwright MCP NOT registered.
+  Per session facts: all browser-dependent checks (1 partially, 4, 5, 6) reported UNVERIFIED;
+  checks 2 and 3 cited from Lead's pre-measured qa/gate-lead-round6.json (Lead-measured, not
+  independently run by gate-runner, therefore not marked PASS by gate-runner per definition rule).
+
+Check 1 — sweep (captures)
+- ls /home/user/portfolio/qa/visual/round-6/ | wc -l -> 50 files (36 route x theme x width frames
+  + 14 named detail crops). 36 = 6 routes (home, work-ultraweb, work-hardmode, impressum,
+  datenschutz, notfound) x 2 themes (dark/light) x 3 widths (375/768/1440). Lead-measured; not
+  independently captured by gate-runner (no browser).
+
+Check 2 — overflow
+- node -e read of qa/gate-lead-round6.json "overflow" key: all 36 route x theme x width keys = false.
+  Lead-measured via overflow-culprits.mjs equivalent; not independently run by gate-runner.
+
+Check 3 — targets
+- node -e read of qa/gate-lead-round6.json "targets" key (375 width only, both themes).
+  threshold recorded: 24 (WCAG floor) — gate-responsive spec calls for ultraweb's 44px floor.
+  Findings (Lead-measured):
+    * every route: 1 small target, selector "html > body > a", text "Skip to content", w=1 h=1
+      (visually-hidden-until-focus skip link — not a pointer target when hidden; likely exempt,
+      not confirmed).
+    * /work/ultraweb (dark+light, 375): 3 closer-section links ~21px tall, e.g.
+      "ultraweb on GitHub ↗" w=182.8 h=21; "ultraweb-site, the live proof ↗" w=283.2 h=21;
+      "next world: hardmode →" w=201.1 h=21.
+    * /work/hardmode (dark+light, 375): 3 closer-section links ~21px tall, e.g.
+      "hardmode on GitHub ↗" w=182.8 h=21; "← previous world: ultraweb" w=237.6 h=21;
+      "all worlds →" w=109.9 h=21.
+  These fail even the lower 24px floor on height (21<24); would also fail the spec's 44px floor.
+  Re-measurement at threshold:44 not performed (no browser) — flagged for the Lead / re-run.
+
+Check 7 — console
+- node -e read of qa/gate-lead-round6.json "console" key: all 36 route x theme x width arrays
+  empty EXCEPT the 6 "notfound-*" entries, each containing exactly one line:
+  "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  — this is the document's own top-level 404 HTTP status on the intentionally-missing route
+  (/this-world-does-not-exist), not a JS/hydration error. No console errors on any real route.
+  Asserted PASS by gate-runner directly from this data (per session scope).
+
+Code audit (no browser required)
+- curl of all 5 sitemap routes: <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  present on /, /work/ultraweb, /work/hardmode, /impressum, /datenschutz.
+- components/sections/operator.tsx:102,158 — stat card: "min-w-0" present.
+- components/sections/operator.tsx:149 — verify command: "max-w-full break-all whitespace-pre-wrap".
+- components/sections/wire.tsx:11 — wire panel header row: "flex flex-wrap items-baseline
+  justify-between gap-x-4 gap-y-2".
+- app/(site)/work/hardmode/page.tsx:186-192 (table 1, min-w-[40rem]) and :220-226 (table 2,
+  min-w-[44rem]) — both wrapped in div.overflow-x-auto, role="region", tabIndex={0},
+  focus-visible:ring-2.
+- app/(site)/work/ultraweb/page.tsx:155-160 — <Image width={1200} height={750}
+  sizes="(min-width: 1280px) 40rem, (min-width: 768px) 60vw, 100vw" ...>.
+
+Checks 4, 5, 6, 8 — no data available to gate-runner this dispatch; see report unverified/
+judgment-open sections.

@@ -1,8 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { TimeAgo } from "@/components/data/time-ago";
-import { setWireStatus } from "./status";
+import {
+  getWirePaused,
+  getWirePausedServer,
+  hydrateWirePaused,
+  setWireStatus,
+  subscribeWirePaused,
+} from "./status";
 
 export type WireRow = {
   sha: string;
@@ -24,6 +30,13 @@ function repoLabel(repo: string): string {
   return repo === "portfolio" ? "this site" : repo;
 }
 
+// "2026-09-02 14:03 UTC" — deterministic on server and client, so the
+// announced timestamp never re-renders (the ticking label is aria-hidden)
+function absoluteUtc(iso: string): string {
+  const m = iso.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/);
+  return m ? `${m[1]} ${m[2]} UTC` : iso;
+}
+
 function Row({ e, trailing }: { e: WireRow; trailing?: boolean }) {
   return (
     <li
@@ -31,8 +44,13 @@ function Row({ e, trailing }: { e: WireRow; trailing?: boolean }) {
         trailing ? "max-sm:hidden" : ""
       } ${e.fresh ? "anim-wire-in" : ""}`}
     >
+      {/* the relative label ticks every minute — kept out of the live region's
+          announced content; the absolute date is what a reader hears (I18) */}
       <span className="text-2xs text-muted-foreground">
-        <TimeAgo iso={e.date} />
+        <span aria-hidden="true">
+          <TimeAgo iso={e.date} />
+        </span>
+        <span className="sr-only">{absoluteUtc(e.date)}</span>
       </span>
       <span className={`font-medium ${repoColor[e.repo] ?? "text-foreground"}`}>
         {repoLabel(e.repo)}
@@ -42,11 +60,13 @@ function Row({ e, trailing }: { e: WireRow; trailing?: boolean }) {
       <span className="order-last w-full text-muted-foreground max-sm:line-clamp-2 sm:order-none sm:w-auto sm:truncate">
         {e.message}
       </span>
+      {/* the badge's meaning is text, not a title attribute (panel I40) */}
       <span
         className="border border-border px-1.5 text-[9px] tracking-[0.1em] text-muted-foreground uppercase max-sm:ml-auto"
         title={e.ai ? "AI-authored commit" : "human-authored commit"}
       >
-        {e.ai ? "AI" : "HUM"}
+        <span aria-hidden="true">{e.ai ? "AI" : "HUM"}</span>
+        <span className="sr-only">{e.ai ? "AI-authored commit" : "human-authored commit"}</span>
       </span>
     </li>
   );
@@ -54,8 +74,19 @@ function Row({ e, trailing }: { e: WireRow; trailing?: boolean }) {
 
 export function WireLive({ initial }: { initial: WireRow[] }) {
   const [rows, setRows] = useState<WireRow[]>(initial);
+  const paused = useSyncExternalStore(
+    subscribeWirePaused,
+    getWirePaused,
+    getWirePausedServer,
+  );
+
+  useEffect(() => hydrateWirePaused(), []);
 
   useEffect(() => {
+    if (paused) {
+      setWireStatus("idle");
+      return;
+    }
     const es = new EventSource("/api/wire");
     es.onopen = () => setWireStatus("live");
     es.onerror = () => setWireStatus("idle"); // EventSource auto-reconnects
@@ -91,10 +122,13 @@ export function WireLive({ initial }: { initial: WireRow[] }) {
       es.close();
       setWireStatus("idle");
     };
-  }, []);
+  }, [paused]);
 
   return (
-    <ol aria-label="Latest repository events" aria-live="polite">
+    <ol
+      aria-label="Latest repository events"
+      aria-live={paused ? "off" : "polite"}
+    >
       {rows.slice(0, 6).map((e, i) => (
         <Row key={e.sha} e={e} trailing={i >= 4} />
       ))}

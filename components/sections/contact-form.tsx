@@ -1,20 +1,27 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect, useRef } from "react";
 import { useFormStatus } from "react-dom";
 import { LoaderCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { submitContact, type ContactState } from "@/app/actions/contact";
+import { CONTACT_LIMITS } from "@/lib/schemas/contact-limits";
+
+// Optional booking link (panel I33) — set NEXT_PUBLIC_BOOKING_URL to a
+// Cal.com / Calendly page; absent, the row keeps only the mailto.
+const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL;
 
 function Field({
   label,
   name,
+  required,
   error,
   defaultValue,
   children,
 }: {
   label: string;
   name: string;
+  required?: boolean;
   error?: string;
   defaultValue?: string;
   children: (props: {
@@ -32,6 +39,8 @@ function Field({
     <div>
       <label htmlFor={id} className="block font-mono text-2xs font-medium tracking-[0.14em] uppercase text-muted-foreground">
         {label}
+        {/* the visible half of "required" — the attribute is the programmatic half */}
+        {required && <span className="font-normal text-muted-foreground/75"> (required)</span>}
       </label>
       <div className="mt-1.5">
         {children({
@@ -71,11 +80,34 @@ export function ContactForm() {
     submitContact,
     { status: "idle" },
   );
+  const statusRef = useRef<HTMLDivElement>(null);
+  const alertRef = useRef<HTMLParagraphElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Focus management (panel I20 / I07): success moves focus onto the status
+  // box (the submit button that held it has unmounted); a form-level error
+  // moves it onto the alert; field errors move it onto the first invalid
+  // input so its aria-describedby text is read. `state` is a fresh object per
+  // action result, so a repeated error re-focuses.
+  useEffect(() => {
+    if (state.status === "success") {
+      statusRef.current?.focus();
+    } else if (state.status === "error") {
+      if (state.formError) {
+        alertRef.current?.focus();
+      } else {
+        formRef.current
+          ?.querySelector<HTMLElement>('[aria-invalid="true"]')
+          ?.focus();
+      }
+    }
+  }, [state]);
 
   if (state.status === "success") {
     return (
       <div
-        className="border border-live/40 bg-card p-6"
+        ref={statusRef}
+        className="border border-live/40 bg-card p-6 outline-none focus-visible:ring-2 focus-visible:ring-ring"
         role="status"
         tabIndex={-1}
       >
@@ -83,7 +115,7 @@ export function ContactForm() {
           ● delivered
         </p>
         <p className="mt-2 text-base">
-          Landed in my inbox. I read everything — you&apos;ll hear back within
+          Landed in my inbox. I read everything — you’ll hear back within
           a day or two.
         </p>
       </div>
@@ -91,26 +123,42 @@ export function ContactForm() {
   }
 
   return (
-    <form action={formAction} className="bracket-frame max-w-[30rem] space-y-5 p-6">
+    // noValidate: the server action already returns a designed error for every
+    // constraint the browser would bubble; the native tooltip broke the UI and
+    // covered the next label (panel I07). `required`/`type=email` stay for
+    // semantics and mobile keyboards.
+    <form
+      ref={formRef}
+      action={formAction}
+      noValidate
+      className="bracket-frame max-w-[30rem] space-y-5 p-6"
+    >
       {state.formError && (
         <p
+          ref={alertRef}
           role="alert"
-          className="border border-destructive/40 bg-destructive/10 px-4 py-3 text-sm text-destructive"
+          tabIndex={-1}
+          className="border border-destructive/40 bg-destructive/10 px-4 py-3 text-sm text-destructive outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           {state.formError}
         </p>
       )}
-      <Field label="Name" name="name" error={state.fieldErrors?.name} defaultValue={state.values?.name}>
-        {(p) => <input type="text" autoComplete="name" required {...p} />}
+      <Field label="Name" name="name" required error={state.fieldErrors?.name} defaultValue={state.values?.name}>
+        {(p) => (
+          <input type="text" autoComplete="name" required maxLength={CONTACT_LIMITS.name} {...p} />
+        )}
       </Field>
-      <Field label="Email" name="email" error={state.fieldErrors?.email} defaultValue={state.values?.email}>
-        {(p) => <input type="email" autoComplete="email" required {...p} />}
+      <Field label="Email" name="email" required error={state.fieldErrors?.email} defaultValue={state.values?.email}>
+        {(p) => (
+          <input type="email" autoComplete="email" required maxLength={CONTACT_LIMITS.email} {...p} />
+        )}
       </Field>
-      <Field label="What are you building?" name="message" error={state.fieldErrors?.message} defaultValue={state.values?.message}>
+      <Field label="What are you building?" name="message" required error={state.fieldErrors?.message} defaultValue={state.values?.message}>
         {(p) => (
           <textarea
             rows={4}
             required
+            maxLength={CONTACT_LIMITS.message}
             {...p}
             className={`${p.className} [field-sizing:content] min-h-[6lh] max-h-[12lh] resize-none overflow-y-auto`}
           />
@@ -135,7 +183,22 @@ export function ContactForm() {
         >
           or email directly
         </a>
+        {BOOKING_URL && (
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="nav-link inline-block py-3.5 font-mono text-xs tracking-[0.08em] uppercase text-muted-foreground underline decoration-border underline-offset-4 hover:text-foreground"
+          >
+            or book 30 minutes <span aria-hidden="true">↗</span>
+          </a>
+        )}
       </div>
+      {/* the promise belongs where the decision is made, not only after it
+          (panel I64) */}
+      <p className="font-mono text-2xs text-muted-foreground">
+        I read everything and reply within a day or two.
+      </p>
     </form>
   );
 }

@@ -1,0 +1,17 @@
+gate-content — raw log — 2026-09-07 re-run
+
+UNVERIFIED: external link cluster (check 9)
+Command: curl -s -o /dev/null -w "%{http_code}" --max-time 10 <url>
+  https://github.com/blyatiful1                    -> 403
+  https://github.com/blyatiful1/gtheme              -> 403
+  https://github.com/blyatiful1/gtheme/actions      -> 403
+  https://github.com/blyatiful1/hardmode            -> 403
+  https://github.com/blyatiful1/hardmode/actions    -> 403
+Retried 3x (curl -sI HEAD, curl -s GET, curl -s GET -A "Mozilla/5.0") — 403 every time, no variance.
+Contrast (same host, same run, resolved 200 cleanly):
+  https://github.com/blyatiful1/portfolio -> 200
+  https://github.com/blyatiful1/ultraweb  -> 200
+  https://ultraweb-site.vercel.app        -> 200
+Proxy status checked (curl -sS "$HTTPS_PROXY/__agentproxy/status"): proxy enabled, no relay failure logged against github.com in the recent-failures list. Read as GitHub-side path-specific mitigation, not a proxy fault. Not scored as a dead link (no consistent site-wide github.com block); not scored green either — logged UNVERIFIED per gate-content's own rule ("never assumed green").
+
+All other checks (1,2,4,6,7,9-internal) measured clean — no failing command output to log.

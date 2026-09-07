@@ -25,7 +25,7 @@ export function LanguageBar({ languages }: { languages: Lang[] }) {
           />
         ))}
       </div>
-      <p aria-hidden="true" className="mt-1.5 font-mono text-2xs tracking-[0.04em] uppercase opacity-70">
+      <p aria-hidden="true" className="mt-1.5 font-mono text-2xs tracking-[0.04em] uppercase">
         {shares.map((s) => `${s.name} ${s.pct}%`).join(" · ")}
       </p>
     </div>
