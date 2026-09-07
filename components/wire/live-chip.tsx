@@ -3,8 +3,9 @@
 import { useSyncExternalStore } from "react";
 import { subscribeWireStatus, getWireStatus } from "./status";
 
-// Header chip reflecting the wire connection. Until Phase 7 wires SSE,
-// status is "idle" and the chip renders the calm variant.
+// Header chip reflecting the wire connection: "wire" = stream idle,
+// "live" = SSE connected. The state's meaning is rendered text for assistive
+// tech, not only a hover title (panel I40 / I42).
 export function LiveChip() {
   const status = useSyncExternalStore(
     subscribeWireStatus,
@@ -25,7 +26,12 @@ export function LiveChip() {
             : "size-1.5 rounded-full bg-muted-foreground/60"
         }
       />
-      {live ? "live" : "wire"}
+      <span aria-hidden="true">{live ? "live" : "wire"}</span>
+      <span className="sr-only">
+        {live
+          ? "Wire status: live — receiving events from GitHub in real time"
+          : "Wire status: idle"}
+      </span>
     </span>
   );
 }

@@ -40,3 +40,12 @@ Written mid-session at the user's request: the state a future session (or a post
 
 ## Perf residuals (recorded, honest — design/QA.md §gate-performance)
 Simulated-mobile LCP 2.9s vs 2.5 target (bandwidth-bound; desktop 0.7s); cold scripts 160kB vs 140 budget (Next runtime dominates). Both recorded as residuals, not passes.
+
+## Lessons banked 2026-09-07 (panel-findings iteration, remote sandbox)
+11. **GitHub REST is blocked from the remote sandbox** (403 by policy on every api.github.com path, even the scoped repos) while anonymous `git clone` of public repos works. `lib/data/github.ts` now has a `GITHUB_API_BASE` seam; the gates ran against a fixture server that replays the four repos' REAL git histories (scratchpad `fixture/build.mjs` + `server.mjs`, rebuilt from the checkouts in one command). Never set the seam in production.
+12. **PGlite must be a `serverExternalPackages` entry** — bundled under `next start` its WASM loader throws `instantiateWasm is not a function` and every /api/wire call 500s. Production (Neon HTTP) never loaded it, which is why the ledger did not see it.
+13. **`node --test` on Node 22.22 discovers `*.test.ts` and strips types natively** — tests import siblings with explicit `.ts` extensions, which needs `allowImportingTsExtensions: true` in tsconfig (legal because `noEmit` is true). No test framework, no loader.
+14. **Lighthouse numbers are garbage while anything else loads the server** — the first run during the shoot scored 88 and two routes errored with an "interstitial"; sequential runs on a quiet machine gave 92/94/97. Run it alone, always.
+15. **`react-hooks/set-state-in-effect` is enforced by this eslint-config-next** — the mounted-flag pattern is `useSyncExternalStore(() => () => {}, () => true, () => false)`, not `useEffect(() => setMounted(true))`.
+16. **The pkill self-match trap struck again** (exit 144) — kill servers by port: `fuser -k 3100/tcp`.
+17. **The Playwright MCP is not registered in this session**, but the plugin's `scripts/measure/*.mjs` are plain `async (page) => …` expressions and run unchanged through the Playwright library (`new Function("return " + source)()`); gate-runner agents report those halves UNVERIFIED and the Lead cites its own library run — recorded that way in QA.md, never as an MCP run.

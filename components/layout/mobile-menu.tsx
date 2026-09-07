@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Dialog } from "radix-ui";
 import { X } from "lucide-react";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 // Radix Dialog supplies focus trap, Escape, scroll lock. The TRIGGER lives in
 // header.tsx (this chunk loads on first open; focus return is handled there).
@@ -12,7 +13,7 @@ const items = [
   { href: "/#w1", label: "ultraweb", cls: "text-world-uw-chrome" },
   { href: "/#w2", label: "hardmode", cls: "text-world-hm-chrome" },
   { href: "/#w3", label: "gtheme", cls: "text-world-gt-chrome" },
-  { href: "/#w0", label: "this site", cls: "text-muted-foreground" },
+  { href: "/#w0", label: "this site", cls: "text-foreground/70" },
   { href: "/#operator", label: "Operator", cls: "text-foreground" },
 ] as const;
 
@@ -70,14 +71,18 @@ export function MobileMenu({
           </nav>
 
           <div className="mt-auto border-t border-border pt-5">
-            <Dialog.Close asChild>
-              <Link
-                href="/#contact"
-                className="font-mono text-sm text-foreground underline underline-offset-4"
-              >
-                Work with me →
-              </Link>
-            </Dialog.Close>
+            <div className="flex items-center justify-between gap-4">
+              <Dialog.Close asChild>
+                <Link
+                  href="/#contact"
+                  className="font-mono text-sm text-foreground underline underline-offset-4"
+                >
+                  Work with me <span aria-hidden="true">→</span>
+                </Link>
+              </Dialog.Close>
+              {/* theme control reachable from the open menu (panel I31) */}
+              <ThemeToggle />
+            </div>
             <p className="mt-3 font-mono text-2xs text-muted-foreground">
               github.com/blyatiful1 · the wire updates this site on its own
             </p>

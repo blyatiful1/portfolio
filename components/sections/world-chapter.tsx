@@ -15,14 +15,20 @@ export type ChapterContent = {
   title: React.ReactNode;
   copy: React.ReactNode;
   facts: { label: string; value: React.ReactNode }[];
-  cta: { href: string; label: string; external?: boolean };
+  /** label is the visible text; destination completes the accessible name so
+   *  the link survives a screen reader's links list (panel I39) */
+  cta: { href: string; label: string; destination: string; external?: boolean };
   surface: string; // ground + fg utility classes
+  fg: string; // the world's foreground token — dd values in the facts rail
   muted: string;
   headingClass: string;
   grain?: boolean;
   hazard?: boolean;
 };
 
+// Three honest states (panel I23): pushed <ago> when the repo answered,
+// a distinct unreachable line when it exists but could not be read this
+// recompute, and the plain fallback when there are no facts at all.
 function LiveLine({
   facts,
   fallback,
@@ -30,6 +36,14 @@ function LiveLine({
   facts: RepoFacts | undefined;
   fallback: string;
 }) {
+  if (facts && facts.available && !facts.reachable) {
+    return (
+      <p className="font-mono text-2xs tracking-[0.06em] uppercase opacity-70">
+        <span aria-hidden="true">○ </span>
+        github unreachable — retrying
+      </p>
+    );
+  }
   return (
     <p className="font-mono text-2xs tracking-[0.06em] uppercase opacity-70">
       <span aria-hidden="true" className="text-live">● </span>
@@ -52,6 +66,7 @@ export function WorldChapter({
   recent?: WireEvent[];
 }) {
   const c = content;
+  const live = repoFacts?.reachable ? repoFacts : undefined;
   return (
     <section id={c.anchor} data-world={c.world} className="bg-background">
       <div
@@ -90,11 +105,16 @@ export function WorldChapter({
                 className="nav-link inline-block py-3.5 font-mono text-sm font-medium tracking-[0.08em] uppercase text-primary"
               >
                 {c.cta.label}
+                <span className="sr-only"> — {c.cta.destination}</span>
+                <span aria-hidden="true"> {c.cta.external ? "↗" : "→"}</span>
               </Link>
             </p>
           </Reveal>
 
-          {/* facts rail — Offset Split: starts 3rem below the narrative top edge */}
+          {/* facts rail — Offset Split: starts 3rem below the narrative top edge.
+              dt = the world's muted token, dd = its foreground token: the
+              hierarchy is a verified pair, not an alpha on a muted color
+              (panel I02: opacity-60 landed the 12px labels at 2.6–3.6:1) */}
           <Reveal
             delay={0.06}
             className={`min-w-0 border-l border-current/25 pl-6 md:mt-12 ${c.muted}`}
@@ -104,30 +124,34 @@ export function WorldChapter({
                   in the md..lg band instead of squeezing a 137px column */}
               {c.facts.map((f) => (
                 <div key={f.label} className="grid grid-cols-[6.5rem_1fr] gap-2 md:max-lg:grid-cols-1 md:max-lg:gap-0.5">
-                  <dt className="opacity-60">{f.label}</dt>
-                  <dd className="text-current">{f.value}</dd>
+                  <dt>{f.label}</dt>
+                  <dd className={c.fg}>{f.value}</dd>
                 </div>
               ))}
-              {repoFacts && repoFacts.totalCommits > 0 && (
+              {live && live.totalCommits > 0 && (
                 <div className="grid grid-cols-[6.5rem_1fr] gap-2 md:max-lg:grid-cols-1 md:max-lg:gap-0.5">
-                  <dt className="opacity-60">commits</dt>
-                  <dd className="tabular-nums">
-                    {repoFacts.totalCommits} · {repoFacts.aiCommits} AI-authored
+                  <dt>commits</dt>
+                  <dd className={`tabular-nums ${c.fg}`}>
+                    {live.totalCommits}
+                    {live.truncated ? "+" : ""} · {live.aiCommits} AI-authored
+                    {live.truncated && (
+                      <span className="sr-only"> (most recent 500 read)</span>
+                    )}
                   </dd>
                 </div>
               )}
             </dl>
-            {repoFacts && repoFacts.languages.length > 0 && (
+            {live && live.languages.length > 0 && (
               <div className="mt-6">
-                <LanguageBar languages={repoFacts.languages} />
+                <LanguageBar languages={live.languages} />
               </div>
             )}
             {recent && recent.length > 0 && (
               <ul className="mt-6 space-y-1.5 border-t border-current/25 pt-4 font-mono text-2xs" aria-label="Recent commits">
                 {recent.slice(0, 3).map((e) => (
                   <li key={e.sha} className="flex min-w-0 gap-2">
-                    <span className="font-medium opacity-80">{e.sha}</span>
-                    <span className="min-w-0 truncate opacity-60">{e.message}</span>
+                    <span className={`font-medium ${c.fg}`}>{e.sha}</span>
+                    <span className="min-w-0 truncate">{e.message}</span>
                   </li>
                 ))}
               </ul>

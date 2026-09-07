@@ -16,7 +16,7 @@ export default function SiteError({
       </h1>
       <p className="mt-5 max-w-[46ch] text-base text-muted-foreground">
         A section of this page failed to render. The repos are fine — this is
-        the site&apos;s problem, not yours.
+        the site’s problem, not yours.
       </p>
       <button
         type="button"

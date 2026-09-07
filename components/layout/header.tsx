@@ -8,6 +8,7 @@ import { Menu } from "lucide-react";
 import { Wordmark } from "@/components/brand/wordmark";
 import { LiveChip } from "@/components/wire/live-chip";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 import type { MobileMenu as MobileMenuT } from "./mobile-menu";
 
 // radix Dialog stays out of the cold load: a plain import() on first open —
@@ -76,6 +77,9 @@ export function Header() {
             ))
           )}
           <LiveChip />
+          {/* the theme control lives where a visitor looks first, not only at
+              the foot of a 6,500px page (panel I31) */}
+          <ThemeToggle />
           <Button
             asChild
             size="sm"

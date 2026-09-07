@@ -16,6 +16,34 @@ const failures = [
   { n: "04", h: "Losing the request across a compaction", p: "The original task quietly mutates into its summary." },
 ];
 
+// The twelve hooks as wired in hooks/hooks.json at v3.1.0 (2026-09-02):
+// name · the event it binds · what its exit code means. Names resolve the
+// "12" below (panel I25); read from the repo, not remembered.
+const hooks = [
+  ["destructive-guard", "PreToolUse · Bash", "exit 2 blocks reset/checkout/clean/rm over uncommitted work, force-push, rm of the repo"],
+  ["claim-audit", "Stop", "exit 2 bounces a “done” claim with no check run and passed after the last edit"],
+  ["loop-alarm", "PostToolUse · PostToolUseFailure · PreToolUse(Edit)", "exit 2 nudges on the 3rd identical failing command; denies the 3rd identical failing edit"],
+  ["readonly-agent", "PreToolUse · Bash/Edit/Write", "exit 2 denies tree writes from verifier, plan-critic, oracle, scout"],
+  ["contract-gate", "SubagentStop", "sends back a verifier/critic/oracle answer that misses its VERDICT structure"],
+  ["commit-preflight", "PreToolUse · Bash", "context nudge on git commit/push when edits landed after the last green check"],
+  ["mem-privacy-guard", "PreToolUse · Write/Edit", "exit 2 blocks secret-shaped or work-marker writes into memory"],
+  ["workflow-lint", "PreToolUse · Workflow", "exit 2 rejects a workflow script that breaks the kit’s rules before it spends money"],
+  ["precompact-save-task", "PreCompact", "saves the original request, later corrections and git state verbatim"],
+  ["compact-recovery", "SessionStart · compact", "re-injects the saved request and protocol after compaction"],
+  ["floor-check", "SessionStart · startup/resume/clear", "witnesses the floor running; self-tests hooks when the harness binary changes"],
+  ["ledger-summary", "SessionEnd", "rolls the session’s firing ledger into one line — “armed” becomes a number"],
+] as const;
+
+// The four fresh-context agents — trigger · context · what comes back — each
+// read-only by hook enforcement, three of them answering in a machine-checked
+// contract (agents/*.md at v3.1.0).
+const agents = [
+  ["verifier", "before reporting multi-file or high-stakes work as done", "the claim plus the files or diff; runs the canonical check itself", "VERDICT: CONFIRMED | REFUTED | PARTIAL · EVIDENCE · GAPS"],
+  ["plan-critic", "before any multi-file, unfamiliar or risky implementation", "the plan plus the original request verbatim", "VERDICT: SOUND | NEEDS CHANGES | WRONG APPROACH · BLOCKERS · RISKS · SIMPLER"],
+  ["oracle", "a bug that survived two fix attempts, or contradictory evidence", "every symptom, attempt, output and code path gathered so far", "DIAGNOSIS · CONFIDENCE · ALTERNATIVES · NEXT EXPERIMENT"],
+  ["scout", "a workflow stage that must read and probe but never write", "the subsystem or claim to map, refute or hunt through", "structured findings; COULD NOT VERIFY where a probe was impossible"],
+] as const;
+
 export default function HardmodeCaseStudy() {
   return (
     <main id="main" tabIndex={-1} className="outline-none light:bg-[var(--w2-ground)]">
@@ -39,15 +67,22 @@ export default function HardmodeCaseStudy() {
             loyalty.
           </p>
           <p className="mt-8 font-mono text-xs tracking-[0.06em] uppercase text-w2-muted">
-            Python · 6 hooks · 3 agents · v3.0.0 ·{" "}
+            Python · 12 hooks · 4 agents · v3.1.0 ·{" "}
             <a
               className="underline underline-offset-2"
               href="https://github.com/blyatiful1/hardmode"
               target="_blank"
               rel="noreferrer"
             >
-              repo ↗
+              hardmode repo on GitHub <span aria-hidden="true">↗</span>
             </a>
+          </p>
+          {/* the timeline: dates and what was cut, so the study shows work
+              to a clock, not only a result (panel I16) */}
+          <p className="mt-3 font-mono text-xs tracking-[0.06em] uppercase text-w2-muted">
+            Started Jul 2026 as fable-protocol · re-based and renamed v3.0, Aug
+            2026 · v3.1, 2 Sep 2026 — cut: the succession premise it was built
+            for.
           </p>
         </div>
       </section>
@@ -64,12 +99,13 @@ export default function HardmodeCaseStudy() {
                 key={item.n}
                 className="grid grid-cols-[4.5rem_1fr] items-baseline gap-6 border-b border-border py-7 last:border-b-0"
               >
-                <span aria-hidden="true" className="font-mono text-3xl font-medium text-world-hm-chrome/70">
+                <span aria-hidden="true" className="font-mono text-3xl font-medium text-world-hm-chrome/70 light:text-world-hm-chrome">
                   {item.n}
                 </span>
                 <div>
                   <h3 className="text-xl font-medium">{item.h}</h3>
-                  <p className="mt-1.5 text-sm text-muted-foreground">{item.p}</p>
+                  {/* the argument reads at body size, not caption size (I48) */}
+                  <p className="mt-1.5 text-base text-muted-foreground">{item.p}</p>
                 </div>
               </div>
             ))}
@@ -89,8 +125,8 @@ export default function HardmodeCaseStudy() {
               <h3 className="text-2xl font-medium">
                 Hooks that cannot be talked out of
               </h3>
-              <p className="mt-3 max-w-[46ch] text-sm text-muted-foreground">
-                A destructive command on a dirty tree doesn&apos;t start a
+              <p className="mt-3 max-w-[46ch] text-base text-muted-foreground">
+                A destructive command on a dirty tree doesn’t start a
                 debate — it gets blocked, deterministically. The scoped,
                 recoverable version passes untouched.
               </p>
@@ -114,9 +150,9 @@ kit:   ALLOWED (exit 0) — scoped deletes pass untouched`}
           <div className="mt-16 grid items-center gap-10 md:grid-cols-[4fr_6fr]">
             <div>
               <h3 className="text-2xl font-medium">
-                Honesty ends the session, claims don&apos;t
+                Honesty ends the session, claims don’t
               </h3>
-              <p className="mt-3 max-w-[46ch] text-sm text-muted-foreground">
+              <p className="mt-3 max-w-[46ch] text-base text-muted-foreground">
                 “All done — tests pass” with no test run gets bounced by the
                 claim audit. The honest report — two failures remain — sails
                 through. The loop alarm fires on the third identical failure.
@@ -138,6 +174,78 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
               </pre>
             </figure>
           </div>
+
+          {/* the identifiers behind the numbers (panel I25) — terse, the
+              figures above already carry the proof */}
+          <div className="mt-20">
+            <h3 className="text-2xl font-medium">The twelve, by name</h3>
+            <p className="mt-3 max-w-[56ch] text-base text-muted-foreground">
+              As wired in hooks/hooks.json at v3.1.0 — the event each binds and
+              what its exit code does.
+            </p>
+            <div
+              className="mt-6 overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              role="region"
+              aria-label="The twelve hooks"
+              tabIndex={0}
+            >
+              <table className="w-full min-w-[40rem] border-collapse font-mono text-xs">
+                <caption className="sr-only">The twelve hardmode hooks: name, bound event, exit-code semantics</caption>
+                <thead>
+                  <tr className="border-b border-border text-left text-2xs tracking-[0.14em] uppercase text-muted-foreground">
+                    <th scope="col" className="py-2 pr-4 font-medium">hook</th>
+                    <th scope="col" className="py-2 pr-4 font-medium">event</th>
+                    <th scope="col" className="py-2 font-medium">exit code means</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {hooks.map(([name, event, meaning]) => (
+                    <tr key={name} className="border-b border-border align-top last:border-b-0">
+                      <th scope="row" className="py-2 pr-4 text-left font-medium whitespace-nowrap text-world-hm-chrome">{name}</th>
+                      <td className="py-2 pr-4 text-muted-foreground">{event}</td>
+                      <td className="py-2 text-foreground/85">{meaning}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mt-16">
+            <h3 className="text-2xl font-medium">The four, with no loyalty</h3>
+            <p className="mt-3 max-w-[56ch] text-base text-muted-foreground">
+              Fresh-context agents, read-only by the readonly-agent hook — not by
+              promise. What triggers each, what it is handed, what it must return.
+            </p>
+            <div
+              className="mt-6 overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              role="region"
+              aria-label="The four agents"
+              tabIndex={0}
+            >
+              <table className="w-full min-w-[44rem] border-collapse font-mono text-xs">
+                <caption className="sr-only">The four hardmode agents: trigger, context received, contract returned</caption>
+                <thead>
+                  <tr className="border-b border-border text-left text-2xs tracking-[0.14em] uppercase text-muted-foreground">
+                    <th scope="col" className="py-2 pr-4 font-medium">agent</th>
+                    <th scope="col" className="py-2 pr-4 font-medium">triggered by</th>
+                    <th scope="col" className="py-2 pr-4 font-medium">handed</th>
+                    <th scope="col" className="py-2 font-medium">returns</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {agents.map(([name, trigger, context, returns]) => (
+                    <tr key={name} className="border-b border-border align-top last:border-b-0">
+                      <th scope="row" className="py-2 pr-4 text-left font-medium whitespace-nowrap text-world-hm-chrome">{name}</th>
+                      <td className="py-2 pr-4 text-muted-foreground">{trigger}</td>
+                      <td className="py-2 pr-4 text-muted-foreground">{context}</td>
+                      <td className="py-2 text-foreground/85">{returns}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -146,9 +254,9 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
         <div className="mx-auto max-w-content px-4 py-16 sm:px-6 md:py-24">
           <div className="grid gap-8 sm:grid-cols-3">
             {[
-              ["6", "hooks, deterministic"],
-              ["3", "fresh-context verifier agents"],
-              ["4/4", "demo scenarios blocked — proven in CI"],
+              ["12", "hooks, deterministic"],
+              ["4", "fresh-context agents, read-only by hook"],
+              ["10/10", "demo scenarios blocked — proven in CI"],
             ].map(([v, l]) => (
               <div key={l} className="bracket-frame p-5">
                 <p className="text-5xl font-bold tracking-tight tabular-nums">{v}</p>
@@ -164,7 +272,16 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
               verification earns its cost by being independent, not by being
               smarter than the drafter.
             </span>{" "}
-            This portfolio was built under exactly this regime.
+            This portfolio was built under exactly this regime. The CI run
+            behind the 10/10:{" "}
+            <a
+              className="underline underline-offset-4"
+              href="https://github.com/blyatiful1/hardmode/actions"
+              target="_blank"
+              rel="noreferrer"
+            >
+              hardmode’s Actions on GitHub <span aria-hidden="true">↗</span>
+            </a>
           </p>
         </div>
       </section>
@@ -174,13 +291,13 @@ kit:   attempt 3 -> LOOP ALARM (exit 2) — "this exact
         <div className="mx-auto flex max-w-content flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6">
           <div className="flex flex-wrap gap-x-7 gap-y-3 font-mono text-sm">
             <a className="nav-link uppercase tracking-[0.08em] text-world-hm-chrome" href="https://github.com/blyatiful1/hardmode" target="_blank" rel="noreferrer">
-              the repo ↗
+              hardmode on GitHub <span aria-hidden="true">↗</span>
             </a>
             <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/work/ultraweb">
-              ← previous world: ultraweb
+              <span aria-hidden="true">← </span>previous world: ultraweb
             </Link>
             <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/#worlds">
-              all worlds →
+              all worlds <span aria-hidden="true">→</span>
             </Link>
           </div>
           <Button asChild>

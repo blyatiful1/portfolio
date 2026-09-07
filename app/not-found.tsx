@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
+// WCAG 2.4.2: the document title says the address was wrong (panel I19) —
+// the root template renders this as "No such world · Iwan Braun".
+export const metadata: Metadata = {
+  title: "No such world",
+  robots: { index: false },
+};
+
 // Full site chrome (judge r2 d1): the 404 is still the site — header, footer,
 // legal links reachable (§5 DDG: ständig verfügbar), theme toggle intact.
+// The footer's live fraction is dropped here: this route is a frozen static
+// shell and a baked number would contradict the live one (panel I06).
 export default function NotFound() {
   return (
     <>
@@ -14,8 +24,8 @@ export default function NotFound() {
         Skip to content
       </a>
       <Header />
-      {/* r4: the 404 speaks the site's own grammar — left-aligned on the content
-          grid with the chapters' bleeding ghost numeral, not a centered island */}
+      {/* r4: the 404 speaks the site’s own grammar — left-aligned on the content
+          grid with the chapters’ bleeding ghost numeral, not a centered island */}
       <main
         id="main"
         tabIndex={-1}
@@ -31,7 +41,11 @@ export default function NotFound() {
           <p className="font-mono text-2xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
             <span aria-hidden="true">[ ?? ]</span> uncharted
           </p>
-          <h1 className="display-features mt-5 max-w-[13ch] text-5xl font-bold tracking-tighter">
+          <h1
+            id="main-heading"
+            tabIndex={-1}
+            className="display-features mt-5 max-w-[13ch] text-5xl font-bold tracking-tighter outline-none"
+          >
             No such world
             <span
               aria-hidden="true"
@@ -39,18 +53,18 @@ export default function NotFound() {
             />
           </h1>
           <p className="mt-5 max-w-[44ch] text-base text-pretty text-muted-foreground">
-            This address isn&apos;t on the wire. Four worlds exist — this
-            isn&apos;t one of them.
+            This address isn’t on the wire. Four worlds exist — this
+            isn’t one of them.
           </p>
           <Link
             href="/"
             className="nav-link mt-9 inline-block py-3.5 font-mono text-sm font-medium tracking-[0.08em] uppercase text-foreground"
           >
-            ← Back to world 00
+            <span aria-hidden="true">← </span>Back to world 00 — home
           </Link>
         </div>
       </main>
-      <Footer />
+      <Footer stat="none" />
     </>
   );
 }

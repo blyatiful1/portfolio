@@ -1,0 +1,7750 @@
+{
+ "console": {
+  "home-dark-375": [],
+  "home-dark-768": [],
+  "home-dark-1440": [],
+  "work-ultraweb-dark-375": [],
+  "work-ultraweb-dark-768": [],
+  "work-ultraweb-dark-1440": [],
+  "work-hardmode-dark-375": [],
+  "work-hardmode-dark-768": [],
+  "work-hardmode-dark-1440": [],
+  "impressum-dark-375": [],
+  "impressum-dark-768": [],
+  "impressum-dark-1440": [],
+  "datenschutz-dark-375": [],
+  "datenschutz-dark-768": [],
+  "datenschutz-dark-1440": [],
+  "notfound-dark-375": [
+   "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "notfound-dark-768": [
+   "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "notfound-dark-1440": [
+   "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "home-light-375": [],
+  "home-light-768": [],
+  "home-light-1440": [],
+  "work-ultraweb-light-375": [],
+  "work-ultraweb-light-768": [],
+  "work-ultraweb-light-1440": [],
+  "work-hardmode-light-375": [],
+  "work-hardmode-light-768": [],
+  "work-hardmode-light-1440": [],
+  "impressum-light-375": [],
+  "impressum-light-768": [],
+  "impressum-light-1440": [],
+  "datenschutz-light-375": [],
+  "datenschutz-light-768": [],
+  "datenschutz-light-1440": [],
+  "notfound-light-375": [
+   "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "notfound-light-768": [
+   "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "notfound-light-1440": [
+   "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "axe": {
+  "home-dark-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "home-dark-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-ultraweb-dark-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-ultraweb-dark-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-hardmode-dark-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-hardmode-dark-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "impressum-dark-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "impressum-dark-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "datenschutz-dark-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "datenschutz-dark-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "notfound-dark-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "notfound-dark-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "home-light-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "home-light-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-ultraweb-light-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-ultraweb-light-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-hardmode-light-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "work-hardmode-light-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "impressum-light-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "impressum-light-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "datenschutz-light-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "datenschutz-light-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".display-features"
+     ]
+    }
+   ]
+  },
+  "notfound-light-375": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  },
+  "notfound-light-1440": {
+   "source": "path",
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": [
+      ".translate-y-\\[14\\%\\]"
+     ]
+    }
+   ]
+  }
+ },
+ "contrast": {
+  "home-dark-375": {
+   "pairs": 240,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "home-dark-1440": {
+   "pairs": 266,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "work-ultraweb-dark-375": {
+   "pairs": 75,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "work-ultraweb-dark-1440": {
+   "pairs": 78,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "work-hardmode-dark-375": {
+   "pairs": 140,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "work-hardmode-dark-1440": {
+   "pairs": 143,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "impressum-dark-375": {
+   "pairs": 52,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "impressum-dark-1440": {
+   "pairs": 56,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "datenschutz-dark-375": {
+   "pairs": 59,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "datenschutz-dark-1440": {
+   "pairs": 63,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "notfound-dark-375": {
+   "pairs": 31,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "notfound-dark-1440": {
+   "pairs": 35,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#292a30",
+     "bg": "#0e0f15",
+     "ratio": 1.34,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "dark"
+  },
+  "home-light-375": {
+   "pairs": 240,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "home-light-1440": {
+   "pairs": 266,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "work-ultraweb-light-375": {
+   "pairs": 75,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "work-ultraweb-light-1440": {
+   "pairs": 78,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "work-hardmode-light-375": {
+   "pairs": 140,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "work-hardmode-light-1440": {
+   "pairs": 143,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "impressum-light-375": {
+   "pairs": 52,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "impressum-light-1440": {
+   "pairs": 56,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "datenschutz-light-375": {
+   "pairs": 59,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "datenschutz-light-1440": {
+   "pairs": 63,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "notfound-light-375": {
+   "pairs": 31,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 64,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  },
+  "notfound-light-1440": {
+   "pairs": 35,
+   "failing": [
+    {
+     "selector": "html > body > footer > div:nth-of-type(2) > p",
+     "text": "IWAN·BRAUN",
+     "fg": "#dddee3",
+     "bg": "#fafcff",
+     "ratio": 1.3,
+     "fontSize": 223.2,
+     "weight": 700,
+     "required": 3,
+     "pass": false,
+     "bgAssumed": false
+    }
+   ],
+   "error": null,
+   "themeSeen": "light"
+  }
+ },
+ "overflow": {
+  "home-dark-375": false,
+  "home-dark-768": false,
+  "home-dark-1440": false,
+  "work-ultraweb-dark-375": false,
+  "work-ultraweb-dark-768": false,
+  "work-ultraweb-dark-1440": false,
+  "work-hardmode-dark-375": false,
+  "work-hardmode-dark-768": false,
+  "work-hardmode-dark-1440": false,
+  "impressum-dark-375": false,
+  "impressum-dark-768": false,
+  "impressum-dark-1440": false,
+  "datenschutz-dark-375": false,
+  "datenschutz-dark-768": false,
+  "datenschutz-dark-1440": false,
+  "notfound-dark-375": false,
+  "notfound-dark-768": false,
+  "notfound-dark-1440": false,
+  "home-light-375": false,
+  "home-light-768": false,
+  "home-light-1440": false,
+  "work-ultraweb-light-375": false,
+  "work-ultraweb-light-768": false,
+  "work-ultraweb-light-1440": false,
+  "work-hardmode-light-375": false,
+  "work-hardmode-light-768": false,
+  "work-hardmode-light-1440": false,
+  "impressum-light-375": false,
+  "impressum-light-768": false,
+  "impressum-light-1440": false,
+  "datenschutz-light-375": false,
+  "datenschutz-light-768": false,
+  "datenschutz-light-1440": false,
+  "notfound-light-375": false,
+  "notfound-light-768": false,
+  "notfound-light-1440": false
+ },
+ "landmarks": {
+  "home-dark-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "img",
+     "label": "Languages: JavaScript 86%, Shell 10%, HTML 4%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "img",
+     "label": "Languages: Python 87%, JavaScript 13%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "img",
+     "label": "Languages: Python 98%, CSS 1%, Shell 1%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "img",
+     "label": "Languages: TypeScript 91%, CSS 9%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "One operator.Four worlds",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "The wire — all worlds, as it happens",
+     "selector": "#main > div:nth-of-type(1) > div > div > h2"
+    },
+    {
+     "level": 2,
+     "text": "ultraweb, a design studio you can install",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "hardmode",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "gtheme, for the nervous",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "This site. It watches the others — and itself.",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "The code is theirs. The standard is mine.",
+     "selector": "#operator > div > div > div:nth-of-type(1) > h2"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "work-ultraweb-dark-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "The studio that built the page you’re reading",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "Why it exists",
+     "selector": "#main > section:nth-of-type(2) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "AI sites all look the same",
+     "selector": "div > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "A studio is a process, not a prompt",
+     "selector": "div > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "So the process got installed",
+     "selector": "div > div > div:nth-of-type(3) > div > h3"
+    },
+    {
+     "level": 2,
+     "text": "How it works — shown on this very site",
+     "selector": "#main > section:nth-of-type(3) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "The client points, the studio commits",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "What was approved, before a line of production code",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Taste is written down, then enforced",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(3) > div > h3"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "work-hardmode-dark-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "region",
+     "label": "The twelve hooks",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(3) > div"
+    },
+    {
+     "role": "region",
+     "label": "The four agents",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(4) > div"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "Advice loses to momentum",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "The enemies — each one repeatable",
+     "selector": "#main > section:nth-of-type(2) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "Declaring victory without running the check",
+     "selector": "div > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "git reset --hard over uncommitted work",
+     "selector": "div > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Grinding the same failing command",
+     "selector": "div > div > div:nth-of-type(3) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Losing the request across a compaction",
+     "selector": "div > div > div:nth-of-type(4) > div > h3"
+    },
+    {
+     "level": 2,
+     "text": "The floor — real output, captured from the shipped hooks",
+     "selector": "#main > section:nth-of-type(3) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "Hooks that cannot be talked out of",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Honesty ends the session, claims don’t",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "The twelve, by name",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(3) > h3"
+    },
+    {
+     "level": 3,
+     "text": "The four, with no loyalty",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(4) > h3"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "impressum-dark-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "complementary",
+     "label": "",
+     "selector": "#main > div > aside"
+    },
+    {
+     "role": "navigation",
+     "label": "Abschnitte",
+     "selector": "#main > div > aside > nav"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "Impressum",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "Diensteanbieter (§ 5 DDG)",
+     "selector": "#anbieter > h2"
+    },
+    {
+     "level": 2,
+     "text": "Kontakt",
+     "selector": "#kontakt > h2"
+    },
+    {
+     "level": 2,
+     "text": "Verbraucherstreitbeilegung (§ 36 VSBG)",
+     "selector": "#vsbg > h2"
+    },
+    {
+     "level": 2,
+     "text": "Hinweis",
+     "selector": "#hinweis > h2"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "datenschutz-dark-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "complementary",
+     "label": "",
+     "selector": "#main > div > aside"
+    },
+    {
+     "role": "navigation",
+     "label": "Abschnitte",
+     "selector": "#main > div > aside > nav"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "Datenschutzerklärung",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "Verantwortlicher",
+     "selector": "#verantwortlicher > h2"
+    },
+    {
+     "level": 2,
+     "text": "Hosting und Server-Logs",
+     "selector": "#hosting > h2"
+    },
+    {
+     "level": 2,
+     "text": "Kontaktaufnahme",
+     "selector": "#kontakt > h2"
+    },
+    {
+     "level": 2,
+     "text": "Empfänger und Drittlandtransfer",
+     "selector": "#empfaenger > h2"
+    },
+    {
+     "level": 2,
+     "text": "Live-Daten von GitHub",
+     "selector": "#github > h2"
+    },
+    {
+     "level": 2,
+     "text": "Lokale Speicherung",
+     "selector": "#speicherung > h2"
+    },
+    {
+     "level": 2,
+     "text": "Ihre Rechte",
+     "selector": "#rechte > h2"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "notfound-dark-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "No such world",
+     "selector": "#main-heading"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "home-light-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "img",
+     "label": "Languages: JavaScript 86%, Shell 10%, HTML 4%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "img",
+     "label": "Languages: Python 87%, JavaScript 13%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "img",
+     "label": "Languages: Python 98%, CSS 1%, Shell 1%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "img",
+     "label": "Languages: TypeScript 91%, CSS 9%",
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "One operator.Four worlds",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "The wire — all worlds, as it happens",
+     "selector": "#main > div:nth-of-type(1) > div > div > h2"
+    },
+    {
+     "level": 2,
+     "text": "ultraweb, a design studio you can install",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "hardmode",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "gtheme, for the nervous",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "This site. It watches the others — and itself.",
+     "selector": "div > div > div:nth-of-type(2) > div:nth-of-type(1) > h2"
+    },
+    {
+     "level": 2,
+     "text": "The code is theirs. The standard is mine.",
+     "selector": "#operator > div > div > div:nth-of-type(1) > h2"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "work-ultraweb-light-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "The studio that built the page you’re reading",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "Why it exists",
+     "selector": "#main > section:nth-of-type(2) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "AI sites all look the same",
+     "selector": "div > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "A studio is a process, not a prompt",
+     "selector": "div > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "So the process got installed",
+     "selector": "div > div > div:nth-of-type(3) > div > h3"
+    },
+    {
+     "level": 2,
+     "text": "How it works — shown on this very site",
+     "selector": "#main > section:nth-of-type(3) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "The client points, the studio commits",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "What was approved, before a line of production code",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Taste is written down, then enforced",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(3) > div > h3"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "work-hardmode-light-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "region",
+     "label": "The twelve hooks",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(3) > div"
+    },
+    {
+     "role": "region",
+     "label": "The four agents",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(4) > div"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "Advice loses to momentum",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "The enemies — each one repeatable",
+     "selector": "#main > section:nth-of-type(2) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "Declaring victory without running the check",
+     "selector": "div > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "git reset --hard over uncommitted work",
+     "selector": "div > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Grinding the same failing command",
+     "selector": "div > div > div:nth-of-type(3) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Losing the request across a compaction",
+     "selector": "div > div > div:nth-of-type(4) > div > h3"
+    },
+    {
+     "level": 2,
+     "text": "The floor — real output, captured from the shipped hooks",
+     "selector": "#main > section:nth-of-type(3) > div > h2"
+    },
+    {
+     "level": 3,
+     "text": "Hooks that cannot be talked out of",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(1) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "Honesty ends the session, claims don’t",
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(2) > div > h3"
+    },
+    {
+     "level": 3,
+     "text": "The twelve, by name",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(3) > h3"
+    },
+    {
+     "level": 3,
+     "text": "The four, with no loyalty",
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(4) > h3"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "impressum-light-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "complementary",
+     "label": "",
+     "selector": "#main > div > aside"
+    },
+    {
+     "role": "navigation",
+     "label": "Abschnitte",
+     "selector": "#main > div > aside > nav"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "Impressum",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "Diensteanbieter (§ 5 DDG)",
+     "selector": "#anbieter > h2"
+    },
+    {
+     "level": 2,
+     "text": "Kontakt",
+     "selector": "#kontakt > h2"
+    },
+    {
+     "level": 2,
+     "text": "Verbraucherstreitbeilegung (§ 36 VSBG)",
+     "selector": "#vsbg > h2"
+    },
+    {
+     "level": 2,
+     "text": "Hinweis",
+     "selector": "#hinweis > h2"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "datenschutz-light-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "complementary",
+     "label": "",
+     "selector": "#main > div > aside"
+    },
+    {
+     "role": "navigation",
+     "label": "Abschnitte",
+     "selector": "#main > div > aside > nav"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "Datenschutzerklärung",
+     "selector": "#main-heading"
+    },
+    {
+     "level": 2,
+     "text": "Verantwortlicher",
+     "selector": "#verantwortlicher > h2"
+    },
+    {
+     "level": 2,
+     "text": "Hosting und Server-Logs",
+     "selector": "#hosting > h2"
+    },
+    {
+     "level": 2,
+     "text": "Kontaktaufnahme",
+     "selector": "#kontakt > h2"
+    },
+    {
+     "level": 2,
+     "text": "Empfänger und Drittlandtransfer",
+     "selector": "#empfaenger > h2"
+    },
+    {
+     "level": 2,
+     "text": "Live-Daten von GitHub",
+     "selector": "#github > h2"
+    },
+    {
+     "level": 2,
+     "text": "Lokale Speicherung",
+     "selector": "#speicherung > h2"
+    },
+    {
+     "level": 2,
+     "text": "Ihre Rechte",
+     "selector": "#rechte > h2"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  },
+  "notfound-light-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "landmarks": [
+    {
+     "role": "banner",
+     "label": "",
+     "selector": "html > body > header"
+    },
+    {
+     "role": "img",
+     "label": "Iwan Braun",
+     "selector": "body > header > div > a > svg"
+    },
+    {
+     "role": "navigation",
+     "label": "Main",
+     "selector": "html > body > header > div > nav"
+    },
+    {
+     "role": "main",
+     "label": "",
+     "selector": "#main"
+    },
+    {
+     "role": "contentinfo",
+     "label": "",
+     "selector": "html > body > footer"
+    },
+    {
+     "role": "navigation",
+     "label": "Footer",
+     "selector": "html > body > footer > div:nth-of-type(1) > nav"
+    }
+   ],
+   "headings": [
+    {
+     "level": 1,
+     "text": "No such world",
+     "selector": "#main-heading"
+    }
+   ],
+   "issues": [],
+   "truncated": false
+  }
+ },
+ "forms": {
+  "home-dark-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "forms": [
+    {
+     "selector": "#contact > form",
+     "fields": [
+      {
+       "selector": "#contact-name",
+       "name": "Name",
+       "type": "text",
+       "labelled": true,
+       "required": true,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": "name"
+      },
+      {
+       "selector": "#contact-email",
+       "name": "Email",
+       "type": "email",
+       "labelled": true,
+       "required": true,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": "email"
+      },
+      {
+       "selector": "#contact-message",
+       "name": "What are you building?",
+       "type": "textarea",
+       "labelled": true,
+       "required": true,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": null
+      },
+      {
+       "selector": "#contact-company-url",
+       "name": "Leave this empty",
+       "type": "text",
+       "labelled": true,
+       "required": false,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": "off"
+      }
+     ],
+     "submit": {
+      "text": "Work with me",
+      "disabled": false
+     }
+    }
+   ],
+   "issues": [
+    {
+     "kind": "required-unmarked",
+     "selector": "#contact-name",
+     "detail": "required but nothing visible marks it: \"Name\""
+    },
+    {
+     "kind": "required-unmarked",
+     "selector": "#contact-email",
+     "detail": "required but nothing visible marks it: \"Email\""
+    },
+    {
+     "kind": "required-unmarked",
+     "selector": "#contact-message",
+     "detail": "required but nothing visible marks it: \"What are you building?\""
+    }
+   ],
+   "counts": {
+    "forms": 1,
+    "fields": 4,
+    "issues": 3
+   },
+   "truncated": false
+  },
+  "home-light-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "forms": [
+    {
+     "selector": "#contact > form",
+     "fields": [
+      {
+       "selector": "#contact-name",
+       "name": "Name",
+       "type": "text",
+       "labelled": true,
+       "required": true,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": "name"
+      },
+      {
+       "selector": "#contact-email",
+       "name": "Email",
+       "type": "email",
+       "labelled": true,
+       "required": true,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": "email"
+      },
+      {
+       "selector": "#contact-message",
+       "name": "What are you building?",
+       "type": "textarea",
+       "labelled": true,
+       "required": true,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": null
+      },
+      {
+       "selector": "#contact-company-url",
+       "name": "Leave this empty",
+       "type": "text",
+       "labelled": true,
+       "required": false,
+       "ariaInvalid": false,
+       "describedBy": null,
+       "describedByResolved": {
+        "exists": false,
+        "visible": false,
+        "role": null,
+        "ariaLive": null,
+        "text": ""
+       },
+       "autocomplete": "off"
+      }
+     ],
+     "submit": {
+      "text": "Work with me",
+      "disabled": false
+     }
+    }
+   ],
+   "issues": [
+    {
+     "kind": "required-unmarked",
+     "selector": "#contact-name",
+     "detail": "required but nothing visible marks it: \"Name\""
+    },
+    {
+     "kind": "required-unmarked",
+     "selector": "#contact-email",
+     "detail": "required but nothing visible marks it: \"Email\""
+    },
+    {
+     "kind": "required-unmarked",
+     "selector": "#contact-message",
+     "detail": "required but nothing visible marks it: \"What are you building?\""
+    }
+   ],
+   "counts": {
+    "forms": 1,
+    "fields": 4,
+    "issues": 3
+   },
+   "truncated": false
+  }
+ },
+ "targets": {
+  "home-dark-375": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 27,
+   "truncated": false
+  },
+  "work-ultraweb-dark-375": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "ultraweb on GitHub ↗",
+     "w": 182.8,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "ultraweb-site, the live proof ↗",
+     "w": 283.2,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "text": "next world: hardmode →",
+     "w": 201.1,
+     "h": 21
+    }
+   ],
+   "count": 4,
+   "checked": 17,
+   "truncated": false
+  },
+  "work-hardmode-dark-375": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "hardmode on GitHub ↗",
+     "w": 182.8,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "← previous world: ultraweb",
+     "w": 237.6,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "text": "all worlds →",
+     "w": 109.9,
+     "h": 21
+    }
+   ],
+   "count": 4,
+   "checked": 20,
+   "truncated": false
+  },
+  "impressum-dark-375": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 19,
+   "truncated": false
+  },
+  "datenschutz-dark-375": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 21,
+   "truncated": false
+  },
+  "notfound-dark-375": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "dark",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 13,
+   "truncated": false
+  },
+  "home-light-375": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 27,
+   "truncated": false
+  },
+  "work-ultraweb-light-375": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "ultraweb on GitHub ↗",
+     "w": 182.8,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "ultraweb-site, the live proof ↗",
+     "w": 283.2,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "text": "next world: hardmode →",
+     "w": 201.1,
+     "h": 21
+    }
+   ],
+   "count": 4,
+   "checked": 17,
+   "truncated": false
+  },
+  "work-hardmode-light-375": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "text": "hardmode on GitHub ↗",
+     "w": 182.8,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "text": "← previous world: ultraweb",
+     "w": 237.6,
+     "h": 21
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "text": "all worlds →",
+     "w": 109.9,
+     "h": 21
+    }
+   ],
+   "count": 4,
+   "checked": 20,
+   "truncated": false
+  },
+  "impressum-light-375": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 19,
+   "truncated": false
+  },
+  "datenschutz-light-375": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 21,
+   "truncated": false
+  },
+  "notfound-light-375": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 375,
+    "height": 812
+   },
+   "theme": "light",
+   "threshold": 24,
+   "small": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "text": "Skip to content",
+     "w": 1,
+     "h": 1
+    }
+   ],
+   "count": 1,
+   "checked": 13,
+   "truncated": false
+  }
+ },
+ "alt": {
+  "home-dark-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: JavaScript 86%, Shell 10%, HTML 4%",
+     "decorative": false,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: Python 87%, JavaScript 13%",
+     "decorative": false,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: Python 98%, CSS 1%, Shell 1%",
+     "decorative": false,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: TypeScript 91%, CSS 9%",
+     "decorative": false,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "❚❚ pause the live feed",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Enter world 01 — ultraweb case study →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb-site.vercel.app ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Enter world 02 — hardmode case study →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "tag": "a",
+     "type": null,
+     "name": "tools/demo.py — CI proves every hook blocks ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Visit world 03 — gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "tag": "a",
+     "type": null,
+     "name": "2,610 tests · CI green ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Audit the build — this site’s repo on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-name",
+     "tag": "input",
+     "type": "text",
+     "name": "Name",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-email",
+     "tag": "input",
+     "type": "email",
+     "name": "Email",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-message",
+     "tag": "textarea",
+     "type": null,
+     "name": "What are you building?",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-company-url",
+     "tag": "input",
+     "type": "text",
+     "name": "Leave this empty",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(5) > button[data-slot=\"button\"]",
+     "tag": "button",
+     "type": "submit",
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(5) > a",
+     "tag": "a",
+     "type": null,
+     "name": "or email directly",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact > div > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 5,
+    "controls": 30,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "work-ultraweb-dark-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    },
+    {
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(2) > figure > img",
+     "src": "image",
+     "alt": "The approved B3 mockup: a near-black chrome holding four full-bleed world chapters — ultraweb in terracotta, hardmode in hazard yellow, gtheme in soft light — with the live wire under the headline One operator, four worlds.",
+     "decorative": false,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "← All worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb repo on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb-site, the live proof ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "type": null,
+     "name": "next world: hardmode →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 2,
+    "controls": 19,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "work-hardmode-dark-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "← All worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode repo on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(3) > div",
+     "tag": "div",
+     "type": null,
+     "name": "The twelve hooks",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(4) > div",
+     "tag": "div",
+     "type": null,
+     "name": "The four agents",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(4) > div > p > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode’s Actions on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "← previous world: ultraweb",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "type": null,
+     "name": "all worlds →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 22,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "impressum-dark-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "iwan.braun2004@gmail.com",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "@blyatiful1",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Diensteanbieter",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Kontakt",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Streitbeilegung",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Hinweis",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "← zurück zu den Welten",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 22,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "datenschutz-dark-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#verantwortlicher > div > p > a",
+     "tag": "a",
+     "type": null,
+     "name": "iwan.braun2004@gmail.com",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Verantwortlicher",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Hosting & Logs",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Kontaktaufnahme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Empfänger",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(5) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub-Daten",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(6) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Lokale Speicherung",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(7) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Ihre Rechte",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "← zurück zu den Welten",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 24,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "notfound-dark-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "← Back to world 00 — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to light theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 16,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "home-light-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: JavaScript 86%, Shell 10%, HTML 4%",
+     "decorative": false,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: Python 87%, JavaScript 13%",
+     "decorative": false,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: Python 98%, CSS 1%, Shell 1%",
+     "decorative": false,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > div:nth-of-type(2) > div > div > div",
+     "src": "",
+     "alt": "Languages: TypeScript 91%, CSS 9%",
+     "decorative": false,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(1) > div > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "❚❚ pause the live feed",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Enter world 01 — ultraweb case study →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb-site.vercel.app ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Enter world 02 — hardmode case study →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "tag": "a",
+     "type": null,
+     "name": "tools/demo.py — CI proves every hook blocks ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Visit world 03 — gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "tag": "a",
+     "type": null,
+     "name": "2,610 tests · CI green ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Audit the build — this site’s repo on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-name",
+     "tag": "input",
+     "type": "text",
+     "name": "Name",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-email",
+     "tag": "input",
+     "type": "email",
+     "name": "Email",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-message",
+     "tag": "textarea",
+     "type": null,
+     "name": "What are you building?",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact-company-url",
+     "tag": "input",
+     "type": "text",
+     "name": "Leave this empty",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(5) > button[data-slot=\"button\"]",
+     "tag": "button",
+     "type": "submit",
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(5) > a",
+     "tag": "a",
+     "type": null,
+     "name": "or email directly",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#contact > div > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 5,
+    "controls": 30,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "work-ultraweb-light-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    },
+    {
+     "selector": "section:nth-of-type(3) > div > div:nth-of-type(2) > figure > img",
+     "src": "image",
+     "alt": "The approved B3 mockup: a near-black chrome holding four full-bleed world chapters — ultraweb in terracotta, hardmode in hazard yellow, gtheme in soft light — with the live wire under the headline One operator, four worlds.",
+     "decorative": false,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "← All worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb repo on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb-site, the live proof ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "type": null,
+     "name": "next world: hardmode →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 2,
+    "controls": 19,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "work-hardmode-light-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "← All worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode repo on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(3) > div",
+     "tag": "div",
+     "type": null,
+     "name": "The twelve hooks",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(3) > div > div:nth-of-type(4) > div",
+     "tag": "div",
+     "type": null,
+     "name": "The four agents",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(4) > div > p > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode’s Actions on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "← previous world: ultraweb",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "tag": "a",
+     "type": null,
+     "name": "all worlds →",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 22,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "impressum-light-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "iwan.braun2004@gmail.com",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "@blyatiful1",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Diensteanbieter",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Kontakt",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Streitbeilegung",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Hinweis",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "← zurück zu den Welten",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 22,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "datenschutz-light-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#verantwortlicher > div > p > a",
+     "tag": "a",
+     "type": null,
+     "name": "iwan.braun2004@gmail.com",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Verantwortlicher",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Hosting & Logs",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Kontaktaufnahme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Empfänger",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(5) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub-Daten",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(6) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Lokale Speicherung",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(7) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Ihre Rechte",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "← zurück zu den Welten",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 24,
+    "issues": 0
+   },
+   "truncated": false
+  },
+  "notfound-light-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "images": [
+    {
+     "selector": "body > header > div > a > svg",
+     "src": "",
+     "alt": "Iwan Braun",
+     "decorative": true,
+     "issue": null
+    }
+   ],
+   "controls": [
+    {
+     "selector": "html > body > a",
+     "tag": "a",
+     "type": null,
+     "name": "Skip to content",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "Iwan Braun — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "tag": "a",
+     "type": null,
+     "name": "Worlds",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "tag": "a",
+     "type": null,
+     "name": "Operator",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "tag": "a",
+     "type": null,
+     "name": "Work with me",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "#main > div > a",
+     "tag": "a",
+     "type": null,
+     "name": "← Back to world 00 — home",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "ultraweb — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "hardmode — case study",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "tag": "a",
+     "type": null,
+     "name": "gtheme on GitHub ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "tag": "a",
+     "type": null,
+     "name": "GitHub profile ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "build ledger — this repo ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "built by world 01 — ultraweb-site ↗",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Impressum",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "tag": "a",
+     "type": null,
+     "name": "Datenschutz",
+     "labelled": true,
+     "issue": null
+    },
+    {
+     "selector": "footer > div:nth-of-type(1) > div > div > button",
+     "tag": "button",
+     "type": "button",
+     "name": "Switch to dark theme",
+     "labelled": true,
+     "issue": null
+    }
+   ],
+   "issues": [],
+   "counts": {
+    "images": 1,
+    "controls": 16,
+    "issues": 0
+   },
+   "truncated": false
+  }
+ },
+ "links": {
+  "home-dark-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "Enter world 01 — ultraweb case study →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "ultraweb-site.vercel.app ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "Enter world 02 — hardmode case study →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "href": "https://github.com/blyatiful1/hardmode/actions",
+     "raw": "https://github.com/blyatiful1/hardmode/actions",
+     "text": "tools/demo.py — CI proves every hook blocks ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "Visit world 03 — gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "href": "https://github.com/blyatiful1/gtheme/actions",
+     "raw": "https://github.com/blyatiful1/gtheme/actions",
+     "text": "2,610 tests · CI green ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "Audit the build — this site’s repo on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(5) > a",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "or email directly",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#contact > div > a[data-slot=\"button\"]",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://ultraweb-site.vercel.app/",
+    "https://github.com/blyatiful1/hardmode/actions",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1/gtheme/actions",
+    "https://github.com/blyatiful1/portfolio",
+    "https://github.com/blyatiful1"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 22,
+    "internal": 5,
+    "external": 6,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "work-ultraweb-dark-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/work/ultraweb#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← All worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/ultraweb",
+     "raw": "https://github.com/blyatiful1/ultraweb",
+     "text": "ultraweb repo on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "href": "https://github.com/blyatiful1/ultraweb",
+     "raw": "https://github.com/blyatiful1/ultraweb",
+     "text": "ultraweb on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "ultraweb-site, the live proof ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "next world: hardmode →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "Work with me",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/ultraweb",
+    "https://ultraweb-site.vercel.app/",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 17,
+    "internal": 5,
+    "external": 5,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "work-hardmode-dark-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/work/hardmode#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← All worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/hardmode",
+     "raw": "https://github.com/blyatiful1/hardmode",
+     "text": "hardmode repo on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(4) > div > p > a",
+     "href": "https://github.com/blyatiful1/hardmode/actions",
+     "raw": "https://github.com/blyatiful1/hardmode/actions",
+     "text": "hardmode’s Actions on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "href": "https://github.com/blyatiful1/hardmode",
+     "raw": "https://github.com/blyatiful1/hardmode",
+     "text": "hardmode on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "← previous world: ultraweb",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "all worlds →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "Work with me",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/hardmode",
+    "https://github.com/blyatiful1/hardmode/actions",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 18,
+    "internal": 5,
+    "external": 6,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "impressum-dark-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/impressum#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(1)",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "iwan.braun2004@gmail.com",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(2)",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "@blyatiful1",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum#anbieter",
+     "raw": "#anbieter",
+     "text": "Diensteanbieter",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/impressum#kontakt",
+     "raw": "#kontakt",
+     "text": "Kontakt",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "href": "http://localhost:3100/impressum#vsbg",
+     "raw": "#vsbg",
+     "text": "Streitbeilegung",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "href": "http://localhost:3100/impressum#hinweis",
+     "raw": "#hinweis",
+     "text": "Hinweis",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← zurück zu den Welten",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 20,
+    "internal": 5,
+    "external": 4,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "datenschutz-dark-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/datenschutz#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#verantwortlicher > div > p > a",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "iwan.braun2004@gmail.com",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/datenschutz#verantwortlicher",
+     "raw": "#verantwortlicher",
+     "text": "Verantwortlicher",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz#hosting",
+     "raw": "#hosting",
+     "text": "Hosting & Logs",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "href": "http://localhost:3100/datenschutz#kontakt",
+     "raw": "#kontakt",
+     "text": "Kontaktaufnahme",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "href": "http://localhost:3100/datenschutz#empfaenger",
+     "raw": "#empfaenger",
+     "text": "Empfänger",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(5) > a",
+     "href": "http://localhost:3100/datenschutz#github",
+     "raw": "#github",
+     "text": "GitHub-Daten",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(6) > a",
+     "href": "http://localhost:3100/datenschutz#speicherung",
+     "raw": "#speicherung",
+     "text": "Lokale Speicherung",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(7) > a",
+     "href": "http://localhost:3100/datenschutz#rechte",
+     "raw": "#rechte",
+     "text": "Ihre Rechte",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← zurück zu den Welten",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/datenschutz",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 22,
+    "internal": 5,
+    "external": 4,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "notfound-dark-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "dark",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/this-world-does-not-exist#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← Back to world 00 — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/this-world-does-not-exist",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/this-world-does-not-exist",
+     "status": 404
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [
+    {
+     "href": "http://localhost:3100/this-world-does-not-exist",
+     "status": 404
+    }
+   ],
+   "counts": {
+    "links": 14,
+    "internal": 6,
+    "external": 4,
+    "checked": 6,
+    "broken": 1
+   },
+   "truncated": false
+  },
+  "home-light-1440": {
+   "url": "http://localhost:3100/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "Enter world 01 — ultraweb case study →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "ultraweb-site.vercel.app ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "Enter world 02 — hardmode case study →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "href": "https://github.com/blyatiful1/hardmode/actions",
+     "raw": "https://github.com/blyatiful1/hardmode/actions",
+     "text": "tools/demo.py — CI proves every hook blocks ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "Visit world 03 — gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div:nth-of-type(2) > dl > div:nth-of-type(2) > dd > a",
+     "href": "https://github.com/blyatiful1/gtheme/actions",
+     "raw": "https://github.com/blyatiful1/gtheme/actions",
+     "text": "2,610 tests · CI green ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "div > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "Audit the build — this site’s repo on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#contact > form > div:nth-of-type(5) > a",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "or email directly",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#contact > div > a[data-slot=\"button\"]",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://ultraweb-site.vercel.app/",
+    "https://github.com/blyatiful1/hardmode/actions",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1/gtheme/actions",
+    "https://github.com/blyatiful1/portfolio",
+    "https://github.com/blyatiful1"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 22,
+    "internal": 5,
+    "external": 6,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "work-ultraweb-light-1440": {
+   "url": "http://localhost:3100/work/ultraweb",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/work/ultraweb#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← All worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/ultraweb",
+     "raw": "https://github.com/blyatiful1/ultraweb",
+     "text": "ultraweb repo on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "href": "https://github.com/blyatiful1/ultraweb",
+     "raw": "https://github.com/blyatiful1/ultraweb",
+     "text": "ultraweb on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "ultraweb-site, the live proof ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "next world: hardmode →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "Work with me",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/ultraweb",
+    "https://ultraweb-site.vercel.app/",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 17,
+    "internal": 5,
+    "external": 5,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "work-hardmode-light-1440": {
+   "url": "http://localhost:3100/work/hardmode",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/work/hardmode#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← All worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(1) > div > p:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/hardmode",
+     "raw": "https://github.com/blyatiful1/hardmode",
+     "text": "hardmode repo on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(4) > div > p > a",
+     "href": "https://github.com/blyatiful1/hardmode/actions",
+     "raw": "https://github.com/blyatiful1/hardmode/actions",
+     "text": "hardmode’s Actions on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(1)",
+     "href": "https://github.com/blyatiful1/hardmode",
+     "raw": "https://github.com/blyatiful1/hardmode",
+     "text": "hardmode on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(2)",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "← previous world: ultraweb",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > div > a:nth-of-type(3)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "all worlds →",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > section:nth-of-type(5) > div > a[data-slot=\"button\"]",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "Work with me",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/hardmode",
+    "https://github.com/blyatiful1/hardmode/actions",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 18,
+    "internal": 5,
+    "external": 6,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "impressum-light-1440": {
+   "url": "http://localhost:3100/impressum",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/impressum#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(1)",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "iwan.braun2004@gmail.com",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#kontakt > div > p > a:nth-of-type(2)",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "@blyatiful1",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum#anbieter",
+     "raw": "#anbieter",
+     "text": "Diensteanbieter",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/impressum#kontakt",
+     "raw": "#kontakt",
+     "text": "Kontakt",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "href": "http://localhost:3100/impressum#vsbg",
+     "raw": "#vsbg",
+     "text": "Streitbeilegung",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "href": "http://localhost:3100/impressum#hinweis",
+     "raw": "#hinweis",
+     "text": "Hinweis",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← zurück zu den Welten",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 20,
+    "internal": 5,
+    "external": 4,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "datenschutz-light-1440": {
+   "url": "http://localhost:3100/datenschutz",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/datenschutz#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#verantwortlicher > div > p > a",
+     "href": "mailto:iwan.braun2004@gmail.com",
+     "raw": "mailto:iwan.braun2004@gmail.com",
+     "text": "iwan.braun2004@gmail.com",
+     "external": true,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/datenschutz#verantwortlicher",
+     "raw": "#verantwortlicher",
+     "text": "Verantwortlicher",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz#hosting",
+     "raw": "#hosting",
+     "text": "Hosting & Logs",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(3) > a",
+     "href": "http://localhost:3100/datenschutz#kontakt",
+     "raw": "#kontakt",
+     "text": "Kontaktaufnahme",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(4) > a",
+     "href": "http://localhost:3100/datenschutz#empfaenger",
+     "raw": "#empfaenger",
+     "text": "Empfänger",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(5) > a",
+     "href": "http://localhost:3100/datenschutz#github",
+     "raw": "#github",
+     "text": "GitHub-Daten",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(6) > a",
+     "href": "http://localhost:3100/datenschutz#speicherung",
+     "raw": "#speicherung",
+     "text": "Lokale Speicherung",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "aside > nav > ul > li:nth-of-type(7) > a",
+     "href": "http://localhost:3100/datenschutz#rechte",
+     "raw": "#rechte",
+     "text": "Ihre Rechte",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > div > aside > p:nth-of-type(4) > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← zurück zu den Welten",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/datenschutz",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    }
+   ],
+   "broken": [],
+   "counts": {
+    "links": 22,
+    "internal": 5,
+    "external": 4,
+    "checked": 5,
+    "broken": 0
+   },
+   "truncated": false
+  },
+  "notfound-light-1440": {
+   "url": "http://localhost:3100/this-world-does-not-exist",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "theme": "light",
+   "links": [
+    {
+     "selector": "html > body > a",
+     "href": "http://localhost:3100/this-world-does-not-exist#main",
+     "raw": "#main",
+     "text": "Skip to content",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "html > body > header > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "Iwan Braun — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(1)",
+     "href": "http://localhost:3100/#worlds",
+     "raw": "/#worlds",
+     "text": "Worlds",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a:nth-of-type(2)",
+     "href": "http://localhost:3100/#operator",
+     "raw": "/#operator",
+     "text": "Operator",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "body > header > div > nav > a[data-slot=\"button\"]",
+     "href": "http://localhost:3100/#contact",
+     "raw": "/#contact",
+     "text": "Work with me",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "#main > div > a",
+     "href": "http://localhost:3100/",
+     "raw": "/",
+     "text": "← Back to world 00 — home",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/work/ultraweb",
+     "raw": "/work/ultraweb",
+     "text": "ultraweb — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/work/hardmode",
+     "raw": "/work/hardmode",
+     "text": "hardmode — case study",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(3) > a",
+     "href": "https://github.com/blyatiful1/gtheme",
+     "raw": "https://github.com/blyatiful1/gtheme",
+     "text": "gtheme on GitHub ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+     "href": "https://github.com/blyatiful1",
+     "raw": "https://github.com/blyatiful1",
+     "text": "GitHub profile ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+     "href": "https://github.com/blyatiful1/portfolio",
+     "raw": "https://github.com/blyatiful1/portfolio",
+     "text": "build ledger — this repo ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+     "href": "https://ultraweb-site.vercel.app/",
+     "raw": "https://ultraweb-site.vercel.app",
+     "text": "built by world 01 — ultraweb-site ↗",
+     "external": true,
+     "rel": "noreferrer",
+     "target": "_blank"
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+     "href": "http://localhost:3100/impressum",
+     "raw": "/impressum",
+     "text": "Impressum",
+     "external": false,
+     "rel": null,
+     "target": null
+    },
+    {
+     "selector": "nav > div:nth-of-type(3) > ul > li:nth-of-type(2) > a",
+     "href": "http://localhost:3100/datenschutz",
+     "raw": "/datenschutz",
+     "text": "Datenschutz",
+     "external": false,
+     "rel": null,
+     "target": null
+    }
+   ],
+   "internal": [
+    "http://localhost:3100/this-world-does-not-exist",
+    "http://localhost:3100/",
+    "http://localhost:3100/work/ultraweb",
+    "http://localhost:3100/work/hardmode",
+    "http://localhost:3100/impressum",
+    "http://localhost:3100/datenschutz"
+   ],
+   "external": [
+    "https://github.com/blyatiful1/gtheme",
+    "https://github.com/blyatiful1",
+    "https://github.com/blyatiful1/portfolio",
+    "https://ultraweb-site.vercel.app/"
+   ],
+   "deadHash": [],
+   "emptyText": [],
+   "checked": [
+    {
+     "href": "http://localhost:3100/this-world-does-not-exist",
+     "status": 404
+    },
+    {
+     "href": "http://localhost:3100/",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/ultraweb",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/work/hardmode",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/impressum",
+     "status": 200
+    },
+    {
+     "href": "http://localhost:3100/datenschutz",
+     "status": 200
+    }
+   ],
+   "broken": [
+    {
+     "href": "http://localhost:3100/this-world-does-not-exist",
+     "status": 404
+    }
+   ],
+   "counts": {
+    "links": 14,
+    "internal": 6,
+    "external": 4,
+    "checked": 6,
+    "broken": 1
+   },
+   "truncated": false
+  }
+ },
+ "shots": [
+  "/home/user/portfolio/qa/visual/round-6/home-dark-375.png",
+  "/home/user/portfolio/qa/visual/round-6/home-dark-768.png",
+  "/home/user/portfolio/qa/visual/round-6/home-dark-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/work-ultraweb-dark-375.png",
+  "/home/user/portfolio/qa/visual/round-6/work-ultraweb-dark-768.png",
+  "/home/user/portfolio/qa/visual/round-6/work-ultraweb-dark-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/work-hardmode-dark-375.png",
+  "/home/user/portfolio/qa/visual/round-6/work-hardmode-dark-768.png",
+  "/home/user/portfolio/qa/visual/round-6/work-hardmode-dark-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/impressum-dark-375.png",
+  "/home/user/portfolio/qa/visual/round-6/impressum-dark-768.png",
+  "/home/user/portfolio/qa/visual/round-6/impressum-dark-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/datenschutz-dark-375.png",
+  "/home/user/portfolio/qa/visual/round-6/datenschutz-dark-768.png",
+  "/home/user/portfolio/qa/visual/round-6/datenschutz-dark-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/notfound-dark-375.png",
+  "/home/user/portfolio/qa/visual/round-6/notfound-dark-768.png",
+  "/home/user/portfolio/qa/visual/round-6/notfound-dark-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/home-light-375.png",
+  "/home/user/portfolio/qa/visual/round-6/home-light-768.png",
+  "/home/user/portfolio/qa/visual/round-6/home-light-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/work-ultraweb-light-375.png",
+  "/home/user/portfolio/qa/visual/round-6/work-ultraweb-light-768.png",
+  "/home/user/portfolio/qa/visual/round-6/work-ultraweb-light-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/work-hardmode-light-375.png",
+  "/home/user/portfolio/qa/visual/round-6/work-hardmode-light-768.png",
+  "/home/user/portfolio/qa/visual/round-6/work-hardmode-light-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/impressum-light-375.png",
+  "/home/user/portfolio/qa/visual/round-6/impressum-light-768.png",
+  "/home/user/portfolio/qa/visual/round-6/impressum-light-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/datenschutz-light-375.png",
+  "/home/user/portfolio/qa/visual/round-6/datenschutz-light-768.png",
+  "/home/user/portfolio/qa/visual/round-6/datenschutz-light-1440.png",
+  "/home/user/portfolio/qa/visual/round-6/notfound-light-375.png",
+  "/home/user/portfolio/qa/visual/round-6/notfound-light-768.png",
+  "/home/user/portfolio/qa/visual/round-6/notfound-light-1440.png"
+ ]
+}

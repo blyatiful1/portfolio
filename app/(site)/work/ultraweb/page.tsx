@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -42,7 +43,7 @@ export default function UltrawebCaseStudy() {
             className="display-features mt-6 max-w-[15ch] font-[family-name:var(--font-display-uw)] text-5xl font-medium tracking-[-0.01em] outline-none"
           >
             The studio that <em className="text-primary">built the page</em>{" "}
-            you&apos;re reading
+            you’re reading
           </h1>
           <p className="mt-7 max-w-[56ch] text-lg text-w1-muted">
             ultraweb is a design studio for Claude Code: one guided session —
@@ -50,15 +51,22 @@ export default function UltrawebCaseStudy() {
             shipped site. Not a template. A process, installed.
           </p>
           <p className="mt-8 font-mono text-xs tracking-[0.06em] uppercase text-w1-muted">
-            JavaScript · 80 skills · 3 model-routed subagents · 7 gates ·{" "}
+            JavaScript · 80 skills · 4 model-routed subagents · 7 gates ·{" "}
             <a
               className="underline underline-offset-2"
               href="https://github.com/blyatiful1/ultraweb"
               target="_blank"
               rel="noreferrer"
             >
-              repo ↗
+              ultraweb repo on GitHub <span aria-hidden="true">↗</span>
             </a>
+          </p>
+          {/* the timeline: dates and what was cut, so the study shows work
+              to a clock, not only a result (panel I16) */}
+          <p className="mt-3 font-mono text-xs tracking-[0.06em] uppercase text-w1-muted">
+            First commit 16 Jul 2026 · v1.9.0 on 2 Sep 2026 · 7 weeks — on this
+            site’s build it binned two full mockup rounds and cut the motion
+            library it had scaffolded.
           </p>
         </div>
       </section>
@@ -81,7 +89,8 @@ export default function UltrawebCaseStudy() {
                 </span>
                 <div>
                   <h3 className="text-xl font-medium">{item.h}</h3>
-                  <p className="mt-2 max-w-[52ch] text-sm text-muted-foreground">
+                  {/* the argument reads at body size, not caption size (I48) */}
+                  <p className="mt-2 max-w-[52ch] text-base text-muted-foreground">
                     {item.p}
                   </p>
                 </div>
@@ -103,15 +112,15 @@ export default function UltrawebCaseStudy() {
               <h3 className="text-2xl font-medium">
                 The client points, the studio commits
               </h3>
-              <p className="mt-3 max-w-[46ch] text-sm text-muted-foreground">
+              <p className="mt-3 max-w-[46ch] text-base text-muted-foreground">
                 A scoping interview, then three contrasting mockups. Rejections
-                are data: this site&apos;s first round was thrown out whole, and
+                are data: this site’s first round was thrown out whole, and
                 the verdict went into the ledger verbatim.
               </p>
             </div>
             <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0 xl:mr-0 xl:rounded-md xl:border-r xl:pr-5">
               <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
-                design/MOCKUPS.md — this site&apos;s actual record
+                design/MOCKUPS.md — this site’s actual record
               </figcaption>
               <pre className="mt-3 overflow-x-auto font-mono text-xs leading-relaxed whitespace-pre-wrap text-muted-foreground">
 {`**Verdict R1:** Revised round — all four objections selected:
@@ -126,12 +135,40 @@ round 3. Green light for Phase 3.`}
             </figure>
           </div>
 
+          {/* the approved candidate, as rendered — the one documentary figure
+              SYSTEM §imagery allows: the studio's own artifact (panel I29) */}
+          <div className="mt-16 grid items-center gap-10 md:grid-cols-[4fr_6fr]">
+            <div>
+              <h3 className="text-2xl font-medium">
+                What was approved, before a line of production code
+              </h3>
+              <p className="mt-3 max-w-[46ch] text-base text-muted-foreground">
+                Round three’s winning candidate: a static HTML mockup, four
+                worlds in one spine. Scroll up — the page you are on is what
+                it became.
+              </p>
+            </div>
+            <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0 xl:mr-0 xl:rounded-md xl:border-r xl:pr-5">
+              <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
+                design/mockups/b3-four-worlds.html — rendered at 1440px
+              </figcaption>
+              <Image
+                src="/work/ultraweb-b3-mockup.webp"
+                width={1200}
+                height={750}
+                alt="The approved B3 mockup: a near-black chrome holding four full-bleed world chapters — ultraweb in terracotta, hardmode in hazard yellow, gtheme in soft light — with the live wire under the headline One operator, four worlds."
+                sizes="(min-width: 1280px) 40rem, (min-width: 768px) 60vw, 100vw"
+                className="mt-3 h-auto w-full rounded-sm border border-border"
+              />
+            </figure>
+          </div>
+
           <div className="mt-16 grid items-center gap-10 md:grid-cols-[4fr_6fr]">
             <div>
               <h3 className="text-2xl font-medium">
                 Taste is written down, then enforced
               </h3>
-              <p className="mt-3 max-w-[46ch] text-sm text-muted-foreground">
+              <p className="mt-3 max-w-[46ch] text-base text-muted-foreground">
                 A constitution every skill obeys, a direction file with a
                 will-not list, and seven gates that screenshot, grep, and
                 measure before anything ships.
@@ -139,7 +176,7 @@ round 3. Green light for Phase 3.`}
             </div>
             <figure className="border border-border bg-card p-5 lg:mr-[calc(50%-50vw)] lg:rounded-l-md lg:border-r-0 lg:pr-0 xl:mr-0 xl:rounded-md xl:border-r xl:pr-5">
               <figcaption className="font-[family-name:var(--font-display-uw)] text-sm italic text-world-uw-chrome">
-                design/DIRECTION.md — this site&apos;s actual record
+                design/DIRECTION.md — this site’s actual record
               </figcaption>
               <pre className="mt-3 overflow-x-auto font-mono text-xs leading-relaxed whitespace-pre-wrap text-muted-foreground">
 {`**Signature move:** "Entering a world" — as the visitor
@@ -178,7 +215,7 @@ ultraweb-site already owns it; this site may not echo it.`}
               this page is output of the process it describes.
             </span>{" "}
             Every decision above — the rejected mockups, the signature budget,
-            the approvals — is committed in this site&apos;s own repo, checkable
+            the approvals — is committed in this site’s own repo, checkable
             like any other claim here.
           </p>
         </div>
@@ -189,13 +226,13 @@ ultraweb-site already owns it; this site may not echo it.`}
         <div className="mx-auto flex max-w-content flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6">
           <div className="flex flex-wrap gap-x-7 gap-y-3 font-mono text-sm">
             <a className="nav-link uppercase tracking-[0.08em] text-world-uw-chrome" href="https://github.com/blyatiful1/ultraweb" target="_blank" rel="noreferrer">
-              the repo ↗
+              ultraweb on GitHub <span aria-hidden="true">↗</span>
             </a>
             <a className="nav-link uppercase tracking-[0.08em] text-world-uw-chrome" href="https://ultraweb-site.vercel.app" target="_blank" rel="noreferrer">
-              ultraweb-site ↗
+              ultraweb-site, the live proof <span aria-hidden="true">↗</span>
             </a>
             <Link className="nav-link uppercase tracking-[0.08em] text-muted-foreground" href="/work/hardmode">
-              next world: hardmode →
+              next world: hardmode <span aria-hidden="true">→</span>
             </Link>
           </div>
           <Button asChild>
